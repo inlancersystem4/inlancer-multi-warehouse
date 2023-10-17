@@ -1,0 +1,21 @@
+/* display class  */
+
+.display-flex {
+    display: flex;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-grid {
+    display: grid;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
