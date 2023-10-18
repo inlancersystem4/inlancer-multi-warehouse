@@ -24,9 +24,19 @@
         -moz-transform: translateX(-999px);
         -ms-transform: translateX(-999px);
         -o-transform: translateX(-999px);
+        z-index: 100;
+    }
+
+    .mini-main-sidebar {
+        display: none;
+    }
+
+    #Close_mini_sidebar {
+        display: none;
     }
 
     .responsive-main-sidebar {
+        display: block;
         animation: ShowSidebar 1s ease forwards;
         -webkit-animation: ShowSidebar 1s ease forwards;
     }

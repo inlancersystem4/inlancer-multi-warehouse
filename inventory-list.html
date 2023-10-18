@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="user-profile-btn" id="Responsive_Close_sidebar">
-                        <img src="./assets/img/icons/bell.svg" class="img-not-selected close-menu">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected close-menu">
                     </div>
 
                 </div>
@@ -365,7 +365,7 @@
 
                 <div class="header-btn-group">
                     <button class="layout-buttons" id="Close_mini_sidebar">
-                        <img src="./assets/img/icons/burger-menu.svg" class="img-not-selected">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
                     </button>
                     <button class="layout-buttons">
                         <img src="./assets/img/icons/arrow-left.svg" class="img-not-selected">
@@ -419,7 +419,7 @@
                             <div class="table-options">
 
 
-                                <div class="table-about-tag">
+                                <div class="table-about-tag custom-dropdown" onclick="OpenDropDown('warehouseDrop')">
                                     <div class="icon">
 
                                         <div class="main-icon">
@@ -428,7 +428,30 @@
 
                                     </div>
                                     <p class="tagline">Nordhavn warehouse</p>
+                                    <ul class="custom-dropdown-list" id="warehouseDrop">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">Retail store #2</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">Retail store #2</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link selected-dropdown-option">
+                                                <p class="dropdown-link-title">Nordhavn warehouse</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">Frederiksberg warehouse</p>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
+
 
 
 
@@ -436,7 +459,10 @@
                                     <button class="icon">
                                         <img src="./assets/img/icons/search.svg" class="img-not-selected">
                                     </button>
-                                    <input type="text" placeholder="Find something">
+                                    <input type="text" placeholder="Find something" class="enter_val">
+                                    <button class="icon val_clear" style="cursor: pointer;">
+                                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                                    </button>
                                 </div>
 
                             </div>
@@ -502,7 +528,7 @@
 
                         <div class="table-footer">
 
-                            <div>
+                            <div class="table-resuits-count custom-dropdown" onclick="OpenDropDown('paginationDrop')">
 
                                 <p class="all-items-list-count">
 
@@ -519,6 +545,35 @@
                                     results
 
                                 </p>
+
+
+                                <ul class="custom-dropdown-list" id="paginationDrop">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">
+                                            <p class="dropdown-link-title">Fit to screen</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">
+                                            <p class="dropdown-link-title">Show all results</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link selected-dropdown-option">
+                                            <p class="dropdown-link-title">10</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">
+                                            <p class="dropdown-link-title">25</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">
+                                            <p class="dropdown-link-title">50</p>
+                                        </a>
+                                    </li>
+                                </ul>
 
                             </div>
 
@@ -553,6 +608,110 @@
         </section>
 
     </main>
+
+
+    <div class="drawer rightside">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Adjust availablity</h4>
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+        </div>
+
+
+        <div class="drawer-body">
+
+            <div class="drawer-section">
+                <small class="section-title">Item</small>
+                <ul class="items-list-in-drawer">
+                    <li class="list-item">
+                        <div class="product-info">
+                            <img src="./assets/img/Rectangle-1665.png">
+                            <div>
+                                <p class="product-name">Classic Bathrobe <span>(ROBE_001)</span> </p>
+                                <div class="product-variants">
+                                    <p>Small</p>
+                                    <p>White</p>
+                                    <p>Hooded</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-quantity-section">
+                            <p class="title">Original quantity</p>
+                            <p class="product-quantity">240</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="drawer-section">
+                <small class="section-title">Reason</small>
+                <div class="custom-select custom-dropdown" onclick="OpenDropDown('ReasonDrop')">
+                    <p>Correction (default)</p>
+                    <ul class="custom-dropdown-list" id="ReasonDrop">
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link selected-dropdown-option">
+                                <p class="dropdown-link-title">Correction (default)</p>
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">
+                                <p class="dropdown-link-title">Count</p>
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link ">
+                                <p class="dropdown-link-title">Received</p>
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">
+                                <p class="dropdown-link-title">Return restock</p>
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">
+                                <p class="dropdown-link-title">Damaged</p>
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">
+                                <p class="dropdown-link-title">Theft or loss</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="drawer-section">
+                <small class="section-title">Adjust by</small>
+                <div class="search-wrraper">
+                    <input type="number" class="enter_Adjust" placeholder="0" min="0" max="999">
+                    <div class="btn-group">
+                        <button class="icon val_decrease" style="cursor: pointer;">
+                            <img src="./assets/img/icons/minus.svg" class="img-not-selected">
+                        </button>
+                        <button class="icon val_increase" style="cursor: pointer;">
+                            <img src="./assets/img/icons/plus-2.svg" class="img-not-selected">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn">Cancel</button>
+                <button class="btn" disabled>Save and close</button>
+            </div>
+        </div>
+
+    </div>
 
 
 
