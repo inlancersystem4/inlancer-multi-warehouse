@@ -1,0 +1,100 @@
+@media (min-width:1920px) {}
+
+
+
+@media (max-width:1440px) {}
+
+
+
+
+@media (max-width:1280px) {}
+
+
+
+
+
+@media (max-width:992px) {
+
+    .main-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-999px);
+        -webkit-transform: translateX(-999px);
+        -moz-transform: translateX(-999px);
+        -ms-transform: translateX(-999px);
+        -o-transform: translateX(-999px);
+    }
+
+    .responsive-main-sidebar {
+        animation: ShowSidebar 1s ease forwards;
+        -webkit-animation: ShowSidebar 1s ease forwards;
+    }
+
+    @keyframes ShowSidebar {
+        100% {
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+    }
+
+    #Open_mini_sidebar {
+        display: none;
+    }
+
+
+    #Responsive_Close_sidebar,
+    #Responsive_Open_sidebar {
+        display: flex;
+    }
+
+
+}
+
+
+
+
+@media (max-width:768px) {
+
+
+
+    .table-content {
+        padding: 16px 0;
+    }
+
+
+    .table-header {
+        padding: 0 22px 16px;
+    }
+
+    .table-footer {
+        padding: 16px 22px 0;
+    }
+
+    .main-table tr {
+        padding: 8px 22px;
+    }
+
+
+    .table-header .table-options {
+        flex-wrap: wrap-reverse;
+        justify-content: flex-end;
+        column-gap: 20px;
+        row-gap: 8px;
+    }
+
+    .table-about-tag {
+        gap: 8px;
+    }
+
+}
+
+
+
+@media (max-width: 560px) {}
+
+
+@media (max-width: 440px) {}

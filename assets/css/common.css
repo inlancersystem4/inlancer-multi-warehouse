@@ -1,5 +1,3 @@
-/* display class  */
-
 .display-flex {
     display: flex;
 }
@@ -18,4 +16,29 @@
 
 .display-inline-block {
     display: inline-block;
+}
+
+
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    outline: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 2px;
+    background-color: var(--Grey-5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--Grey-20);
+    width: 2px;
 }
