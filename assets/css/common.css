@@ -41,6 +41,7 @@ button {
 ::-webkit-scrollbar {
     width: 2px;
     background-color: var(--Grey-5);
+    height: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -318,6 +319,106 @@ input[type=number] {
 .text-20 {
     font-size: 20px;
 }
+
+
+
+
+/* base font */
+
+
+.text-base_regular {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+.text-base_semibold {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/* Close base font */
+
+
+
+
+/* small font  */
+
+.text-small_regular {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.text-small_semibold {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* Close small font  */
+
+
+/* large font  */
+
+
+.text-large_semibold {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.text-large_regular {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+/* Close  large font  */
+
+
+/* xl font  */
+
+.text-xl_regular {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
+.text-xl_semibold {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+/* Close xl font  */
+
+/* sm font  */
+
+.text-sm_regular {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.text-sm_medium {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.text-sm_semibold {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* Close sm font  */
 
 /* Close Tyrograph */
 

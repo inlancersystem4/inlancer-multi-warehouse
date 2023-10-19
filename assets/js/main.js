@@ -62,17 +62,18 @@ $(document).ready(function () {
 
     $('.enter_val').on('input', function () {
         if ($(this).val().length > 0) {
-            $('.val_clear').show();
+            $(this).siblings('.val_clear').show();
         } else {
-            $('.val_clear').hide();
+            $(this).siblings('.val_clear').hide();
         }
     });
 
-
     $('.val_clear').on('click', function () {
-        $('.enter_val').val('');
+        $(this).siblings('.enter_val').val('');
         $(this).hide();
     });
+
+
 
 
     $('.enter_Adjust').val(0);
@@ -142,7 +143,15 @@ $(document).ready(function () {
     })
 
 
-
+    $("#show_SearchBar").click(function (event) {
+        event.stopPropagation();
+        $(this).children(".searchBar").fadeIn();
+        $(document).on("click", function (event) {
+            if (!$(event.target).closest(".searchBar").length) {
+                $(".searchBar").fadeOut();
+            }
+        });
+    });
 
 })
 
