@@ -19,6 +19,9 @@
 }
 
 
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 
 
 
@@ -30,6 +33,8 @@ a {
 button {
     border: 0;
     outline: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 
@@ -52,3 +57,325 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+
+
+
+
+
+/* Tyrograph */
+
+
+
+.color-black {
+    color: var(--black);
+}
+
+.color-white {
+    color: var(--Grey);
+}
+
+.color-Grey_5 {
+    color: var(--Grey-5);
+}
+
+.color-Grey_10 {
+    color: var(--Grey-10);
+}
+
+.color-Grey_20 {
+    color: var(--Grey-20);
+}
+
+.color-Grey_30 {
+    color: var(--Grey-30);
+}
+
+.color-Grey_40 {
+    color: var(--Grey-40);
+}
+
+
+.color-Grey_50 {
+    color: var(--Grey-50);
+}
+
+.color-Grey_60 {
+    color: var(--Grey-60);
+}
+
+.color-Grey_70 {
+    color: var(--Grey-70);
+}
+
+.color-Grey_90 {
+    color: var(--Grey-90);
+}
+
+
+
+
+
+
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--Grey);
+}
+
+.bg-Grey_5 {
+    background-color: var(--Grey-5);
+}
+
+.bg-Grey_10 {
+    background-color: var(--Grey-10);
+}
+
+.bg-Grey_20 {
+    background-color: var(--Grey-20);
+}
+
+.bg-Grey_30 {
+    background-color: var(--Grey-30);
+}
+
+.bg-Grey_40 {
+    background-color: var(--Grey-40);
+}
+
+.bg-Grey_50 {
+    background-color: var(--Grey-50);
+}
+
+.bg-Grey_60 {
+    background-color: var(--Grey-60);
+}
+
+.bg-Grey_70 {
+    background-color: var(--Grey-70);
+}
+
+.bg-Grey_90 {
+    background-color: var(--Grey-90);
+}
+
+
+
+
+
+
+
+
+
+.border {
+    border-width: 1px;
+}
+
+.border-2 {
+    border-width: 2px;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+.border-black {
+    border-color: var(--black);
+}
+
+.border-white {
+    border-color: var(--Grey);
+}
+
+.border-Grey_5 {
+    border-color: var(--Grey-5);
+}
+
+.border-Grey_10 {
+    border-color: var(--Grey-10);
+}
+
+.border-Grey_20 {
+    border-color: var(--Grey-20);
+}
+
+.border-Grey_30 {
+    border-color: var(--Grey-30);
+}
+
+.border-Grey_40 {
+    border-color: var(--Grey-40);
+}
+
+.border-Grey_50 {
+    border-color: var(--Grey-50);
+}
+
+.border-Grey_60 {
+    border-color: var(--Grey-60);
+}
+
+.border-Grey_70 {
+    border-color: var(--Grey-70);
+}
+
+.border-Grey_90 {
+    border-color: var(--Grey-90);
+}
+
+
+
+
+
+.rounded-none {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+
+.rounded-sm {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.rounded-regualr {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+
+.required {
+    color: #F43F5E;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.font-800 {
+    font-weight: 800;
+}
+
+.font-900 {
+    font-weight: 900;
+}
+
+
+
+.text-12 {
+    font-size: 12px;
+}
+
+
+.text-14 {
+    font-size: 14px;
+}
+
+.text-15 {
+    font-size: 15px;
+}
+
+.text-16 {
+    font-size: 16px;
+}
+
+.text-17 {
+    font-size: 17px;
+}
+
+.text-18 {
+    font-size: 18px;
+}
+
+.text-19 {
+    font-size: 19px;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+/* Close Tyrograph */
+
+
+
+
+
+
+
+
+/* input  */
+
+
+
+.input-1 {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--Grey-20);
+    width: 100%;
+    outline: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: var(--Grey-5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--Grey-90);
+}
+
+.input-1::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--Grey-40);
+}
+
+.input-1:focus {
+    border: 1px solid #7C3AED !important;
+    outline: none;
+    box-shadow: 0px 0px 0px 4px rgba(124, 58, 237, 0.10);
+}
+
+
+.input-group {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    color: var(--Grey-50);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+/* Close input  */

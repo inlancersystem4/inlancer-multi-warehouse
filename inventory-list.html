@@ -403,199 +403,603 @@
 
                     <ul class="tab-list">
                         <li class="tab-items">
-                            <button class="tab-button active-tab-button">Inventory list</button>
+                            <button class="tab-button active-tab-button" data-tab="inventory_list">Inventory
+                                list</button>
                         </li>
                         <li class="tab-items">
-                            <button class="tab-button">Locations</button>
+                            <button class="tab-button " data-tab="locations">Locations</button>
+                        </li>
+                        <li class="tab-items">
+                            <button class="tab-button" data-tab="Transfers">Transfers</button>
+                        </li>
+                        <li class="tab-items">
+                            <button class="tab-button" data-tab="Suppliers">Suppliers</button>
+                        </li>
+                        <li class="tab-items">
+                            <button class="tab-button" data-tab="purchase_orders">Purchase orders</button>
                         </li>
                     </ul>
 
-                    <div class="table-content">
 
-                        <div class="table-header">
-
-                            <h2 class="title">Inventory list</h2>
-
-                            <div class="table-options">
+                    <div class="tab-pane active-tab-content" id="inventory_list">
 
 
-                                <div class="table-about-tag custom-dropdown" onclick="OpenDropDown('warehouseDrop')">
-                                    <div class="icon">
+                        <div class="table-content">
 
-                                        <div class="main-icon">
-                                            <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
+                            <div class="table-header">
+
+                                <h2 class="title">Inventory list</h2>
+
+                                <div class="table-options">
+
+
+                                    <div class="table-about-tag custom-dropdown"
+                                        onclick="OpenDropDown('warehouseDrop')">
+                                        <div class="icon">
+
+                                            <div class="main-icon">
+                                                <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
+                                            </div>
+
                                         </div>
-
+                                        <p class="tagline">Nordhavn warehouse</p>
+                                        <ul class="custom-dropdown-list" id="warehouseDrop">
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">
+                                                    <p class="dropdown-link-title">Retail store #2</p>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">
+                                                    <p class="dropdown-link-title">Retail store #2</p>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link selected-dropdown-option">
+                                                    <p class="dropdown-link-title">Nordhavn warehouse</p>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">
+                                                    <p class="dropdown-link-title">Frederiksberg warehouse</p>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <p class="tagline">Nordhavn warehouse</p>
-                                    <ul class="custom-dropdown-list" id="warehouseDrop">
+
+
+
+
+                                    <div class="search-wrraper">
+                                        <button class="icon">
+                                            <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                                        </button>
+                                        <input type="text" placeholder="Find something" class="enter_val">
+                                        <button class="icon val_clear" style="cursor: pointer;">
+                                            <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <table class="main-table">
+
+                                <tr>
+                                    <th class="item-section">Item</th>
+                                    <th class="variants-section">Variants</th>
+                                    <th class="SKU-section">SKU</th>
+                                    <th class="blank-section"></th>
+                                    <th class="incoming-section">Incoming</th>
+                                    <th class="committed-section">Committed</th>
+                                    <th class="available-section">Available</th>
+                                </tr>
+
+                                <tr>
+                                    <td class="item-section">
+                                        <div class="product-item">
+                                            <img src="./assets/img/Rectangle-1665.png">
+                                            <p class="items-name">Classic Bathrobe</p>
+                                        </div>
+                                    </td>
+                                    <td class="variants-section">
+                                        <div class="product-variants">
+                                            <p>Small</p>
+                                            <p>White</p>
+                                            <p>Hooded</p>
+                                        </div>
+                                    </td>
+                                    <td class="text-light SKU-section">ROBE_001</td>
+                                    <td class="blank-section"></td>
+                                    <td class="incoming-section">0</td>
+                                    <td class="committed-section">16</td>
+                                    <td class="available-section">240</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="item-section">
+                                        <div class="product-item">
+                                            <img src="./assets/img/Rectangle-1665.png">
+                                            <p class="items-name">Classic Bathrobe</p>
+                                        </div>
+                                    </td>
+                                    <td class="variants-section">
+                                        <div class="product-variants">
+                                            <p>Small</p>
+                                            <p>White</p>
+                                            <p>Hooded</p>
+                                        </div>
+                                    </td>
+                                    <td class="text-light SKU-section">ROBE_001</td>
+                                    <td class="blank-section"></td>
+                                    <td class="incoming-section">0</td>
+                                    <td class="committed-section">16</td>
+                                    <td class="available-section">240</td>
+                                </tr>
+
+                            </table>
+
+                            <div class="table-footer">
+
+                                <div class="table-resuits-count custom-dropdown"
+                                    onclick="OpenDropDown('paginationDrop')">
+
+                                    <p class="all-items-list-count">
+
+                                        <span>1</span>
+
+                                        -
+
+                                        <span>13</span>
+
+                                        of
+
+                                        <span>200</span>
+
+                                        results
+
+                                    </p>
+
+
+                                    <ul class="custom-dropdown-list" id="paginationDrop">
                                         <li class="dropdown-item">
                                             <a href="#" class="dropdown-link">
-                                                <p class="dropdown-link-title">Retail store #2</p>
+                                                <p class="dropdown-link-title">Fit to screen</p>
                                             </a>
                                         </li>
                                         <li class="dropdown-item">
                                             <a href="#" class="dropdown-link">
-                                                <p class="dropdown-link-title">Retail store #2</p>
+                                                <p class="dropdown-link-title">Show all results</p>
                                             </a>
                                         </li>
                                         <li class="dropdown-item">
                                             <a href="#" class="dropdown-link selected-dropdown-option">
-                                                <p class="dropdown-link-title">Nordhavn warehouse</p>
+                                                <p class="dropdown-link-title">10</p>
                                             </a>
                                         </li>
                                         <li class="dropdown-item">
                                             <a href="#" class="dropdown-link">
-                                                <p class="dropdown-link-title">Frederiksberg warehouse</p>
+                                                <p class="dropdown-link-title">25</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">50</p>
                                             </a>
                                         </li>
                                     </ul>
+
                                 </div>
 
 
+                                <div class="table-pagination">
+
+                                    <p class="total-pages-count">
+                                        <span> 1 </span>
+                                        of
+                                        <span>16</span>
+                                        pages
+                                    </p>
 
 
-                                <div class="search-wrraper">
-                                    <button class="icon">
-                                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
-                                    </button>
-                                    <input type="text" placeholder="Find something" class="enter_val">
-                                    <button class="icon val_clear" style="cursor: pointer;">
-                                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
-                                    </button>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <table class="main-table">
-
-                            <tr>
-                                <th class="item-section">Item</th>
-                                <th class="variants-section">Variants</th>
-                                <th class="SKU-section">SKU</th>
-                                <th class="blank-section"></th>
-                                <th class="incoming-section">Incoming</th>
-                                <th class="committed-section">Committed</th>
-                                <th class="available-section">Available</th>
-                            </tr>
-
-                            <tr>
-                                <td class="item-section">
-                                    <div class="product-item">
-                                        <img src="./assets/img/Rectangle-1665.png">
-                                        <p class="items-name">Classic Bathrobe</p>
+                                    <div class="pagination-btn-group">
+                                        <button class="pagination-btn pagination-btn-disabled">Prev</button>
+                                        <button class="pagination-btn">Next</button>
                                     </div>
-                                </td>
-                                <td class="variants-section">
-                                    <div class="product-variants">
-                                        <p>Small</p>
-                                        <p>White</p>
-                                        <p>Hooded</p>
-                                    </div>
-                                </td>
-                                <td class="text-light SKU-section">ROBE_001</td>
-                                <td class="blank-section"></td>
-                                <td class="incoming-section">0</td>
-                                <td class="committed-section">16</td>
-                                <td class="available-section">240</td>
-                            </tr>
 
-                            <tr>
-                                <td class="item-section">
-                                    <div class="product-item">
-                                        <img src="./assets/img/Rectangle-1665.png">
-                                        <p class="items-name">Classic Bathrobe</p>
-                                    </div>
-                                </td>
-                                <td class="variants-section">
-                                    <div class="product-variants">
-                                        <p>Small</p>
-                                        <p>White</p>
-                                        <p>Hooded</p>
-                                    </div>
-                                </td>
-                                <td class="text-light SKU-section">ROBE_001</td>
-                                <td class="blank-section"></td>
-                                <td class="incoming-section">0</td>
-                                <td class="committed-section">16</td>
-                                <td class="available-section">240</td>
-                            </tr>
-
-                        </table>
-
-                        <div class="table-footer">
-
-                            <div class="table-resuits-count custom-dropdown" onclick="OpenDropDown('paginationDrop')">
-
-                                <p class="all-items-list-count">
-
-                                    <span>1</span>
-
-                                    -
-
-                                    <span>13</span>
-
-                                    of
-
-                                    <span>200</span>
-
-                                    results
-
-                                </p>
-
-
-                                <ul class="custom-dropdown-list" id="paginationDrop">
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-link">
-                                            <p class="dropdown-link-title">Fit to screen</p>
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-link">
-                                            <p class="dropdown-link-title">Show all results</p>
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-link selected-dropdown-option">
-                                            <p class="dropdown-link-title">10</p>
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-link">
-                                            <p class="dropdown-link-title">25</p>
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-link">
-                                            <p class="dropdown-link-title">50</p>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-
-
-                            <div class="table-pagination">
-
-                                <p class="total-pages-count">
-                                    <span> 1 </span>
-                                    of
-                                    <span>16</span>
-                                    pages
-                                </p>
-
-
-                                <div class="pagination-btn-group">
-                                    <button class="pagination-btn pagination-btn-disabled">Prev</button>
-                                    <button class="pagination-btn">Next</button>
                                 </div>
 
                             </div>
 
                         </div>
+
+                    </div>
+
+
+                    <div class="tab-pane " id="locations">
+
+                        <div class="inventory_location-grid">
+
+                            <div>
+
+                                <div class="inventory_location-add-location-box inventory_location-padd">
+
+                                    <div>
+                                        <h6 class="title">Locations</h6>
+                                        <p class="sub-title">Manage the places you stock inventory, fulfill orders, and
+                                            sell products.</p>
+                                    </div>
+
+                                    <button class="add_location_btn" id="Open_Add_location-model">Add location
+                                        <div class="custom-tooltip">
+                                            Manage which location is used
+                                            by Medusa and apps when no
+                                            other location is specified.
+                                        </div>
+                                    </button>
+
+                                </div>
+
+                                <div class="inventory_location-location-details-box">
+
+                                    <div class="first">
+
+                                        <div class="location-about-section">
+
+                                            <div class="table-about-tag">
+                                                <div class="icon">
+
+                                                    <div class="main-icon">
+                                                        <img src="./assets/img/icons/buildings.svg"
+                                                            class="img-not-selected">
+                                                    </div>
+
+                                                </div>
+                                                <div>
+                                                    <h6 class="tagline">Retail store #1</h6>
+                                                    <p class="tab-address">Copenhagen, Denmark</p>
+                                                </div>
+                                            </div>
+
+                                            <button class="btn">
+                                                <img src="./assets/img/icons/dots-icon.svg" class="img-not-selected">
+                                            </button>
+
+                                        </div>
+
+                                        <p class="location-section-description">Vognmagergade is a street located one
+                                            block south of Rosenborg
+                                            Castle Gardens
+                                            in the Old Town of Copenhagen, Denmark. This is our number one selling
+                                            store.</p>
+
+
+                                        <ul class="location-status-list">
+                                            <li class="success"> <span></span> Offers online purchases</li>
+                                            <li class="padding"> <span></span> Doesn’t offer delivery</li>
+                                        </ul>
+
+                                    </div>
+
+
+
+                                    <div>
+
+                                        <small class="label">Connected sales channels</small>
+
+                                        <ul class="location-details-flex-list">
+
+                                            <li>
+
+                                                <div class="list-items">
+
+                                                    <div class="icon-border icon-border-20 icon-border_40px">
+                                                        <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                                            <img src="./assets/img/icons/channels.svg"
+                                                                class="img-not-selected">
+                                                        </div>
+                                                    </div>
+
+                                                    <p>Website, App, Amazon <span>+ 2 more</span> </p>
+                                                </div>
+
+                                                <button class="btn-regular">Edit channels</button>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+
+
+                                    <div>
+
+                                        <small class="label">Items at this location</small>
+
+                                        <ul class="location-details-flex-list">
+
+                                            <li>
+
+                                                <div class="list-items">
+
+
+                                                    <div class="multi_img-sec">
+                                                        <img src="./assets/img/Rectangle-1665.png">
+                                                        <img src="./assets/img/Rectangle-1665.png">
+                                                        <img src="./assets/img/Rectangle-1665.png">
+                                                    </div>
+
+
+                                                    <p>Classic Bathrobe, Poplin sleepwear<span>+ 496 more</span> </p>
+                                                </div>
+
+                                                <button class="btn-regular">View inventory</button>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+
+
+
+                                <div class="inventory_location-location-details-box">
+
+                                    <div class="first">
+
+                                        <div class="location-about-section">
+
+                                            <div class="table-about-tag">
+                                                <div class="icon">
+
+                                                    <div class="main-icon">
+                                                        <img src="./assets/img/icons/buildings.svg"
+                                                            class="img-not-selected">
+                                                    </div>
+
+                                                </div>
+                                                <div>
+                                                    <h6 class="tagline">Retail store #1</h6>
+                                                    <p class="tab-address">Copenhagen, Denmark</p>
+                                                </div>
+                                            </div>
+
+                                            <button class="btn">
+                                                <img src="./assets/img/icons/dots-icon.svg" class="img-not-selected">
+                                            </button>
+
+                                        </div>
+
+                                        <p class="location-section-description">Vognmagergade is a street located one
+                                            block south of Rosenborg
+                                            Castle Gardens
+                                            in the Old Town of Copenhagen, Denmark. This is our number one selling
+                                            store.</p>
+
+
+                                        <ul class="location-status-list">
+                                            <li class="success"> <span></span> Offers online purchases</li>
+                                            <li class="padding"> <span></span> Doesn’t offer delivery</li>
+                                        </ul>
+
+                                    </div>
+
+
+
+                                    <div>
+
+                                        <small class="label">Connected sales channels</small>
+
+                                        <ul class="location-details-flex-list">
+
+                                            <li>
+
+                                                <div class="list-items">
+
+                                                    <div class="icon-border icon-border-20 icon-border_40px">
+                                                        <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                                            <img src="./assets/img/icons/channels.svg"
+                                                                class="img-not-selected">
+                                                        </div>
+                                                    </div>
+
+                                                    <p>Website, App, Amazon <span>+ 2 more</span> </p>
+                                                </div>
+
+                                                <button class="btn-regular">Edit channels</button>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+
+
+                                    <div>
+
+                                        <small class="label">Items at this location</small>
+
+
+                                        <div class="no-conetnt-show-section">None inventory items are connected to this
+                                            locations yet</div>
+
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="inventory_location-location-details-box">
+
+                                    <div class="first">
+
+                                        <div class="location-about-section">
+
+                                            <div class="table-about-tag">
+                                                <div class="icon">
+
+                                                    <div class="main-icon">
+                                                        <img src="./assets/img/icons/buildings.svg"
+                                                            class="img-not-selected">
+                                                    </div>
+
+                                                </div>
+                                                <div>
+                                                    <h6 class="tagline">Default location</h6>
+                                                    <p class="tab-address">-</p>
+                                                </div>
+                                            </div>
+
+                                            <button class="btn">
+                                                <img src="./assets/img/icons/dots-icon.svg" class="img-not-selected">
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div>
+
+                                        <small class="label">Connected sales channels</small>
+
+                                        <div class="no-conetnt-show-section">Not connected to any sales channels yet
+                                        </div>
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <small class="label">Items at this location</small>
+
+
+                                        <ul class="location-details-flex-list">
+
+                                            <li>
+
+                                                <div class="list-items">
+
+
+                                                    <div class="multi_img-sec">
+                                                        <img src="./assets/img/Rectangle-1665.png">
+                                                        <img src="./assets/img/Rectangle-1665.png">
+                                                        <img src="./assets/img/Rectangle-1665.png">
+                                                    </div>
+
+
+                                                    <p>Classic Bathrobe, Poplin sleepwear<span>+ 496 more</span> </p>
+                                                </div>
+
+                                                <button class="btn-regular">View inventory</button>
+                                            </li>
+
+
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+                            <div class="inventory_location-padd Location_ranking-rules-box">
+
+                                <div class="details-section">
+
+                                    <h2 class="title">Location ranking rules</h2>
+
+                                    <p class="sub-title">Specify your location ranking. Medusa will use you location
+                                        ranking when
+                                        fulfilling orders.</p>
+
+                                    <button class="btn-regular btn-w-full">Add new rule</button>
+
+                                </div>
+
+                                <div>
+
+                                    <small class="label">Default</small>
+                                    <div class="all-regions-box">
+
+                                        <div class="regions-details">
+
+                                            <div class="icon-with-border">
+                                                <div class="icon">
+                                                    <img src="./assets/img/icons/world.svg">
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <h4 class="title">All regions</h4>
+                                                <p class="sub-title">24 regions</p>
+                                            </div>
+
+                                        </div>
+
+
+                                        <button class="btn">
+                                            <img src="./assets/img/icons/dots-icon.svg" class="img-not-selected">
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div>
+
+
+                                    <small class="label">Overrides</small>
+
+
+                                    <div class="no-conetnt-show-section">
+
+                                        No overrides have been added yet.
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="tab-pane" id="Transfers">
+
+
+                        <div class="">Transfers</div>
+
+                    </div>
+
+
+                    <div class="tab-pane" id="Suppliers">
+
+
+                        <div class="">Suppliers</div>
+
+
+                    </div>
+
+
+                    <div class="tab-pane" id="purchase_orders">
+
+                        <div class="">purchase_orders</div>
 
                     </div>
 
@@ -608,6 +1012,218 @@
         </section>
 
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="full-screen-model">
+
+        <div class="model-content">
+
+
+            <div class="model-header">
+
+                <button class="border border-solid border-Grey_20 rounded-regualr" id="Model_Close_btn">
+                    <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                </button>
+
+                <button class="btn-regular" disabled>Add location</button>
+            </div>
+
+
+            <div class="model-body">
+
+                <div class="model-body-content">
+
+                    <h4 class="model-title">Add new location</h4>
+
+
+                    <div class="custom-accordion">
+
+                        <div class="accordion-items active-accordion">
+
+                            <div class="accordion-header">
+
+                                <div>
+                                    <h4 class="accordion-title">General information <span class="required">*</span></h4>
+                                    <p class="accordion-sub-title">Specify the details about this location.</p>
+                                </div>
+
+                                <div class="accordion-icons">
+                                    <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                                    <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                                </div>
+
+                            </div>
+
+                            <div class="accordion-body">
+
+                                <div class="input-group">
+
+                                    <label for="Flagship">Location name <span class="required"> * </span></label>
+
+                                    <input type="text" class="input-1" id="Flagship"
+                                        placeholder="Flagship store, warehouse">
+
+                                </div>
+
+                                <p class="address-form-title">Address</p>
+
+                                <div class="address-form">
+
+                                    <div class="input-group">
+
+                                        <label for="Medusa">Company name</label>
+
+                                        <input type="text" class="input-1" id="Medusa" placeholder="Medusa">
+
+                                    </div>
+
+                                    <div></div>
+
+
+                                    <div class="input-group">
+
+                                        <label for="Address1">Address line 1</label>
+
+                                        <input type="text" class="input-1" id="Address1" placeholder="Vognmagergade 7">
+
+                                    </div>
+
+
+                                    <div class="input-group">
+
+                                        <label for="Address2">Address line 2</label>
+
+                                        <input type="text" class="input-1" id="Address2" placeholder="Vognmagergade 7">
+
+                                    </div>
+
+
+                                    <div class="input-group">
+
+                                        <label for="1120">Postal code</label>
+
+                                        <input type="text" class="input-1" id="1120" placeholder="1120">
+
+                                    </div>
+
+                                    <div class="input-group">
+
+                                        <label for="City">City</label>
+
+                                        <input type="text" class="input-1" id="City" placeholder="Copenhagen">
+
+                                    </div>
+
+
+                                    <div class="input-group">
+
+                                        <label for="Copenhagen">Country</label>
+
+                                        <div class="custom-select custom-dropdown" onclick="OpenDropDown('countryDrop')"
+                                            style="width: 100%;">
+                                            <p>Select a country</p>
+                                            <ul class="custom-dropdown-list" id="countryDrop">
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link selected-dropdown-option">
+                                                        <p class="dropdown-link-title">Select a country</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link">
+                                                        <p class="dropdown-link-title">one</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link ">
+                                                        <p class="dropdown-link-title">two</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link">
+                                                        <p class="dropdown-link-title">three</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="accordion-items">
+
+                            <div class="accordion-header">
+
+                                <div>
+                                    <h4 class="accordion-title">Sales channels</h4>
+                                    <p class="accordion-sub-title">Specify which Sales Channels this location's
+                                        inventory can be purchased through.</p>
+                                </div>
+
+                                <div class="accordion-icons">
+                                    <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                                    <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                                </div>
+
+                            </div>
+
+                            <div class="accordion-body">
+
+                                <button class="btn-regular btn-w-full">Add sales channels</button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="accordion-items">
+
+                            <div class="accordion-header">
+
+                                <div>
+                                    <h4 class="accordion-title">Settings</h4>
+                                    <p class="accordion-sub-title">Specify the details about this location.</p>
+                                </div>
+
+                                <div class="accordion-icons">
+                                    <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                                    <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
 
 
     <div class="drawer rightside">
@@ -716,7 +1332,6 @@
 
 
     <div id="overlay"></div>
-
 
 
     <script src="./assets/js/jQuery-min.js"></script>

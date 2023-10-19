@@ -36,6 +36,7 @@
     font-weight: 500;
     line-height: 20px;
     background-color: transparent;
+    border: 1px solid transparent;
     padding: 6px 12px;
     display: flex;
     align-items: center;
@@ -52,7 +53,7 @@
 .active-tab-button {
     color: var(--Grey-90) !important;
     background-color: var(--Grey) !important;
-    border: 1px solid #E5E7EB;
+    border: 1px solid #E5E7EB !important;
 }
 
 
@@ -493,4 +494,430 @@
 .drawer-section .btn-group .icon svg {
     width: 16px;
     height: 16px;
+}
+
+
+
+
+
+
+
+
+.inventory_location-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.inventory_location-grid div:nth-child(1) {
+    grid-column: span 2 / span 2;
+}
+
+
+
+.inventory_location-padd {
+    padding: 24px 32px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 1px solid var(--Grey-20);
+    background-color: var(--Grey);
+}
+
+.inventory_location-add-location-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+}
+
+.inventory_location-add-location-box .add_location_btn {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--Grey-90);
+    line-height: 20px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid var(--Grey-20);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+}
+
+.inventory_location-add-location-box .title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--Grey-90);
+}
+
+.inventory_location-add-location-box .sub-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--Grey-50);
+    margin-top: 4px;
+}
+
+.Location_ranking-rules-box {
+    height: fit-content;
+}
+
+.Location_ranking-rules-box>*+* {
+    margin-top: 24px;
+}
+
+.Location_ranking-rules-box .details-section .title {
+    color: var(--Grey-90);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.Location_ranking-rules-box .details-section .sub-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--Grey-50);
+    margin-top: 8px;
+}
+
+.Location_ranking-rules-box .details-section .btn-regular {
+    margin-top: 16px;
+}
+
+.Location_ranking-rules-box .all-regions-box {
+    border-radius: 8px;
+    border: 1px solid var(--Grey-20);
+    padding: 8px 16px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Location_ranking-rules-box .all-regions-box .btn {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Location_ranking-rules-box .all-regions-box .btn img,
+.Location_ranking-rules-box .all-regions-box .btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.Location_ranking-rules-box .all-regions-box .regions-details {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.Location_ranking-rules-box .label {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #6B7280;
+    display: block;
+}
+
+.Location_ranking-rules-box .all-regions-box .regions-details .icon-with-border {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--Grey-20);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Location_ranking-rules-box .all-regions-box .regions-details .icon-with-border .icon {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--Grey-10);
+}
+
+.Location_ranking-rules-box .all-regions-box .regions-details .icon-with-border .icon img,
+.Location_ranking-rules-box .all-regions-box .regions-details .icon-with-border .icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.Location_ranking-rules-box .all-regions-box .regions-details .title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--Grey-90);
+}
+
+.Location_ranking-rules-box .all-regions-box .regions-details .sub-title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--Grey-50);
+}
+
+.inventory_location-location-details-box {
+    background-color: var(--Grey);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 1px solid var(--Grey-20);
+    margin-top: 8px;
+}
+
+.inventory_location-location-details-box .first {
+    padding: 24px 32px;
+}
+
+.inventory_location-location-details-box>*+* {
+    border-top: 1px solid var(--Grey-20);
+    padding: 24px 32px;
+}
+
+.inventory_location-location-details-box div .label {
+    color: var(--Grey-50);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.inventory_location-location-details-box .location-about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    padding: 0 !important;
+}
+
+.inventory_location-location-details-box .location-about-section .btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--Grey-20);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    cursor: pointer;
+    -o-border-radius: 8px;
+}
+
+.inventory_location-location-details-box .location-about-section .btn svg,
+.inventory_location-location-details-box .location-about-section .btn img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.location-about-section .table-about-tag .tab-address {
+    color: var(--Grey-50);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.location-about-section .table-about-tag .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.location-about-section .table-about-tag .tagline {
+    font-weight: 600;
+    color: var(--Grey-90);
+}
+
+.location-about-section .table-about-tag {
+    gap: 16px;
+}
+
+.location-about-section .table-about-tag:hover {
+    background-color: transparent;
+}
+
+.inventory_location-location-details-box .location-section-description {
+    color: var(--Grey-50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 640px;
+    margin-top: 16px;
+}
+
+.inventory_location-location-details-box .location-status-list {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    list-style: none;
+    margin-top: 24px;
+}
+
+.inventory_location-location-details-box .location-status-list li {
+    border-radius: 8px;
+    border: 1px solid var(--Grey-20);
+    background-color: transparent;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    padding: 4px 12px;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--Grey-60);
+}
+
+.inventory_location-location-details-box .location-status-list li span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.inventory_location-location-details-box .location-status-list .success span {
+    background-color: #10B981;
+}
+
+.inventory_location-location-details-box .location-status-list .padding span {
+    background-color: #F43F5E;
+}
+
+
+.location-details-flex-list>*+* {
+    margin-top: 8px;
+}
+
+.location-details-flex-list li {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.location-details-flex-list li .list-items {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.location-details-flex-list li .list-items p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--Grey-90);
+}
+
+.location-details-flex-list li .list-items p span {
+    font-weight: 500;
+    color: var(--Grey-50);
+}
+
+.location-details-flex-list li .multi_img-sec {
+    display: flex;
+    align-items: stretch;
+    padding-left: 18px;
+}
+
+.location-details-flex-list li .multi_img-sec img {
+    margin-left: -24px;
+    border: 2px solid var(--Grey);
+    overflow: hidden;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    width: 30px;
+    height: 40px;
+}
+
+.no-conetnt-show-section {
+    margin: 24px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--Grey-40);
+}
+
+
+
+#Model_Close_btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.full-screen-model .model-title {
+    font-size: 24px;
+    color: var(--Grey-90);
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 28px;
+}
+
+.address-form-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--Grey-90);
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.address-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
 }
