@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
         <link rel="stylesheet" href="./assets/css/common.css">
         <link rel="stylesheet" href="./assets/css/base.css">
         <link rel="stylesheet" href="./assets/css/style.css">
@@ -462,7 +463,7 @@
                                 </div>
 
                                 <ul class="chat-connectivity-people-list">
-                                    <li>
+                                    <li class="active-chat">
                                         <div class="people-profile_pic">
                                             <span class="profile-status status-online"></span>
                                             <img
@@ -554,9 +555,25 @@
                                         <button class="btn">
                                             <img src="./assets/img/chat/call-icon.svg">
                                         </button>
-                                        <button class="btn custom-dropdown">
+                                        <button class="btn custom-dropdown" onclick="OpenDropDown('warehouseDrop')">
 
                                             <img src="./assets/img/icons/settings.svg">
+
+
+                                            <ul class="custom-dropdown-list" id="warehouseDrop">
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="chat-dropdown-link">
+                                                        <img src="./assets/img/chat/delete-icon.svg">
+                                                        <p class="dropdown-link-title required">Delete chat</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="chat-dropdown-link">
+                                                        <img src="./assets/img/chat/paintBrush.svg">
+                                                        <p class="dropdown-link-title">Clear history</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
 
                                         </button>
 
@@ -565,6 +582,150 @@
                                 </div>
 
                                 <div class="chat-message-section-body">
+
+
+                                    <div class="day-chat-full-section">
+
+                                        <div class="message-day-show-tag">
+                                            <span class="daily-counter">yesterday</span>
+                                        </div>
+
+                                        <div class="chat-message-box my-message-box">
+                                            <div class="message">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque officia
+                                                dicta sed, deserunt laboriosam illo quod, quidem explicabo, nam odio eum
+                                                magnam ab.
+                                                <span class="message-timeing">10:16 PM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="chat-message-box friend-message-box">
+                                            <div class="message">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque officia
+                                                dicta sed, deserunt laboriosam illo quod, quidem explicabo, nam odio eum
+                                                magnam ab.
+                                                <span class="message-timeing">10:16 PM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="chat-message-box my-message-box">
+                                            <div class="message">
+                                                <a data-lightbox="image-1" class="lightBox"
+                                                    href="https://images.unsplash.com/photo-1682687982107-14492010e05e?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                    <img
+                                                        src="https://images.unsplash.com/photo-1682687982107-14492010e05e?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                </a>
+                                                <span class="message-timeing">10:34 PM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="chat-message-box friend-message-box">
+                                            <div class="message">
+                                                <div class="img-grid">
+                                                    <a class="lightBox"
+                                                        href="https://images.unsplash.com/photo-1682687982107-14492010e05e?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                        data-lightbox="img-grid1">
+                                                        <img
+                                                            src="https://images.unsplash.com/photo-1682687982107-14492010e05e?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                    </a>
+                                                    <a data-lightbox="img-grid1" class="lightBox"
+                                                        href="https://images.unsplash.com/photo-1696530858332-653f2e6a711a?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                        <img
+                                                            src="https://images.unsplash.com/photo-1696530858332-653f2e6a711a?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                    </a>
+                                                    <a data-lightbox="img-grid1" class="lightBox"
+                                                        href="https://images.unsplash.com/photo-1682687981630-cefe9cd73072?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                        <img
+                                                            src="https://images.unsplash.com/photo-1682687981630-cefe9cd73072?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                    </a>
+                                                    <a data-lightbox="img-grid1" class="lightBox"
+                                                        href="https://images.unsplash.com/photo-1682687980115-a37b56ea7271?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                        <img
+                                                            src="https://images.unsplash.com/photo-1682687980115-a37b56ea7271?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                        <h6 class="more-img-info">+2 More</h6>
+                                                    </a>
+                                                    <a data-lightbox="img-grid1" class="lightBox"
+                                                        href="https://images.unsplash.com/photo-1682685794304-99d3d07c57d2?auto=format&fit=crop&q=80&w=1372&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                        <img
+                                                            src="https://images.unsplash.com/photo-1682685794304-99d3d07c57d2?auto=format&fit=crop&q=80&w=1372&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                    </a>
+                                                    <a data-lightbox="img-grid1" class="lightBox"
+                                                        href="https://images.unsplash.com/photo-1696960595001-e2ea1fe436dd?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                        <img
+                                                            src="https://images.unsplash.com/photo-1696960595001-e2ea1fe436dd?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                                    </a>
+                                                </div>
+                                                <span class="message-timeing">10:34 PM</span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="chat-message-box my-message-box">
+                                            <div class="message">
+
+                                                <div class="document-box">
+
+                                                    <div class="document-box-info">
+
+                                                        <img src="./assets/img/chat/pdf-icon.svg"
+                                                            class="documwnt-icon img-not-selected">
+
+                                                        <div>
+
+                                                            <h6 class="document-name">Invoice PDF</h6>
+
+                                                            <ul class="document-details">
+                                                                <li class="document-length">1 page</li>
+                                                                <li class="document-size">2 kb</li>
+                                                                <li class="document-type">PDF</li>
+                                                            </ul>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <button class="downloadBtn">
+                                                        <img src="./assets/img/chat/download-icon.svg"
+                                                            class="img-not-selected">
+                                                    </button>
+
+                                                </div>
+
+                                                <span class="message-timeing">11 :17 PM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="day-chat-full-section">
+
+                                        <div class="message-day-show-tag">
+                                            <span class="daily-counter">Today</span>
+                                        </div>
+
+                                        <div class="chat-message-box friend-message-box">
+                                            <div class="message">
+                                                <audio src="./assets/audio/varma-playlist.mp3" controls></audio>
+                                                <span class="message-timeing">10:16 PM</span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="chat-message-box my-message-box">
+                                            <div class="message">
+                                                <video src="./assets/video/mov_bbb.mp4" width="100%" controls></video>
+                                                <span class="message-timeing">10:16 PM</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
 
                                 </div>
 
@@ -608,6 +769,7 @@
 
 
         <script src="./assets/js/jQuery-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
         <script src="./assets/js/main.js"></script>
     </body>
 

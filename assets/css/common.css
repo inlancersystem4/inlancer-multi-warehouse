@@ -258,7 +258,7 @@ input[type=number] {
 
 
 .required {
-    color: #F43F5E;
+    color: #F43F5E !important;
 }
 
 .font-400 {

@@ -153,6 +153,12 @@ $(document).ready(function () {
         });
     });
 
+
+
+
+
+
+
 })
 
 function OpenDropDown(dropdownId) {
@@ -165,3 +171,9 @@ $(document).on("click", function (e) {
         $(".custom-dropdown-list").removeClass("show-dropdown");
     }
 });
+
+
+lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
+})
