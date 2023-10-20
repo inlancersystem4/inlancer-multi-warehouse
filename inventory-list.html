@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/common.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
@@ -515,7 +515,7 @@
                                     <td class="blank-section"></td>
                                     <td class="incoming-section">0</td>
                                     <td class="committed-section">16</td>
-                                    <td class="available-section">240</td>
+                                    <td class="available-section" onclick="OpenDrawer('adjust_availablity')">240</td>
                                 </tr>
 
                                 <tr>
@@ -536,7 +536,7 @@
                                     <td class="blank-section"></td>
                                     <td class="incoming-section">0</td>
                                     <td class="committed-section">16</td>
-                                    <td class="available-section">240</td>
+                                    <td class="available-section" onclick="OpenDrawer('adjust_availablity')">240</td>
                                 </tr>
 
                             </table>
@@ -632,7 +632,8 @@
                                             sell products.</p>
                                     </div>
 
-                                    <button class="add_location_btn" id="Open_Add_location-model">Add location
+                                    <button class="add_location_btn" onclick="OpenModel('Add_location_model')">Add
+                                        location
                                         <div class="custom-tooltip">
                                             Manage which location is used
                                             by Medusa and apps when no
@@ -922,7 +923,8 @@
                                         ranking when
                                         fulfilling orders.</p>
 
-                                    <button class="btn-regular btn-w-full">Add new rule</button>
+                                    <button class="btn-regular btn-w-full" onclick="OpenModel('Add_rule_model')">Add new
+                                        rule</button>
 
                                 </div>
 
@@ -962,10 +964,61 @@
                                     <small class="label">Overrides</small>
 
 
-                                    <div class="no-conetnt-show-section">
+                                    <!-- <div class="no-conetnt-show-section">
 
                                         No overrides have been added yet.
 
+
+                                    </div> -->
+
+                                    <div class="all-regions-box">
+
+                                        <div class="regions-details">
+
+                                            <div class="icon-with-border">
+                                                <div class="icon">
+                                                    <img src="./assets/img/icons/map.svg">
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <h4 class="title">Scandinavia</h4>
+                                                <p class="sub-title">Denmark, Norway, Sweden</p>
+                                            </div>
+
+                                        </div>
+
+
+                                        <button class="btn">
+                                            <img src="./assets/img/icons/dots-icon.svg" class="img-not-selected">
+                                        </button>
+
+                                    </div>
+
+                                    <div class="all-regions-box">
+
+                                        <div class="regions-details">
+
+                                            <div class="icon-with-border">
+                                                <div class="icon">
+                                                    <img src="./assets/img/icons/map.svg">
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <h4 class="title">Europe</h4>
+                                                <p class="sub-title">Hungary, Belarus, Austria, <span class="font-500">
+                                                        + 41 areas
+                                                    </span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+
+                                        <button class="btn">
+                                            <img src="./assets/img/icons/dots-icon.svg" class="img-not-selected">
+                                        </button>
 
                                     </div>
 
@@ -1025,15 +1078,14 @@
 
 
 
-
-    <div class="full-screen-model">
+    <div class="full-screen-model" id="Add_location_model">
 
         <div class="model-content">
 
 
             <div class="model-header">
 
-                <button class="border border-solid border-Grey_20 rounded-regualr" id="Model_Close_btn">
+                <button class="border border-solid border-Grey_20 rounded-regualr Model_Close_btn">
                     <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
                 </button>
 
@@ -1198,12 +1250,76 @@
 
                                 <div>
                                     <h4 class="accordion-title">Settings</h4>
-                                    <p class="accordion-sub-title">Specify the details about this location.</p>
+                                    <p class="accordion-sub-title">Specify how this location's inventory can be used.
+                                    </p>
                                 </div>
 
                                 <div class="accordion-icons">
                                     <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
                                     <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                                </div>
+
+                            </div>
+
+
+                            <div class="accordion-body">
+
+
+                                <div class="space-y-32px">
+
+                                    <div class="display-flex justify-between align-center w-100">
+
+                                        <div class="custom-toogle-btn-title">
+                                            <h6 class="text-base_semibold color-Grey_90">Does this location keeps stock
+                                                that
+                                                can be
+                                                purchased online?</h6>
+                                            <p class="text-base_regular color-Grey_50">E.g., a warehouse would have
+                                                stock
+                                                for online
+                                                purchase, a 3rd party retailer
+                                                would not.</p>
+                                        </div>
+
+                                        <div class="custom-toogle-btn">
+                                            <input class="form-toogle-btn" type="checkbox" role="switch" checked>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="display-flex justify-between align-center w-100">
+
+                                        <div class="custom-toogle-btn-title">
+                                            <h6 class="text-base_semibold color-Grey_90">Does this location fulfill
+                                                online
+                                                orders?</h6>
+                                            <p class="text-base_regular color-Grey_50">E.g., a warehouse can ship orders
+                                                directly to the customer, a retail store typically don't have space or
+                                                packaging etc. to do so</p>
+                                        </div>
+
+                                        <div class="custom-toogle-btn">
+                                            <input class="form-toogle-btn" type="checkbox" role="switch" checked>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="display-flex justify-between align-center w-100">
+
+                                        <div class="custom-toogle-btn-title">
+                                            <h6 class="text-base_semibold color-Grey_90">Does this location offer
+                                                pickups?
+                                            </h6>
+                                            <p class="text-base_regular color-Grey_50">E.g., a warehouse typically don't
+                                                allow customers to show up, retail stores do.</p>
+                                        </div>
+
+                                        <div class="custom-toogle-btn">
+                                            <input class="form-toogle-btn" type="checkbox" role="switch" checked>
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -1226,7 +1342,267 @@
 
 
 
-    <div class="drawer rightside">
+
+    <div class="full-screen-model" id="Add_rule_model">
+
+        <div class="model-content">
+
+
+            <div class="model-header">
+
+                <button class="border border-solid border-Grey_20 rounded-regualr Model_Close_btn">
+                    <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                </button>
+
+                <button class="btn-regular" disabled>Add location</button>
+            </div>
+
+
+            <div class="model-body">
+
+                <div class="model-body-content">
+
+                    <h4 class="model-title">Add new location ranking rule</h4>
+
+
+                    <div class="custom-accordion">
+
+                        <div class="accordion-items active-accordion">
+
+                            <div class="accordion-header">
+
+                                <div>
+                                    <h4 class="accordion-title">General information <span class="required">*</span></h4>
+                                    <p class="accordion-sub-title">Specify how you like to prioritise your locations.
+                                    </p>
+                                </div>
+
+                                <div class="accordion-icons">
+                                    <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                                    <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                                </div>
+
+                            </div>
+
+                            <div class="accordion-body">
+
+
+                                <div class="address-form">
+
+                                    <div class="input-group">
+
+                                        <label for="USA">Rule name</label>
+
+                                        <input type="text" class="input-1" id="USA" placeholder="USA, Europe">
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="address-form-title mb-0">Ranked location order</p>
+                                <p class="text-base_regular color-Grey_50 margin-top_4px">Drag locations to reorder
+                                    them. Locations at
+                                    the top of the list are
+                                    assigned orders
+                                    first.
+                                    If one location can’t fulfill the whole order, it will get split and assigned to
+                                    multiple locations.</p>
+
+                                <ul class="space-y-16px ranked-location-order-list margin-top_24px">
+
+                                    <li class="display-flex align-center gap-16px">
+                                        <div>
+                                            <h6 class="color-Grey_50 text-sm_semibold">01</h6>
+                                        </div>
+                                        <div
+                                            class="display-flex align-center justify-between w-100 padding-8px gap-20px">
+
+                                            <div class="display-flex align-center gap-20px">
+                                                <div class="icon-border icon-border-20 icon-border_40px">
+                                                    <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                                        <img src="./assets/img/icons/buildings.svg"
+                                                            class="img-not-selected">
+                                                    </div>
+                                                </div>
+                                                <h6 class="color-Grey_90 text-base_medium">Retail store #1</h6>
+                                            </div>
+
+                                            <div class="icon-btn icon-btn_32px">
+                                                <img src="./assets/img/icons/grip-icon.svg">
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+
+                                    <li class="display-flex align-center gap-16px">
+                                        <div>
+                                            <h6 class="color-Grey_50 text-sm_semibold">02</h6>
+                                        </div>
+                                        <div
+                                            class="display-flex align-center justify-between w-100 padding-8px gap-20px">
+
+                                            <div class="display-flex align-center gap-20px">
+                                                <div class="icon-border icon-border-20 icon-border_40px">
+                                                    <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                                        <img src="./assets/img/icons/buildings.svg"
+                                                            class="img-not-selected">
+                                                    </div>
+                                                </div>
+                                                <h6 class="color-Grey_90 text-base_medium">Retail store #2</h6>
+                                            </div>
+
+                                            <div class="icon-btn icon-btn_32px">
+                                                <img src="./assets/img/icons/grip-icon.svg">
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+
+                                    <li class="display-flex align-center gap-16px">
+                                        <div>
+                                            <h6 class="color-Grey_50 text-sm_semibold">03</h6>
+                                        </div>
+                                        <div
+                                            class="display-flex align-center justify-between w-100 padding-8px gap-20px">
+
+                                            <div class="display-flex align-center gap-20px">
+                                                <div class="icon-border icon-border-20 icon-border_40px">
+                                                    <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                                        <img src="./assets/img/icons/buildings.svg"
+                                                            class="img-not-selected">
+                                                    </div>
+                                                </div>
+                                                <h6 class="color-Grey_90 text-base_medium">Nordhavn warehouse</h6>
+                                            </div>
+
+                                            <div class="icon-btn icon-btn_32px">
+                                                <img src="./assets/img/icons/grip-icon.svg">
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+
+                                    <li class="display-flex align-center gap-16px">
+                                        <div>
+                                            <h6 class="color-Grey_50 text-sm_semibold">04</h6>
+                                        </div>
+                                        <div
+                                            class="display-flex align-center justify-between w-100 padding-8px gap-20px">
+
+                                            <div class="display-flex align-center gap-20px">
+                                                <div class="icon-border icon-border-20 icon-border_40px">
+                                                    <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                                        <img src="./assets/img/icons/buildings.svg"
+                                                            class="img-not-selected">
+                                                    </div>
+                                                </div>
+                                                <h6 class="color-Grey_90 text-base_medium">Frederiksberg warehouse</h6>
+                                            </div>
+
+                                            <div class="icon-btn icon-btn_32px">
+                                                <img src="./assets/img/icons/grip-icon.svg">
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="accordion-items">
+
+                            <div class="accordion-header">
+
+                                <div>
+                                    <h4 class="accordion-title">Areas</h4>
+                                    <p class="accordion-sub-title">Specify which Sales Channels this location's
+                                        inventory can be purchased through.</p>
+                                </div>
+
+                                <div class="accordion-icons">
+                                    <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                                    <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                                </div>
+
+                            </div>
+
+                            <div class="accordion-body">
+
+                                <div class="display-flex align-center justify-between w-100">
+                                    <div class="custom-toogle-btn-title">
+                                        <h6 class="text-base_semibold color-Grey_90">Areas affected by this rule</h6>
+                                        <p class="text-base_regular color-Grey_50">Select the geographical areas where
+                                            this location
+                                            rank should apply.</p>
+                                    </div>
+                                    <button class="btn-regular" onclick="OpenDrawer('affected_Area')">Add
+                                        areas</button>
+                                </div>
+
+
+                                <div class="display-flex align-center justify-between w-100">
+                                    <div class="display-flex align-center gap-16px">
+
+                                        <div class="icon-border icon-border-20 icon-border_40px">
+                                            <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                                <img src="./assets/img/icons/map.svg" class="img-not-selected">
+                                            </div>
+                                        </div>
+
+                                        <div class="display-flex align-center gap-8px">
+                                            <p class="text-base_regular color-Grey_90">Anhui, Beijing, Chongqing</p>
+                                            <p class="text-base_regular color-Grey_50">+ 28 more</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn-regular" onclick="OpenDrawer('affected_Area')">Edit
+                                        areas</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="drawer rightside" id="adjust_availablity">
 
         <div class="drawer-header">
             <h4 class="drawer-title">Adjust availablity</h4>
@@ -1329,6 +1705,127 @@
 
     </div>
 
+
+
+
+    <div class="drawer rightside" id="affected_Area">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Areas affected by this rule</h4>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+            <div class="w-100 display-flex align-center gap-8px margin-top_24px">
+
+                <div class="search-wrraper w-100">
+                    <button class="icon">
+                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                    </button>
+                    <input type="text" placeholder="Find something" class="enter_val  w-100">
+                    <button class="icon val_clear" style="cursor: pointer;">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                    </button>
+                </div>
+
+                <p class="text-sm_medium color-Grey_50 padding-x_12px">178selected</p>
+                <button class="btn-regular">Deselect</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-body p-0">
+
+
+            <ul class="areas-list">
+
+                <li class="">
+                    <img src="./assets/img/icons/triangle-right.svg" class="arrow-icon">
+                    <input type="checkbox" id="index1" class="custom-checkbox">
+                    <p class="title">Rest of the world</p>
+                    <label for="index1"></label>
+                </li>
+
+
+                <div class="continents-list">
+
+                    <li class="active-list">
+                        <img src="./assets/img/icons/triangle-right.svg" class="arrow-icon">
+                        <input type="checkbox" id="index2" class="custom-checkbox" checked>
+                        <p class="title">Asia</p>
+                        <label for="index2"></label>
+                    </li>
+
+
+                    <ul class="country-list">
+
+                        <li class="disabled-list">
+                            <img src="./assets/img/icons/triangle-right.svg" class="arrow-icon">
+                            <input type="checkbox" id="Afghanistan" class="custom-checkbox">
+                            <img src="./assets/img/cn 1.png" class="country-flags">
+                            <p class="title">Afghanistan</p>
+                            <label for="Afghanistan"></label>
+
+
+
+                        </li>
+
+
+                        <div class="continents-list provinces-country">
+
+                            <li>
+                                <img src="./assets/img/icons/triangle-right.svg" class="arrow-icon">
+                                <input type="checkbox" id="Azerbaijan" class="custom-checkbox">
+                                <img src="./assets/img/Frame 2.png" class="country-flags">
+                                <p class="title">China</p>
+                                <label for="Azerbaijan"></label>
+                                <p class="text-base_regular color-Grey_50 provinces-count "> 31 of 31 provinces </p>
+                            </li>
+
+
+                            <ul class="country-inner-region">
+
+                                <li class="">
+                                    <img src="./assets/img/icons/triangle-right.svg" class="arrow-icon">
+                                    <input type="checkbox" id="A" class="custom-checkbox">
+                                    <p class="title">Afghanistan</p>
+                                    <label for="A"></label>
+                                </li>
+
+                                <li class="disabled-list">
+                                    <img src="./assets/img/icons/triangle-right.svg" class="arrow-icon">
+                                    <input type="checkbox" id="A" class="custom-checkbox">
+                                    <p class="title">Beijing</p>
+                                    <label for="A"></label>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </ul>
+                </div>
+
+
+
+            </ul>
+
+
+
+        </div>
+
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn">Cancel</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
 
 
     <div id="overlay"></div>

@@ -890,7 +890,7 @@
 
 
 
-#Model_Close_btn {
+.Model_Close_btn {
     width: 32px;
     height: 32px;
     display: flex;
@@ -1615,4 +1615,130 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
+}
+
+
+
+.custom-toogle-btn-title {
+    max-width: 560px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.areas-list {
+    list-style: none;
+}
+
+.areas-list li {
+    padding: 12px 32px;
+    background-color: var(--Grey);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--Grey-20);
+    position: relative;
+    width: 100%;
+}
+
+.areas-list li:hover {
+    background-color: var(--Grey-5);
+}
+
+.areas-list li .title {
+    color: var(--Grey-90);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.areas-list li label {
+    position: absolute;
+    height: 100%;
+    left: 50px;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+    z-index: 99;
+    display: block;
+}
+
+
+.areas-list li.active-list {
+    background-color: var(--Grey-5);
+}
+
+.areas-list .country-list {
+    width: 100%;
+    display: none;
+}
+
+.areas-list .country-list li .arrow-icon,
+.areas-list .country-list .continents-list .country-inner-region li .arrow-icon {
+    opacity: 0;
+}
+
+.areas-list .country-list li .country-flags {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.areas-list .continents-list .country-inner-region {
+    display: none;
+}
+
+.areas-list .country-list .continents-list li .arrow-icon {
+    opacity: 1;
+}
+
+.areas-list .country-list .continents-list .country-inner-region li .country-flags {
+    display: none;
+}
+
+
+.areas-list .disabled-list {
+    cursor: no-drop !important;
+    position: relative;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Grey-5);
+    z-index: 9;
+}
+
+.areas-list .disabled-list .title {
+    color: var(--Grey-40);
+}
+
+.areas-list .disabled-list label {
+    display: none;
+}
+
+.rotage-90 {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.provinces-country .provinces-count {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }

@@ -98,10 +98,8 @@ $(document).ready(function () {
 
 
 
-    $(".available-section").click(function () {
-        $(".drawer").addClass("drawer-show")
-        $("#overlay").fadeIn("show");
-    })
+
+
 
     $(".close-icon").click(function () {
         $(".drawer").removeClass("drawer-show")
@@ -131,16 +129,12 @@ $(document).ready(function () {
     })
 
 
-    $("#Open_Add_location-model").click(function () {
-        $(".full-screen-model").fadeIn("slow")
-        $("#overlay").show("slow");
-    })
 
-
-    $("#Model_Close_btn").click(function () {
-        $(".full-screen-model").fadeOut()
+    $(".Model_Close_btn").click(function () {
+        $(this).parent().parent().parent().fadeOut();
         $("#overlay").hide();
     })
+
 
 
     $("#show_SearchBar").click(function (event) {
@@ -154,16 +148,44 @@ $(document).ready(function () {
     });
 
 
+    $('.disabled-list input').prop('disabled', true);
+
+    $('.areas-list li .custom-checkbox').change(function () {
+        if ($(this).prop('checked')) {
+            $(this).closest('li').addClass('active-list');
+        } else {
+            $(this).closest('li').removeClass('active-list');
+        }
+    });
 
 
-
+    $('.continents-list li .arrow-icon').click(function () {
+        $(this).parent().toggleClass("active-list");
+        $(this).parent().siblings().slideToggle();
+        $(this).toggleClass("rotage-90")
+    })
 
 
 })
 
+
+
+
+function OpenDrawer(DrawerId) {
+    $(".full-screen-model").fadeOut();
+    $("#" + DrawerId).addClass("drawer-show")
+    $("#overlay").fadeIn("show");
+}
+
+
 function OpenDropDown(dropdownId) {
     $(".custom-dropdown-list").removeClass("show-dropdown");
     $("#" + dropdownId).toggleClass("show-dropdown");
+}
+
+function OpenModel(modelId) {
+    $("#" + modelId).fadeIn("show");
+    $("#overlay").show("slow");
 }
 
 $(document).on("click", function (e) {
@@ -173,7 +195,3 @@ $(document).on("click", function (e) {
 });
 
 
-lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true
-})
