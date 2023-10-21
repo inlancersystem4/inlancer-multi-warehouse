@@ -916,6 +916,10 @@ body {
     cursor: pointer;
 }
 
+.btn-regular:hover {
+    background-color: var(--Grey-5);
+}
+
 .btn-regular:disabled {
     background-color: var(--Grey-20) !important;
     color: var(--Grey-40) !important;

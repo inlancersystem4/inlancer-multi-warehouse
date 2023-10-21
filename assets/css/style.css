@@ -627,6 +627,12 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.Location_ranking-rules-box .all-regions-box .btn:hover {
+    background-color: var(--Grey);
+    border: 1px solid var(--Grey-20);
 }
 
 .Location_ranking-rules-box .all-regions-box .btn img,
@@ -691,6 +697,10 @@
     font-weight: 400;
     line-height: 20px;
     color: var(--Grey-50);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .inventory_location-location-details-box {
@@ -1796,4 +1806,117 @@
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.setting-options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 16px;
+    row-gap: 8px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
+.setting-options-grid .options {
+    padding: 16px 24px;
+    border: 1px solid var(--Grey-20);
+    background-color: var(--Grey);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.setting-options-grid .options .btn {
+    width: 24px;
+    height: 24px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.setting-options-grid .options .btn:hover {
+    background-color: var(--Grey-5);
+}
+
+.setting-options-grid .options .btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.setting-options-grid:nth-of-type(odd) {
+    border-top: 1px solid var(--Grey-20);
+}
+
+
+
+
+
+
+
+
+.setting-pages-grid {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    justify-content: center;
+}
+
+.setting-pages-grid .details-content {
+    width: 100%;
+    max-width: 416px;
+    padding: 24px 32px 32px 32px;
+    border-radius: 8px;
+    background-color: var(--Grey);
+    border: 1px solid var(--Grey-20);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.setting-pages-grid .main-content {
+    width: 100%;
+}
+
+.setting-pages-grid .main-content>*+* {
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+.shipping_details {
+    display: none;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }

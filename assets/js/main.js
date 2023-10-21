@@ -160,6 +160,10 @@ $(document).ready(function () {
         $(this).toggleClass("rotage-90")
     })
 
+    $('.toggle_shipping_details').click(function () {
+        $(this).parent().parent().parent().siblings('.shipping_details').slideToggle()
+        $(this).toggleClass('rotate-180')
+    })
 
 })
 

@@ -1099,7 +1099,8 @@
 
                                     <div class="all-regions-box">
 
-                                        <div class="regions-details">
+                                        <div class="regions-details"
+                                            onclick="OpenDrawer('Edit_override_location_rank')">
 
                                             <div class="icon-with-border">
                                                 <div class="icon">
@@ -1115,15 +1116,44 @@
                                         </div>
 
 
-                                        <button class="btn">
+                                        <button class="btn custom-dropdown" onclick="OpenDropDown('regionsDrop1')">
+
                                             <img src="./assets/img/icons/dots-icon.svg" class="img-not-selected">
+
+
+                                            <ul class="custom-dropdown-list icon-dropdown" id="regionsDrop1">
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link"
+                                                        onclick="OpenDrawer('Edit_override_location_rank_settings')">
+                                                        <img src="./assets/img/icons/edit.svg">
+                                                        <p class="dropdown-link-title">Edit override details</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link">
+                                                        <img src="./assets/img/icons/settings.svg">
+                                                        <p class="dropdown-link-title">Edit override settings
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link"
+                                                        onclick="OpenModel('Delete_override')">
+                                                        <img src="./assets/img/icons/trash.svg">
+                                                        <p class="dropdown-link-title required">Delete override
+                                                        </p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
                                         </button>
 
                                     </div>
 
                                     <div class="all-regions-box">
 
-                                        <div class="regions-details">
+                                        <div class="regions-details"
+                                            onclick="OpenDrawer('Edit_override_location_rank')">
 
                                             <div class="icon-with-border">
                                                 <div class="icon">
@@ -1857,9 +1887,9 @@
                     <div class="arrow-icon">
                         <img src="./assets/img/icons/triangle-right.svg">
                     </div>
-                    <input type="checkbox" id="index1" class="custom-checkbox">
+                    <input type="checkbox" id="index10" class="custom-checkbox" checked>
                     <p class="title">Rest of the world</p>
-                    <label for="index1"></label>
+                    <label for="index10"></label>
                 </li>
 
 
@@ -1869,9 +1899,9 @@
                         <div class="arrow-icon">
                             <img src="./assets/img/icons/triangle-right.svg">
                         </div>
-                        <input type="checkbox" id="index2" class="custom-checkbox" checked>
+                        <input type="checkbox" id="index20" class="custom-checkbox">
                         <p class="title">Asia</p>
-                        <label for="index2"></label>
+                        <label for="index20"></label>
                     </li>
 
 
@@ -2344,6 +2374,320 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+    <div class="drawer rightside" id="Edit_override_location_rank">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Edit override location rank</h4>
+
+            <button class="close-icon" onclick="CloseDrawer('Edit_override_location_rank')">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+        </div>
+
+
+        <div class="drawer-body">
+            <div class="space-y-32px">
+
+
+                <div class="input-group">
+                    <label for="">Rule name</label>
+                    <input type="text" class="input-1" value="Scandinavia">
+                </div>
+
+
+                <div>
+                    <h6 class="color-Grey_90 text-base_semibold">Ranked location order</h6>
+                    <p class="color-Grey_50 text-base_regular margin-top_4px">Drag locations to reorder them. Locations
+                        at the top of the list are assigned orders first.</p>
+                    <p class="color-Grey_50 text-base_regular margin-top_4px">If one location can’t fulfill the whole
+                        order, it will get split and assigned to multiple locations.</p>
+                </div>
+
+
+                <div>
+                    <ul class="space-y-16px ranked-location-order-list">
+
+                        <li class="display-flex align-center gap-16px">
+                            <div>
+                                <h6 class="color-Grey_50 text-sm_semibold">01</h6>
+                            </div>
+                            <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
+
+                                <div class="display-flex align-center gap-20px">
+                                    <div class="icon-border icon-border-20 icon-border_40px">
+                                        <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                            <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
+                                        </div>
+                                    </div>
+                                    <h6 class="color-Grey_90 text-base_medium">Retail store #1</h6>
+                                </div>
+
+                                <div class="icon-btn icon-btn_32px">
+                                    <img src="./assets/img/icons/grip-icon.svg">
+                                </div>
+
+                            </div>
+                        </li>
+
+
+                        <li class="display-flex align-center gap-16px">
+                            <div>
+                                <h6 class="color-Grey_50 text-sm_semibold">02</h6>
+                            </div>
+                            <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
+
+                                <div class="display-flex align-center gap-20px">
+                                    <div class="icon-border icon-border-20 icon-border_40px">
+                                        <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                            <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
+                                        </div>
+                                    </div>
+                                    <h6 class="color-Grey_90 text-base_medium">Retail store #2</h6>
+                                </div>
+
+                                <div class="icon-btn icon-btn_32px">
+                                    <img src="./assets/img/icons/grip-icon.svg">
+                                </div>
+
+                            </div>
+                        </li>
+
+
+                        <li class="display-flex align-center gap-16px">
+                            <div>
+                                <h6 class="color-Grey_50 text-sm_semibold">03</h6>
+                            </div>
+                            <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
+
+                                <div class="display-flex align-center gap-20px">
+                                    <div class="icon-border icon-border-20 icon-border_40px">
+                                        <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                            <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
+                                        </div>
+                                    </div>
+                                    <h6 class="color-Grey_90 text-base_medium">Nordhavn warehouse</h6>
+                                </div>
+
+                                <div class="icon-btn icon-btn_32px">
+                                    <img src="./assets/img/icons/grip-icon.svg">
+                                </div>
+
+                            </div>
+                        </li>
+
+
+                        <li class="display-flex align-center gap-16px">
+                            <div>
+                                <h6 class="color-Grey_50 text-sm_semibold">04</h6>
+                            </div>
+                            <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
+
+                                <div class="display-flex align-center gap-20px">
+                                    <div class="icon-border icon-border-20 icon-border_40px">
+                                        <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                            <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
+                                        </div>
+                                    </div>
+                                    <h6 class="color-Grey_90 text-base_medium">Frederiksberg warehouse</h6>
+                                </div>
+
+                                <div class="icon-btn icon-btn_32px">
+                                    <img src="./assets/img/icons/grip-icon.svg">
+                                </div>
+
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_default_location_ranking')">Cancel</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="model center-align_model" id="Delete_override">
+        <div class="delete-model">
+            <div class="w-100">
+                <h4 class="color-Grey_90 text-large_semibold">Delete override</h4>
+                <p class="text-base_regular color-Grey_50">Are you sure you want to delete this override?</p>
+            </div>
+            <div class="display-flex gap-8px">
+                <button class="btn-regular" onclick="CloseModel('Delete_override')">No, cancel</button>
+                <button class="btn-regular btn-danger">Yes, delete override</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="drawer rightside" id="Edit_override_location_rank_settings">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Edit override location rank settings</h4>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+            <div class="w-100 display-flex align-center gap-8px margin-top_24px">
+
+                <div class="search-wrraper w-100">
+                    <button class="icon">
+                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                    </button>
+                    <input type="text" placeholder="Find something" class="enter_val  w-100">
+                    <button class="icon val_clear" style="cursor: pointer;">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                    </button>
+                </div>
+
+                <p class="text-sm_medium color-Grey_50 padding-x_12px">3selected</p>
+                <button class="btn-regular">Deselect</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-body p-0">
+
+
+            <ul class="areas-list">
+
+                <li class="">
+                    <div class="arrow-icon">
+                        <img src="./assets/img/icons/triangle-right.svg">
+                    </div>
+                    <input type="checkbox" id="index100" class="custom-checkbox" checked>
+                    <p class="title">Rest of the world</p>
+                    <label for="index100"></label>
+                </li>
+
+
+                <div class="continents-list">
+
+                    <li class="active-list">
+                        <div class="arrow-icon">
+                            <img src="./assets/img/icons/triangle-right.svg">
+                        </div>
+                        <input type="checkbox" id="index200" class="custom-checkbox">
+                        <p class="title">Asia</p>
+                        <label for="index200"></label>
+                    </li>
+
+
+                    <ul class="country-list">
+
+                        <li class="disabled-list">
+                            <div class="arrow-icon">
+                                <img src="./assets/img/icons/triangle-right.svg">
+                            </div>
+                            <input type="checkbox" id="afghanistan" class="custom-checkbox">
+                            <img src="./assets/img/cn 1.png" class="country-flags">
+                            <p class="title">Afghanistan</p>
+                            <label for="afghanistan"></label>
+
+
+
+                        </li>
+
+
+                        <div class="continents-list provinces-country">
+
+                            <li>
+                                <div class="arrow-icon">
+                                    <img src="./assets/img/icons/triangle-right.svg">
+                                </div>
+                                <input type="checkbox" id="azerbaijan" class="custom-checkbox">
+                                <img src="./assets/img/Frame 2.png" class="country-flags">
+                                <p class="title">China</p>
+                                <label for="azerbaijan"></label>
+                                <p class="text-base_regular color-Grey_50 provinces-count "> 31 of 31 provinces </p>
+                            </li>
+
+
+                            <ul class="country-inner-region">
+
+                                <li class="">
+                                    <div class="arrow-icon">
+                                        <img src="./assets/img/icons/triangle-right.svg">
+                                    </div>
+                                    <input type="checkbox" id="a" class="custom-checkbox">
+                                    <p class="title">Afghanistan</p>
+                                    <label for="a"></label>
+                                </li>
+
+                                <li class="disabled-list">
+                                    <div class="arrow-icon">
+                                        <img src="./assets/img/icons/triangle-right.svg">
+                                    </div>
+                                    <input type="checkbox" id="B" class="custom-checkbox">
+                                    <p class="title">Beijing</p>
+                                    <label for="B"></label>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </ul>
+                </div>
+
+
+
+            </ul>
+
+
+
+        </div>
+
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_override_location_rank_settings')">Cancel</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <div id="overlay"></div>

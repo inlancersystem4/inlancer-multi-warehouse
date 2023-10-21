@@ -22,9 +22,28 @@
     align-items: center;
 }
 
+.align-stretch {
+    align-items: stretch;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
 
 .w-100 {
     width: 100%;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
 }
 
 .justify-between {
@@ -197,6 +216,29 @@ input[type=number] {
 
 .border {
     border-width: 1px;
+}
+
+.border-t {
+    border-width: 0;
+    border-top-width: 1px;
+}
+
+
+.border-b {
+    border-width: 0;
+    border-bottom-width: 1px;
+}
+
+
+.border-r {
+    border-width: 0;
+    border-right-width: 1px;
+}
+
+
+.border-l {
+    border-width: 0;
+    border-left-width: 1px;
 }
 
 .border-2 {
@@ -427,6 +469,36 @@ input[type=number] {
 
 /* Close xl font  */
 
+
+
+/* 2xl font  */
+
+
+.text-2xl_regular {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.text-2xl_medium {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.text-2xl_semibold {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+
+
+
+/* Close  2xl font  */
+
+
+
 /* sm font  */
 
 .text-sm_regular {
@@ -452,10 +524,28 @@ input[type=number] {
 /* Close Tyrograph */
 
 
+/* alignment  */
 
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Close alignment */
 
 /* space   */
 
+
+.space-y-8px>*+* {
+    margin-top: 32px;
+}
 
 .space-y-32px>*+* {
     margin-top: 32px;
@@ -1170,7 +1260,7 @@ input[type=number] {
 }
 
 .gap-24px {
-    gap: 14px;
+    gap: 24px;
 }
 
 .gap-32px {
@@ -1182,6 +1272,69 @@ input[type=number] {
 
 /* CLose space  */
 
+
+/* line clamp  */
+
+.line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+
+/* Close line clamp  */
+
+
+/* img width  */
+
+.w_20px {
+    width: 20px;
+}
+
+.w_32px {
+    width: 32px;
+}
+
+.w_24px {
+    width: 24px;
+}
+
+.w_8px {
+    width: 8px;
+}
+
+.w_42px {
+    width: 42px;
+}
+
+
+/* Close img width  */
+
+
+/* img height  */
+
+.h_20px {
+    height: 20px;
+}
+
+.h_32px {
+    height: 32px;
+}
+
+.h_24px {
+    height: 24px;
+}
+
+.h_8px {
+    height: 8px;
+}
+
+.h_42px {
+    height: 42px;
+}
+
+/* Close img height  */
 
 
 /* input  */
