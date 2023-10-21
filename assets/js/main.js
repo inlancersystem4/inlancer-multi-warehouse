@@ -42,7 +42,8 @@ $(document).ready(function () {
     $("#overlay").click(function () {
         $(".main-sidebar").removeClass("responsive-main-sidebar");
         $(".drawer").removeClass("drawer-show");
-        $(".full-screen-model").fadeOut("slow")
+        $(".full-screen-model").fadeOut("slow");
+        $(".model").hide();
         $(this).hide();
     })
 
@@ -130,12 +131,6 @@ $(document).ready(function () {
 
 
 
-    $(".Model_Close_btn").click(function () {
-        $(this).parent().parent().parent().fadeOut();
-        $("#overlay").hide();
-    })
-
-
 
     $("#show_SearchBar").click(function (event) {
         event.stopPropagation();
@@ -160,7 +155,7 @@ $(document).ready(function () {
 
 
     $('.continents-list li .arrow-icon').click(function () {
-        $(this).parent().toggleClass("active-list");
+        $(this).parent().toggleClass("active-continents-list");
         $(this).parent().siblings().slideToggle();
         $(this).toggleClass("rotage-90")
     })
@@ -168,6 +163,15 @@ $(document).ready(function () {
 
 })
 
+
+$(document).keydown(function (e) {
+    if (e.keyCode === 27) {
+        $(".full-screen-model").fadeOut();
+        $(".drawer").removeClass("drawer-show");
+        $(".model").fadeOut();
+        $("#overlay").hide();
+    }
+});
 
 
 
@@ -177,16 +181,30 @@ function OpenDrawer(DrawerId) {
     $("#overlay").fadeIn("show");
 }
 
+function CloseDrawer(DrawerId) {
+    $(".full-screen-model").fadeOut();
+    $("#" + DrawerId).removeClass("drawer-show")
+    $("#overlay").hide();
+}
 
 function OpenDropDown(dropdownId) {
     $(".custom-dropdown-list").removeClass("show-dropdown");
     $("#" + dropdownId).toggleClass("show-dropdown");
 }
 
+
+
 function OpenModel(modelId) {
     $("#" + modelId).fadeIn("show");
     $("#overlay").show("slow");
 }
+
+function CloseModel(modelId) {
+    $("#" + modelId).fadeOut();
+    $("#overlay").hide();
+}
+
+
 
 $(document).on("click", function (e) {
     if (!$(e.target).closest(".custom-dropdown").length && !$(e.target).hasClass("dropdown-link")) {

@@ -465,6 +465,10 @@ input[type=number] {
     margin-top: 16px;
 }
 
+.space-y-24px>*+* {
+    margin-top: 24px;
+}
+
 
 
 
@@ -1214,6 +1218,14 @@ input[type=number] {
     box-shadow: 0px 0px 0px 4px rgba(124, 58, 237, 0.10);
 }
 
+textarea {
+    resize: vertical;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-family: 'Inter', sans-serif !important;
+    text-align: left;
+}
 
 .input-group {
     display: flex;

@@ -607,6 +607,11 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    cursor: pointer;
+}
+
+.Location_ranking-rules-box .all-regions-box:hover {
+    background-color: var(--Grey-5);
 }
 
 .Location_ranking-rules-box .all-regions-box .btn {
@@ -741,6 +746,10 @@
     -ms-border-radius: 8px;
     cursor: pointer;
     -o-border-radius: 8px;
+}
+
+.inventory_location-location-details-box .location-about-section .btn:hover {
+    background-color: var(--Grey-5);
 }
 
 .inventory_location-location-details-box .location-about-section .btn svg,
@@ -1682,9 +1691,16 @@
     display: none;
 }
 
-.areas-list .country-list li .arrow-icon,
-.areas-list .country-list .continents-list .country-inner-region li .arrow-icon {
-    opacity: 0;
+.areas-list .country-list li .arrow-icon {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.areas-list .country-list li .arrow-icon img,
+.areas-list .country-list .continents-list .country-inner-region li .arrow-icon img {
+    display: none;
+    width: 16px;
+    height: 16px;
 }
 
 .areas-list .country-list li .country-flags {
@@ -1697,8 +1713,8 @@
     display: none;
 }
 
-.areas-list .country-list .continents-list li .arrow-icon {
-    opacity: 1;
+.areas-list .country-list .continents-list li .arrow-icon img {
+    display: block;
 }
 
 .areas-list .country-list .continents-list .country-inner-region li .country-flags {
@@ -1732,6 +1748,10 @@
     -o-transform: rotate(90deg);
 }
 
+.active-continents-list {
+    background-color: var(--Grey-5) !important;
+}
+
 .provinces-country .provinces-count {
     position: absolute;
     right: 32px;
@@ -1741,4 +1761,39 @@
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
+}
+
+
+
+.Default-tag {
+    border-radius: 8px;
+    background-color: var(--Grey-10);
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--Grey-60);
+}
+
+
+
+
+
+
+
+
+.delete-model {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    align-items: flex-end;
+    gap: 24px;
+    min-width: 519px;
+    max-width: 519px;
+    border-radius: 8px;
+    background-color: var(--Grey);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
