@@ -123,14 +123,6 @@
 
 @media (max-width: 560px) {
 
-    .main-content-body {
-        padding: 16px 0px 64px;
-    }
-
-    .main-content-body .content-section {
-        width: 99%;
-    }
-
     .chat-message-box .message {
         padding: 4px 12px;
         border-radius: 4px;

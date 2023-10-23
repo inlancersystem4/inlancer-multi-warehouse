@@ -869,6 +869,16 @@ body {
     right: 0;
 }
 
+.custom-dropdown-list.leftside {
+    right: -30%;
+    left: auto;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+
 
 /* close select  */
 
@@ -1340,7 +1350,7 @@ body {
     height: 100%;
     opacity: 0.4;
     background: #111827;
-    display: none;
+    /* display: none; */
 }
 
 

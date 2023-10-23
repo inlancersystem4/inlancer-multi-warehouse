@@ -977,9 +977,54 @@
 
                                                     <div class="display-flex gap-8px">
 
-                                                        <button class="icon-btn icon-btn_32px">
+                                                        <button class="icon-btn icon-btn_32px custom-dropdown"
+                                                            onclick="OpenDropDown('index110')">
                                                             <img src="./assets/img/icons/dots-icon.svg"
                                                                 class="img-not-selected w_20px h_20px">
+
+                                                            <ul class="custom-dropdown-list icon-dropdown"
+                                                                id="index110">
+                                                                <li class="dropdown-item">
+                                                                    <a href="#" class="dropdown-link"
+                                                                        onclick="OpenDrawer('Edit_shipping_zoneDra')">
+                                                                        <img src="./assets/img/icons/edit.svg">
+                                                                        <p class="dropdown-link-title"> Edit name
+                                                                        </p>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="dropdown-item">
+                                                                    <a href="#" class="dropdown-link">
+                                                                        <img src="./assets/img/icons/map.svg">
+                                                                        <p class="dropdown-link-title">Edit areas
+                                                                        </p>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="dropdown-item">
+                                                                    <a href="#" class="dropdown-link">
+                                                                        <img src="./assets/img/icons/back.svg">
+                                                                        <p class="dropdown-link-title">Add return option
+                                                                        </p>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="dropdown-item">
+                                                                    <a href="#" class="dropdown-link">
+                                                                        <img src="./assets/img/icons/fast-delivery.svg">
+                                                                        <p class="dropdown-link-title">Add shipping
+                                                                            option
+                                                                        </p>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="dropdown-item">
+                                                                    <a href="#" class="dropdown-link"
+                                                                        onclick="OpenModel('Delete_shipping_zone')">
+                                                                        <img src="./assets/img/icons/trash.svg">
+                                                                        <p class="dropdown-link-title required">Delete
+                                                                            shipping zone
+                                                                        </p>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+
                                                         </button>
                                                         <button class="icon-btn icon-btn_32px  toggle_shipping_details">
                                                             <img src="./assets/img/icons/chevron-down.svg"
@@ -1029,8 +1074,37 @@
                                                                                 Store
                                                                             </p>
                                                                         </div>
-                                                                        <button class="icon-btn icon-btn_32px">
+                                                                        <button
+                                                                            class="icon-btn icon-btn_32px custom-dropdown"
+                                                                            onclick="OpenDropDown('index111')">
                                                                             <img src="./assets/img/icons/dots-icon.svg">
+
+
+                                                                            <ul class="custom-dropdown-list leftside  icon-dropdown"
+                                                                                id="index111">
+                                                                                <li class="dropdown-item">
+                                                                                    <a href="#" class="dropdown-link"
+                                                                                        onclick="OpenDrawer('Edit_shipping_option')">
+                                                                                        <img
+                                                                                            src="./assets/img/icons/fast-delivery.svg">
+                                                                                        <p class="dropdown-link-title">
+                                                                                            Edit shipping option
+                                                                                        </p>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="dropdown-item">
+                                                                                    <a href="#" class="dropdown-link"
+                                                                                        onclick="OpenModel('Delete_shipping_zone')">
+                                                                                        <img
+                                                                                            src="./assets/img/icons/trash.svg">
+                                                                                        <p
+                                                                                            class="dropdown-link-title required">
+                                                                                            Delete shipping zone
+                                                                                        </p>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -3176,6 +3250,406 @@
     </div>
 
 
+
+
+    <div class="model center-align_model" id="Delete_shipping_zone">
+        <div class="delete-model">
+            <div class="w-100">
+                <h4 class="color-Grey_90 text-large_semibold">Delete shipping zone</h4>
+                <p class="text-base_regular color-Grey_50">Are you sure you want to delete this shipping zone?</p>
+            </div>
+            <div class="display-flex gap-8px">
+                <button class="btn-regular" onclick="CloseModel('Delete_shipping_zone')">No, cancel</button>
+                <button class="btn-regular btn-danger">Yes, delete zone</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="drawer rightside" id="Edit_shipping_zoneDra">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Edit shipping zone</h4>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+        </div>
+
+
+        <div class="drawer-body">
+
+
+
+
+            <div>
+
+                <h6 class="text-base_semibold">Shipping zone</h6>
+                <p class="text-base_regular color-Grey_50 margin-top_4px">A shipping zone is a geographical region that
+                    can be shipped
+                    to from a specific location. You can
+                    later on add any number of shipping options to this zone. </p>
+
+
+                <div class="space-y-24px w-100 margin-top_16px">
+
+
+                    <div class="input-group">
+
+                        <label for="Flagship">Zone name </label>
+
+                        <input type="text" class="input-1" id="Flagship" value="Scandinavia">
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_shipping_zoneDra')">Cancel</button>
+                <button class="btn bg-purple color-white" disabled>Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="drawer rightside" id="Edit_shipping_option">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Add condition</h4>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+        </div>
+
+
+        <div class="drawer-body pt-0 px-0">
+
+            <div class="custom-accordion">
+
+                <div
+                    class="accordion-items active-accordion border-b border-solid border-Grey_20 padding-x_32px padding-bottom_32px">
+
+                    <div class="accordion-header">
+
+                        <div>
+                            <h4 class="accordion-title">General</h4>
+                        </div>
+
+                        <div class="accordion-icons">
+                            <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                            <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-body py-0">
+
+                        <div class="space-y-24px">
+
+
+                            <div class="input-group">
+                                <label for="">Name <span class="required">*</span></label>
+                                <input type="text" class="input-1" value="GLS Parcel Shop (GLS Pakkeshop)" />
+                            </div>
+
+                            <div class="input-group">
+
+                                <label for="fulfillment_methodDrop20">Fulfillment Method <span
+                                        class="required">*</span></label>
+
+                                <div class="custom-select custom-dropdown"
+                                    onclick="OpenDropDown('fulfillment_methodDrop20')" style="width: 100%;">
+                                    <p>Manual fulfillment</p>
+                                    <ul class="custom-dropdown-list" id="fulfillment_methodDrop20">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link selected-dropdown-option">
+                                                <p class="dropdown-link-title">Select a method</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">one</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link ">
+                                                <p class="dropdown-link-title">two</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">three</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label for="TypeDrop2">Type <span class="required">*</span></label>
+
+                                <div class="custom-select custom-dropdown" onclick="OpenDropDown('TypeDrop2')"
+                                    style="width: 100%;">
+                                    <p>Standard</p>
+                                    <ul class="custom-dropdown-list" id="TypeDrop2">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link selected-dropdown-option">
+                                                <p class="dropdown-link-title">Standardx</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">Express</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link ">
+                                                <p class="dropdown-link-title">Express Eco</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <div class="add-custom-option">
+                                                <input type="text" placeholder="Add custom type">
+                                                <button class="add_new-custom-option ">
+                                                    <img src="./assets/img/icons/plus.svg">
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label for="transit_time2">Transit time <span class="required">*</span></label>
+
+                                <div class="custom-select custom-dropdown" onclick="OpenDropDown('transit_time2')"
+                                    style="width: 100%;">
+                                    <p>2-3 days</p>
+                                    <ul class="custom-dropdown-list" id="transit_time2">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link selected-dropdown-option">
+                                                <p class="dropdown-link-title">2-3 days</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">2-8 days</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link ">
+                                                <p class="dropdown-link-title">1-3 days</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <div class="add-custom-option">
+                                                <input type="text" placeholder=" Add Transit time">
+                                                <button class="add_new-custom-option ">
+                                                    <img src="./assets/img/icons/plus.svg">
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+
+
+
+                            <div class="margin-top_32px display-flex align-center justify-between w-100 gap-12px">
+
+                                <div>
+                                    <h6 class="text-base_semibold color-Grey_90">Visible in store
+                                    </h6>
+                                    <p class="color-Grey_50 text-base_regular margin-top_4px">Enable or
+                                        disable the
+                                        shipping option visiblity in store</p>
+                                </div>
+
+
+                                <div class="custom-toogle-btn">
+                                    <input type="checkbox" class="form-toogle-btn" checked>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="accordion-items active-accordion border-b border-solid border-Grey_20 padding-x_32px padding-bottom_32px">
+
+                    <div class="accordion-header">
+
+                        <div>
+                            <h4 class="accordion-title">Conditions</h4>
+                        </div>
+
+                        <div class="accordion-icons">
+                            <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                            <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-body py-0">
+
+                        <div class="space-y-16px margin-bottom_32px">
+
+                            <div class="display-flex align-center justify-between w-100">
+
+                                <div class="display-flex align-center gap-16px">
+
+                                    <div class="icon-border icon-border_40px border-Grey_20">
+                                        <div class="icon-bg icon-bg_32px  bg-Grey_10">
+                                            €
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6 class="text-base_medium color-Grey_90">Euro</h6>
+                                        <div class="display-flex gap-8px">
+                                            <p class="text-small_regular color-Grey_50">Min. subtotal: €50 EUR
+                                            </p>
+                                            <p class="text-small_regular color-Grey_50">Max. subtotal: No limit
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div>
+
+                                    <button class="icon-btn icon-btn_32px custom-dropdown"
+                                        onclick="OpenDropDown('index120')">
+                                        <img src="./assets/img/icons/dots-icon.svg">
+
+                                        <ul class="custom-dropdown-list icon-dropdown" id="index120">
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">
+                                                    <img src="./assets/img/icons/edit.svg">
+                                                    <p class="dropdown-link-title">Edit condition</p>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">
+                                                    <img src="./assets/img/icons/trash.svg">
+                                                    <p class="dropdown-link-title required">Delete location
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </button>
+
+
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="display-flex align-center justify-between w-100">
+
+                                <div class="display-flex align-center gap-16px">
+
+                                    <div class="icon-border icon-border_40px border-Grey_20">
+                                        <div class="icon-bg icon-bg_32px  bg-Grey_10">
+                                            $
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6 class="text-base_medium color-Grey_90">United States Dollar</h6>
+                                        <div class="display-flex gap-8px">
+                                            <p class="text-small_regular color-Grey_50">Min. subtotal: $50 USD
+                                            </p>
+                                            <p class="text-small_regular color-Grey_50">Max. subtotal: No limit
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div>
+
+                                    <button class="icon-btn icon-btn_32px custom-dropdown"
+                                        onclick="OpenDropDown('index121')">
+                                        <img src="./assets/img/icons/dots-icon.svg">
+
+                                        <ul class="custom-dropdown-list icon-dropdown" id="index121">
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">
+                                                    <img src="./assets/img/icons/edit.svg">
+                                                    <p class="dropdown-link-title">Edit condition</p>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">
+                                                    <img src="./assets/img/icons/trash.svg">
+                                                    <p class="dropdown-link-title required">Delete location
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </button>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <button class="btn-regular btn-w-full" onclick="OpenDrawer('add_conditionDra')">Add
+                            condition</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_shipping_option')">Cancel</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
 
 
 
