@@ -1920,3 +1920,197 @@
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.price-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4px 8px;
+}
+
+.price-list .price-list-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.price-list .price-list-details .accordion-icon {
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+
+
+.price-list .price-list-details .accordion-icon img,
+.price-list .price-list-details .accordion-icon svg {
+    width: 18px;
+    height: 18px;
+    display: none;
+    transition: transform 0.4s;
+    -webkit-transition: transform 0.4s;
+    -moz-transition: transform 0.4s;
+    -ms-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+}
+
+.price-list .price-list-details .price-details {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.price-list .price-list-details .price-details .icon {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--Grey-10);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.price-list .price-list-details .price-details .icon img,
+.price-list .price-list-details .price-details .icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.price-list .price-list-details .price-details .price-value {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Grey);
+    border: 1px solid var(--Grey-20);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.price-list .price-list-details .price-details .price-value img,
+.price-list .price-list-details .price-details .price-value svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+.price-list .current-price {
+    border-radius: 8px;
+    border: 1px solid var(--Grey-20);
+    background-color: var(--Grey-5);
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    height: 40px;
+    min-width: 223px;
+    max-width: 223px;
+}
+
+
+.price-accordion-body {
+    display: none;
+}
+
+
+.price-accordion .price-list .price-list-details .accordion-icon img,
+.price-accordion .price-list .price-list-details .accordion-icon svg {
+    display: block;
+}
+
+
+.price-accordion-body .price-list .price-list-details .accordion-icon img,
+.price-accordion-body .price-list .price-list-details .accordion-icon svg {
+    display: none;
+}
+
+.price-accordion-body .price-list .price-list-details .price-details .display-flex p {
+    display: none;
+}
+
+
+.price-accordion-active .price-list .price-list-details .accordion-icon {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.price-accordion-active .price-accordion-body {
+    display: block;
+}
+
+
+.store-shipping .ellipse-dot {
+    background-color: #3B82F6;
+}
+
+.admin-shipping .ellipse-dot {
+    background-color: #8B5CF6;
+}
+
+
+
+
+
+
+
+
+.add-condition-input-group {
+    width: 100%;
+    background-color: var(--Grey-5);
+}
+
+.add-condition-input-group .custom-select {
+    width: 96px  !important;
+    border-right: 1px solid var(--Grey-20) !important;
+}
+
+.add-condition-input-group .input-1:focus {
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.add-condition-input-group .custom-select:hover {
+    box-shadow: none !important;
+}
+
+.add-condition-input-group .input-1 {
+    text-align: right;
+}

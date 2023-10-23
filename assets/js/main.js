@@ -96,7 +96,13 @@ $(document).ready(function () {
 
 
 
-
+    $('.add-custom-option input').on('input', function () {
+        if ($(this).val().trim() !== '') {
+            $('.add_new-custom-option').addClass('add_new-custom-option-show');
+        } else {
+            $('.add_new-custom-option').removeClass('add_new-custom-option-show');
+        }
+    });
 
 
 
@@ -165,6 +171,29 @@ $(document).ready(function () {
         $(this).toggleClass('rotate-180')
     })
 
+
+    $('.price-accordion .price-list .price-list-details .accordion-icon').click(function () {
+        $(this).parent().parent().parent().toggleClass('price-accordion-active');
+    })
+
+
+    $('.add-shipping-option-radio_btn').each(function () {
+        if ($(this).is(':checked')) {
+            $(this).parent().parent().addClass('border-violet');
+        }
+    });
+
+    $('.add-shipping-option-radio_btn').change(function () {
+        $(this).parent().parent().siblings().removeClass('border-violet');
+
+        if ($(this).is(':checked')) {
+            $(this).parent().parent().addClass('border-violet');
+        } else {
+            $(this).parent().parent().removeClass('border-violet');
+        }
+    });
+
+
 })
 
 
@@ -208,6 +237,10 @@ function CloseModel(modelId) {
     $("#overlay").hide();
 }
 
+
+function ToggleAccordion(accordionId) {
+    $("#" + accordionId).slideToggle("slow");
+}
 
 
 $(document).on("click", function (e) {
