@@ -151,8 +151,14 @@ $(document).ready(function () {
 
     $('.disabled-list input').prop('disabled', true);
 
+    $('.areas-list li .custom-checkbox').each(function () {
+        if ($(this).is(':checked')) {
+            $(this).closest('li').addClass('active-list');
+        }
+    });
+
     $('.areas-list li .custom-checkbox').change(function () {
-        if ($(this).prop('checked')) {
+        if ($(this).is(':checked')) {
             $(this).closest('li').addClass('active-list');
         } else {
             $(this).closest('li').removeClass('active-list');
@@ -167,7 +173,7 @@ $(document).ready(function () {
     })
 
     $('.toggle_shipping_details').click(function () {
-        $(this).parent().parent().parent().siblings('.shipping_details').slideToggle()
+        $(this).parent().parent().siblings('.shipping_details').slideToggle()
         $(this).toggleClass('rotate-180')
     })
 

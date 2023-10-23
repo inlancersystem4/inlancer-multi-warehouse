@@ -179,6 +179,10 @@ input[type=number] {
     background-color: #7C3AED !important;
 }
 
+.bg-blue {
+    background-color: #1E3A8A !important;
+}
+
 .bg-black {
     background-color: var(--black);
 }
@@ -1521,3 +1525,36 @@ textarea {
 
 
 /* Close ellipse */
+
+
+
+
+/* object fit  */
+
+
+.object-contain {
+    object-fit: contain;
+}
+
+
+.object-cover {
+    object-fit: cover;
+}
+
+
+/* Close object fit  */
+
+
+
+
+
+
+
+/* opticy  */
+
+
+.opticy-0 {
+    opacity: 0 !important;
+}
+
+/* Close  opticy  */

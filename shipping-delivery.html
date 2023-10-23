@@ -416,7 +416,7 @@
                         <div class="main-content">
 
 
-                            <div class="w-full rounded-regualr bg-white border border-Grey_20 border-solid">
+                            <!-- <div class="w-full rounded-regualr bg-white border border-Grey_20 border-solid">
 
                                 <div
                                     class="w-full padding-x_32px padding-top_24px padding-bottom_32px border-b border-solid border-Grey_20">
@@ -609,18 +609,21 @@
 
                                         </div>
 
-                                        <div class="w-full padding-x_32px padding-bottom_32px">
 
-                                            <div class="display-flex gap-8px justify-end align-stretch">
-                                                <button class="btn-regular">Add return option</button>
-                                                <button class="btn-regular"
-                                                    onclick="OpenModel('Add_shipping_option')">Add shipping
-                                                    option</button>
-                                            </div>
+                                    </div>
 
+                                    <div class="w-full padding-x_32px padding-bottom_32px">
+
+                                        <div class="display-flex gap-8px justify-end align-stretch">
+                                            <button class="btn-regular" onclick="OpenModel('Add_return_option')">Add
+                                                return option</button>
+                                            <button class="btn-regular" onclick="OpenModel('Add_shipping_option')">Add
+                                                shipping
+                                                option</button>
                                         </div>
 
                                     </div>
+
                                 </div>
 
 
@@ -812,10 +815,36 @@
                                             <p class="text-small_semibold color-Grey_50">Return options</p>
 
 
-                                            <p class="color-Grey_40 text-center text-base_regular margin-y_24px">Not
-                                                covered
-                                                by
-                                                any return options.</p>
+                                            <div class="margin-top_8px space-y-8px">
+
+                                                <div
+                                                    class="padding-y_12px padding-x_16px rounded-regualr border border-Grey_20 border-solid">
+
+                                                    <div class="display-flex align-center justify-between w-100">
+                                                        <div>
+                                                            <h6 class="color-Grey_90 text-sm_medium">GLS Home Delivery
+                                                                (GLS Hjemmelevering)</h6>
+                                                            <div class="display-flex align-center gap-8px">
+                                                                <p class="text-sm_regular color-Grey_50">No special
+                                                                    conditions</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="display-flex align-center gap-16px">
+                                                            <div
+                                                                class="display-flex align-center gap-6px border border-solid border-Grey_20 rounded-regualr padding-x_8px padding-y_2px store-shipping">
+                                                                <span class="ellipse-dot"></span>
+                                                                <p class="text-sm_medium color-Grey_60">Store</p>
+                                                            </div>
+                                                            <button class="icon-btn icon-btn_32px">
+                                                                <img src="./assets/img/icons/dots-icon.svg">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
 
 
                                         </div>
@@ -823,7 +852,8 @@
                                         <div class="w-full padding-x_32px padding-bottom_32px">
 
                                             <div class="display-flex gap-8px justify-end align-stretch">
-                                                <button class="btn-regular">Add return option</button>
+                                                <button class="btn-regular" onclick="OpenModel('Add_return_option')">Add
+                                                    return option</button>
                                                 <button class="btn-regular"
                                                     onclick="OpenModel('Add_shipping_option')">Add shipping
                                                     option</button>
@@ -864,15 +894,724 @@
                                 </div>
 
 
-                            </div>
+                            </div> -->
 
+
+
+
+
+
+
+
+                            <div class="w-full rounded-regualr bg-white border border-Grey_20 border-solid">
+
+                                <div
+                                    class="w-full padding-x_32px padding-top_24px padding-bottom_32px border-b border-solid border-Grey_20">
+
+                                    <p class="text-small_semibold color-Grey_50">Shipping from</p>
+
+                                    <div class="display-flex align-center justify-between w-100 margin-top_8px">
+
+                                        <div class="display-flex align-center gap-16px">
+                                            <div class="icon-border icon-border-20 icon-border_40px">
+                                                <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                                    <img src="./assets/img/icons/buildings.svg"
+                                                        class="img-not-selected">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="display-flex align-center gap-8px">
+                                                    <h6 class="color-Grey_90 text-base_semibold">Retail store #1</h6>
+                                                </div>
+                                                <p class="color-Grey_50 text-small_regular">Copenhagen,
+                                                    Denmark</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="display-flex gap-8px">
+
+                                            <button class="btn-regular"
+                                                onclick="OpenModel('connect_fulfillment_provider')">Connect
+                                                provider</button>
+                                            <button class="btn-regular">Add shipping zone</button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div>
+
+                                    <div class="w-full  padding-top_24px ">
+
+                                        <p class="text-small_semibold color-Grey_50 padding-x_32px">Shipping to</p>
+
+                                        <div class="all-border-t">
+
+                                            <div>
+
+                                                <div
+                                                    class="display-flex align-center justify-between w-100 margin-top_8px padding-x_32px padding-bottom_24px">
+
+
+                                                    <div class="display-flex align-center gap-16px">
+                                                        <div class="icon-border icon-border-20 icon-border_40px">
+                                                            <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                                                <img src="./assets/img/icons/map.svg"
+                                                                    class="img-not-selected">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="display-flex align-center gap-8px">
+                                                                <h6 class="color-Grey_90 text-base_semibold">Scandinavia
+                                                                </h6>
+                                                            </div>
+                                                            <p class="color-Grey_50 text-small_regular">2 shipping
+                                                                options,
+                                                                0 return option</p>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="display-flex gap-8px">
+
+                                                        <button class="icon-btn icon-btn_32px">
+                                                            <img src="./assets/img/icons/dots-icon.svg"
+                                                                class="img-not-selected w_20px h_20px">
+                                                        </button>
+                                                        <button class="icon-btn icon-btn_32px  toggle_shipping_details">
+                                                            <img src="./assets/img/icons/chevron-down.svg"
+                                                                class="img-not-selected w_20px h_20px">
+                                                        </button>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="shipping_details padding-top_16px">
+
+                                                    <div class="w-full padding-x_32px padding-bottom_32px">
+
+                                                        <p class="text-small_semibold color-Grey_50">Shipping options
+                                                        </p>
+
+
+                                                        <div class="margin-top_8px space-y-8px">
+
+                                                            <div
+                                                                class="padding-y_12px padding-x_16px rounded-regualr border border-Grey_20 border-solid">
+
+                                                                <div
+                                                                    class="display-flex align-center justify-between w-100">
+                                                                    <div>
+                                                                        <h6 class="color-Grey_90 text-sm_medium">Free
+                                                                            Shippings -
+                                                                            GLS Parcel Shop (GLS Pakkeshop)</h6>
+                                                                        <div class="display-flex align-center gap-8px">
+                                                                            <p class="text-sm_regular color-Grey_50">2
+                                                                                to 8
+                                                                                business
+                                                                                days</p>
+                                                                            <p class="text-sm_regular color-Grey_50">
+                                                                                Min.
+                                                                                subtotal:
+                                                                                EUR, USD</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="display-flex align-center gap-16px">
+                                                                        <div
+                                                                            class="display-flex align-center gap-6px border border-solid border-Grey_20 rounded-regualr padding-x_8px padding-y_2px store-shipping">
+                                                                            <span class="ellipse-dot"></span>
+                                                                            <p class="text-sm_medium color-Grey_60">
+                                                                                Store
+                                                                            </p>
+                                                                        </div>
+                                                                        <button class="icon-btn icon-btn_32px">
+                                                                            <img src="./assets/img/icons/dots-icon.svg">
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div
+                                                                class="padding-y_12px padding-x_16px rounded-regualr border border-Grey_20 border-solid">
+
+                                                                <div
+                                                                    class="display-flex align-center justify-between w-100">
+                                                                    <div>
+                                                                        <h6 class="color-Grey_90 text-sm_medium">GLS
+                                                                            Parcel
+                                                                            Shop
+                                                                            (GLS Pakkeshop)</h6>
+                                                                        <div class="display-flex align-center gap-8px">
+                                                                            <p class="text-sm_regular color-Grey_50">1
+                                                                                to 3
+                                                                                business
+                                                                                days</p>
+                                                                            <p class="text-sm_regular color-Grey_50">
+                                                                                Min.
+                                                                                subtotal:
+                                                                                €50 EUR</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="display-flex align-center gap-16px">
+                                                                        <div
+                                                                            class="display-flex align-center gap-6px border border-solid border-Grey_20 rounded-regualr padding-x_8px padding-y_2px admin-shipping">
+                                                                            <span class="ellipse-dot"></span>
+                                                                            <p class="text-sm_medium color-Grey_60">
+                                                                                Admin
+                                                                            </p>
+                                                                        </div>
+                                                                        <button class="icon-btn icon-btn_32px">
+                                                                            <img src="./assets/img/icons/dots-icon.svg">
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="w-full padding-x_32px padding-bottom_32px">
+
+                                                        <p class="text-small_semibold color-Grey_50">Return options</p>
+
+
+                                                        <div class="margin-top_8px space-y-8px">
+
+                                                            <div
+                                                                class="padding-y_12px padding-x_16px rounded-regualr border border-Grey_20 border-solid">
+
+                                                                <div
+                                                                    class="display-flex align-center justify-between w-100">
+                                                                    <div>
+                                                                        <h6 class="color-Grey_90 text-sm_medium">GLS
+                                                                            Home
+                                                                            Delivery
+                                                                            (GLS Hjemmelevering)</h6>
+                                                                        <div class="display-flex align-center gap-8px">
+                                                                            <p class="text-sm_regular color-Grey_50">No
+                                                                                special
+                                                                                conditions</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="display-flex align-center gap-16px">
+                                                                        <div
+                                                                            class="display-flex align-center gap-6px border border-solid border-Grey_20 rounded-regualr padding-x_8px padding-y_2px store-shipping">
+                                                                            <span class="ellipse-dot"></span>
+                                                                            <p class="text-sm_medium color-Grey_60">
+                                                                                Store
+                                                                            </p>
+                                                                        </div>
+                                                                        <button class="icon-btn icon-btn_32px">
+                                                                            <img src="./assets/img/icons/dots-icon.svg">
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="w-full padding-x_32px padding-bottom_32px">
+
+                                                        <div class="display-flex gap-8px justify-end align-stretch">
+                                                            <button class="btn-regular"
+                                                                onclick="OpenModel('Add_return_option')">Add
+                                                                return option</button>
+                                                            <button class="btn-regular"
+                                                                onclick="OpenModel('Add_shipping_option')">Add shipping
+                                                                option</button>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div>
+
+                                                <div
+                                                    class="display-flex align-center justify-between w-100 padding-x_32px padding-bottom_24px">
+
+
+                                                    <div class="display-flex align-center gap-16px">
+                                                        <div class="icon-border icon-border-20 icon-border_40px">
+                                                            <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                                                <img src="./assets/img/icons/map.svg"
+                                                                    class="img-not-selected">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="display-flex align-center gap-8px">
+                                                                <h6 class="color-Grey_90 text-base_semibold">Europe
+                                                                </h6>
+                                                            </div>
+                                                            <p class="color-Grey_50 text-small_regular">2 shipping
+                                                                options,
+                                                                1 return option</p>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="display-flex gap-8px">
+
+                                                        <button class="icon-btn icon-btn_32px">
+                                                            <img src="./assets/img/icons/dots-icon.svg"
+                                                                class="img-not-selected w_20px h_20px">
+                                                        </button>
+                                                        <button class="icon-btn icon-btn_32px  toggle_shipping_details">
+                                                            <img src="./assets/img/icons/chevron-down.svg"
+                                                                class="img-not-selected w_20px h_20px">
+                                                        </button>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="shipping_details padding-top_16px">
+
+                                                    <div class="w-full padding-x_32px padding-bottom_32px">
+
+                                                        <p class="text-small_semibold color-Grey_50">Shipping options
+                                                        </p>
+
+
+                                                        <div class="margin-top_8px space-y-8px">
+
+                                                            <div
+                                                                class="padding-y_12px padding-x_16px rounded-regualr border border-Grey_20 border-solid">
+
+                                                                <div
+                                                                    class="display-flex align-center justify-between w-100">
+                                                                    <div>
+                                                                        <h6 class="color-Grey_90 text-sm_medium">Free
+                                                                            Shippings -
+                                                                            GLS Parcel Shop (GLS Pakkeshop)</h6>
+                                                                        <div class="display-flex align-center gap-8px">
+                                                                            <p class="text-sm_regular color-Grey_50">2
+                                                                                to 8
+                                                                                business
+                                                                                days</p>
+                                                                            <p class="text-sm_regular color-Grey_50">
+                                                                                Min.
+                                                                                subtotal:
+                                                                                EUR, USD</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="display-flex align-center gap-16px">
+                                                                        <div
+                                                                            class="display-flex align-center gap-6px border border-solid border-Grey_20 rounded-regualr padding-x_8px padding-y_2px store-shipping">
+                                                                            <span class="ellipse-dot"></span>
+                                                                            <p class="text-sm_medium color-Grey_60">
+                                                                                Store
+                                                                            </p>
+                                                                        </div>
+                                                                        <button class="icon-btn icon-btn_32px">
+                                                                            <img src="./assets/img/icons/dots-icon.svg">
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div
+                                                                class="padding-y_12px padding-x_16px rounded-regualr border border-Grey_20 border-solid">
+
+                                                                <div
+                                                                    class="display-flex align-center justify-between w-100">
+                                                                    <div>
+                                                                        <h6 class="color-Grey_90 text-sm_medium">GLS
+                                                                            Parcel
+                                                                            Shop
+                                                                            (GLS Pakkeshop)</h6>
+                                                                        <div class="display-flex align-center gap-8px">
+                                                                            <p class="text-sm_regular color-Grey_50">1
+                                                                                to 3
+                                                                                business
+                                                                                days</p>
+                                                                            <p class="text-sm_regular color-Grey_50">
+                                                                                Min.
+                                                                                subtotal:
+                                                                                €50 EUR</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="display-flex align-center gap-16px">
+                                                                        <div
+                                                                            class="display-flex align-center gap-6px border border-solid border-Grey_20 rounded-regualr padding-x_8px padding-y_2px admin-shipping">
+                                                                            <span class="ellipse-dot"></span>
+                                                                            <p class="text-sm_medium color-Grey_60">
+                                                                                Admin
+                                                                            </p>
+                                                                        </div>
+                                                                        <button class="icon-btn icon-btn_32px">
+                                                                            <img src="./assets/img/icons/dots-icon.svg">
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="w-full padding-x_32px padding-bottom_32px">
+
+                                                        <p class="text-small_semibold color-Grey_50">Return options</p>
+
+
+                                                        <div class="margin-top_8px space-y-8px">
+
+                                                            <div
+                                                                class="padding-y_12px padding-x_16px rounded-regualr border border-Grey_20 border-solid">
+
+                                                                <div
+                                                                    class="display-flex align-center justify-between w-100">
+                                                                    <div>
+                                                                        <h6 class="color-Grey_90 text-sm_medium">GLS
+                                                                            Home
+                                                                            Delivery
+                                                                            (GLS Hjemmelevering)</h6>
+                                                                        <div class="display-flex align-center gap-8px">
+                                                                            <p class="text-sm_regular color-Grey_50">No
+                                                                                special
+                                                                                conditions</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="display-flex align-center gap-16px">
+                                                                        <div
+                                                                            class="display-flex align-center gap-6px border border-solid border-Grey_20 rounded-regualr padding-x_8px padding-y_2px store-shipping">
+                                                                            <span class="ellipse-dot"></span>
+                                                                            <p class="text-sm_medium color-Grey_60">
+                                                                                Store
+                                                                            </p>
+                                                                        </div>
+                                                                        <button class="icon-btn icon-btn_32px">
+                                                                            <img src="./assets/img/icons/dots-icon.svg">
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="w-full padding-x_32px padding-bottom_32px">
+
+                                                        <div class="display-flex gap-8px justify-end align-stretch">
+                                                            <button class="btn-regular"
+                                                                onclick="OpenModel('Add_return_option')">Add
+                                                                return option</button>
+                                                            <button class="btn-regular"
+                                                                onclick="OpenModel('Add_shipping_option')">Add shipping
+                                                                option</button>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div>
+
+                                                <div
+                                                    class="display-flex align-center justify-between w-100 padding-x_32px padding-bottom_24px">
+
+
+                                                    <div class="display-flex align-center gap-16px">
+                                                        <div class="icon-border icon-border-20 icon-border_40px">
+                                                            <div class="icon-bg icon-bg_32px bg-Grey_10">
+                                                                <img src="./assets/img/icons/map.svg"
+                                                                    class="img-not-selected">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="display-flex align-center gap-8px">
+                                                                <h6 class="color-Grey_90 text-base_semibold">USA
+                                                                </h6>
+                                                            </div>
+                                                            <p class="color-Grey_50 text-small_regular">2 shipping
+                                                                options,
+                                                                1 return option</p>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="display-flex gap-8px">
+
+                                                        <button class="icon-btn icon-btn_32px">
+                                                            <img src="./assets/img/icons/dots-icon.svg"
+                                                                class="img-not-selected w_20px h_20px">
+                                                        </button>
+                                                        <button class="icon-btn icon-btn_32px  toggle_shipping_details">
+                                                            <img src="./assets/img/icons/chevron-down.svg"
+                                                                class="img-not-selected w_20px h_20px">
+                                                        </button>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="shipping_details padding-top_16px">
+
+                                                    <div class="w-full padding-x_32px padding-bottom_32px">
+
+                                                        <p class="text-small_semibold color-Grey_50">Shipping options
+                                                        </p>
+
+
+                                                        <div class="margin-top_8px space-y-8px">
+
+                                                            <div
+                                                                class="padding-y_12px padding-x_16px rounded-regualr border border-Grey_20 border-solid">
+
+                                                                <div
+                                                                    class="display-flex align-center justify-between w-100">
+                                                                    <div>
+                                                                        <h6 class="color-Grey_90 text-sm_medium">Free
+                                                                            Shippings -
+                                                                            GLS Parcel Shop (GLS Pakkeshop)</h6>
+                                                                        <div class="display-flex align-center gap-8px">
+                                                                            <p class="text-sm_regular color-Grey_50">2
+                                                                                to 8
+                                                                                business
+                                                                                days</p>
+                                                                            <p class="text-sm_regular color-Grey_50">
+                                                                                Min.
+                                                                                subtotal:
+                                                                                EUR, USD</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="display-flex align-center gap-16px">
+                                                                        <div
+                                                                            class="display-flex align-center gap-6px border border-solid border-Grey_20 rounded-regualr padding-x_8px padding-y_2px store-shipping">
+                                                                            <span class="ellipse-dot"></span>
+                                                                            <p class="text-sm_medium color-Grey_60">
+                                                                                Store
+                                                                            </p>
+                                                                        </div>
+                                                                        <button class="icon-btn icon-btn_32px">
+                                                                            <img src="./assets/img/icons/dots-icon.svg">
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div
+                                                                class="padding-y_12px padding-x_16px rounded-regualr border border-Grey_20 border-solid">
+
+                                                                <div
+                                                                    class="display-flex align-center justify-between w-100">
+                                                                    <div>
+                                                                        <h6 class="color-Grey_90 text-sm_medium">GLS
+                                                                            Parcel
+                                                                            Shop
+                                                                            (GLS Pakkeshop)</h6>
+                                                                        <div class="display-flex align-center gap-8px">
+                                                                            <p class="text-sm_regular color-Grey_50">1
+                                                                                to 3
+                                                                                business
+                                                                                days</p>
+                                                                            <p class="text-sm_regular color-Grey_50">
+                                                                                Min.
+                                                                                subtotal:
+                                                                                €50 EUR</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="display-flex align-center gap-16px">
+                                                                        <div
+                                                                            class="display-flex align-center gap-6px border border-solid border-Grey_20 rounded-regualr padding-x_8px padding-y_2px admin-shipping">
+                                                                            <span class="ellipse-dot"></span>
+                                                                            <p class="text-sm_medium color-Grey_60">
+                                                                                Admin
+                                                                            </p>
+                                                                        </div>
+                                                                        <button class="icon-btn icon-btn_32px">
+                                                                            <img src="./assets/img/icons/dots-icon.svg">
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="w-full padding-x_32px padding-bottom_32px">
+
+                                                        <p class="text-small_semibold color-Grey_50">Return options</p>
+
+
+                                                        <div class="margin-top_8px space-y-8px">
+
+                                                            <div
+                                                                class="padding-y_12px padding-x_16px rounded-regualr border border-Grey_20 border-solid">
+
+                                                                <div
+                                                                    class="display-flex align-center justify-between w-100">
+                                                                    <div>
+                                                                        <h6 class="color-Grey_90 text-sm_medium">GLS
+                                                                            Home
+                                                                            Delivery
+                                                                            (GLS Hjemmelevering)</h6>
+                                                                        <div class="display-flex align-center gap-8px">
+                                                                            <p class="text-sm_regular color-Grey_50">No
+                                                                                special
+                                                                                conditions</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="display-flex align-center gap-16px">
+                                                                        <div
+                                                                            class="display-flex align-center gap-6px border border-solid border-Grey_20 rounded-regualr padding-x_8px padding-y_2px store-shipping">
+                                                                            <span class="ellipse-dot"></span>
+                                                                            <p class="text-sm_medium color-Grey_60">
+                                                                                Store
+                                                                            </p>
+                                                                        </div>
+                                                                        <button class="icon-btn icon-btn_32px">
+                                                                            <img src="./assets/img/icons/dots-icon.svg">
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="w-full padding-x_32px padding-bottom_32px">
+
+                                                        <div class="display-flex gap-8px justify-end align-stretch">
+                                                            <button class="btn-regular"
+                                                                onclick="OpenModel('Add_return_option')">Add
+                                                                return option</button>
+                                                            <button class="btn-regular"
+                                                                onclick="OpenModel('Add_shipping_option')">Add shipping
+                                                                option</button>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div
+                                        class="w-full  padding-y_24px padding-x_32px border-t border-solid border-Grey_20">
+
+                                        <p class="text-small_semibold color-Grey_50 margin-bottom_8px">Fulfillment
+                                            provider</p>
+
+
+                                        <div class="space-y-8px">
+                                            <div
+                                                class="display-flex align-center justify-between w-100 rounded-regualr padding-y_2px">
+                                                <div class="display-flex align-center  gap-16px">
+
+                                                    <div class="icon-border icon-border_40px border-Grey_20">
+
+                                                        <div class="icon-bg icon-bg_32px bg-blue">
+                                                            <img src="./assets/img/webshipper-ikon 1.png"
+                                                                class="object-contain">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div>
+                                                        <h6 class="text-base_semibold color-Grey_90">Webshipper</h6>
+                                                        <div class="display-flex align-center gap-8px">
+                                                            <p class="text-small_regular color-Grey_50">Standard,
+                                                                Express,
+                                                                Express Plus, EcoFriendly</p>
+                                                            <p class="color-Grey_50 text-small_regular">+ 8 services</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="display-flex align-stretch gap-6px">
+                                                    <button class="icon-btn icon-btn_32px">
+                                                        <img src="./assets/img/icons/dots-icon.svg">
+                                                    </button>
+                                                    <button class="icon-btn icon-btn_32px opticy-0"></button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div
+                                        class="w-full padding-x_32px padding-y_24px border-t border-solid border-Grey_20">
+
+                                        <div class="display-flex align-center justify-between w-100">
+
+                                            <div>
+                                                <h6 class="color-Grey_90 text-sm_medium ">Not covered by your shipping
+                                                    zones
+                                                </h6>
+                                                <p class="text-sm_regular color-Grey_50 margin-top_4px">236 countries
+                                                    and
+                                                    regions</p>
+                                            </div>
+
+
+                                            <div class="display-flex gap-8px">
+                                                <button class="icon-btn icon-btn_32px">
+                                                    <img src="./assets/img/icons/dots-icon.svg"
+                                                        class="img-not-selected w_20px h_20px">
+                                                </button>
+                                                <button class="icon-btn icon-btn_32px">
+                                                    <img src="./assets/img/icons/chevron-down.svg"
+                                                        class="img-not-selected w_20px h_20px">
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
 
                         </div>
 
+
+
                     </div>
-
-
-
                 </div>
 
 
@@ -1819,6 +2558,625 @@
         </div>
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="full-screen-model" id="Add_return_option">
+
+        <div class="model-content">
+
+
+            <div class="model-header">
+
+                <button class="border border-solid border-Grey_20 rounded-regualr Model_Close_btn"
+                    onclick="CloseModel('Add_return_option')">
+                    <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                </button>
+
+                <button class="btn-regular" disabled>Add return option</button>
+            </div>
+
+
+            <div class="model-body">
+
+                <div class="model-body-content">
+
+                    <h4 class="model-title">Add shipping option</h4>
+
+
+                    <div class="custom-accordion">
+
+                        <div class="accordion-items active-accordion">
+
+                            <div class="accordion-header">
+
+                                <div>
+                                    <h4 class="accordion-title">General information <span class="required">*</span></h4>
+                                    <p class="accordion-sub-title">To start selling, all you need is a name and a price.
+                                    </p>
+                                </div>
+
+                                <div class="accordion-icons">
+                                    <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                                    <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                                </div>
+
+                            </div>
+
+                            <div class="accordion-body">
+
+
+                                <div>
+
+                                    <div class="w-100">
+
+                                        <h6 class="text-base_semibold color-Grey_90 margin-bottom_16px">Details</h6>
+
+                                        <div class="address-form">
+
+                                            <div class="input-group">
+
+                                                <label for="Give">Name <span class="required">*</span></label>
+
+                                                <input type="text" class="input-1" id="Give"
+                                                    placeholder="Give the option a name">
+
+                                            </div>
+
+                                            <div class="input-group">
+
+                                                <label for="fulfillment_methodDrop">Fulfillment Method <span
+                                                        class="required">*</span></label>
+
+                                                <div class="custom-select custom-dropdown"
+                                                    onclick="OpenDropDown('fulfillment_methodDrop2')"
+                                                    style="width: 100%;">
+                                                    <p>Choose a method</p>
+                                                    <ul class="custom-dropdown-list" id="fulfillment_methodDrop2">
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-link selected-dropdown-option">
+                                                                <p class="dropdown-link-title">Select a method</p>
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-link">
+                                                                <p class="dropdown-link-title">one</p>
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-link ">
+                                                                <p class="dropdown-link-title">two</p>
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-link">
+                                                                <p class="dropdown-link-title">three</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div
+                                            class="margin-top_32px display-flex align-center justify-between w-100 gap-12px">
+
+                                            <div>
+                                                <h6 class="text-base_semibold color-Grey_90">Visible in store
+                                                </h6>
+                                                <p class="color-Grey_50 text-base_regular margin-top_4px">Enable or
+                                                    disable the
+                                                    shipping option visiblity in store</p>
+                                            </div>
+
+
+                                            <div class="custom-toogle-btn">
+                                                <input type="checkbox" class="form-toogle-btn" checked>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="accordion-items">
+
+                            <div class="accordion-header">
+
+                                <div>
+                                    <h4 class="accordion-title">Price</h4>
+                                    <p class="accordion-sub-title">Specify the shipping options price in different
+                                        currencies.</p>
+                                </div>
+
+                                <div class="accordion-icons">
+                                    <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                                    <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                                </div>
+
+                            </div>
+
+                            <div class="accordion-body">
+
+
+
+                                <div class="price-accordion">
+
+                                    <div class="price-list">
+                                        <div class="price-list-details">
+                                            <button class="accordion-icon">
+                                                <img src="./assets/img/icons/triangle-right.svg">
+                                            </button>
+                                            <div class="price-details">
+                                                <div class="icon">
+                                                    <img src="./assets/img/icons/coins.svg">
+                                                </div>
+                                                <div class="display-flex align-center gap-8px">
+                                                    <h6 class="color-Grey_90 text-sm_medium">DKK</h6>
+                                                    <p class="text-sm_regular color-Grey_50">Danish krone</p>
+                                                    <div class="price-value">
+                                                        <img src="./assets/img/icons/taxes.svg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="current-price">
+                                            <span class="text-base_regular color-Grey_40">kr.</span>
+                                            <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                                600.00</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="price-accordion-body">
+                                        <div class="price-list">
+                                            <div class="price-list-details">
+                                                <button class="accordion-icon">
+                                                    <img src="./assets/img/icons/triangle-right.svg">
+                                                </button>
+                                                <div class="price-details">
+                                                    <div class="icon">
+                                                        <img src="./assets/img/icons/coins.svg">
+                                                    </div>
+                                                    <div class="display-flex align-center gap-8px">
+                                                        <h6 class="color-Grey_90 text-sm_medium">DKK</h6>
+                                                        <p class="text-sm_regular color-Grey_50">Danish krone</p>
+                                                        <div class="price-value">
+                                                            <img src="./assets/img/icons/taxes.svg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="current-price">
+                                                <span class="text-base_regular color-Grey_40">kr.</span>
+                                                <p
+                                                    class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                                    600.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="price-list">
+                                    <div class="price-list-details">
+                                        <button class="accordion-icon">
+                                            <img src="./assets/img/icons/triangle-right.svg">
+                                        </button>
+                                        <div class="price-details">
+                                            <div class="icon">
+                                                <img src="./assets/img/icons/coins.svg">
+                                            </div>
+                                            <div class="display-flex align-center gap-8px">
+                                                <h6 class="color-Grey_90 text-sm_medium">USD</h6>
+                                                <p class="text-sm_regular color-Grey_50">United States Dollar</p>
+                                                <div class="price-value">
+                                                    <img src="./assets/img/icons/taxes.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="current-price">
+                                        <span class="text-base_regular color-Grey_40">$</span>
+                                        <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                            90.00</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="price-accordion">
+
+                                    <div class="price-list">
+                                        <div class="price-list-details">
+                                            <button class="accordion-icon">
+                                                <img src="./assets/img/icons/triangle-right.svg">
+                                            </button>
+                                            <div class="price-details">
+                                                <div class="icon">
+                                                    <img src="./assets/img/icons/coins.svg">
+                                                </div>
+                                                <div class="display-flex align-center gap-8px">
+                                                    <h6 class="color-Grey_90 text-sm_medium">EUR</h6>
+                                                    <p class="text-sm_regular color-Grey_50">Euro</p>
+                                                    <div class="price-value">
+                                                        <img src="./assets/img/icons/taxes.svg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="current-price">
+                                            <span class="text-base_regular color-Grey_40">€</span>
+                                            <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                                90.00</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="price-accordion-body">
+
+
+                                        <div class="price-list">
+                                            <div class="price-list-details">
+                                                <button class="accordion-icon">
+                                                    <img src="./assets/img/icons/triangle-right.svg">
+                                                </button>
+                                                <div class="price-details">
+                                                    <div class="icon">
+                                                    </div>
+                                                    <div class="display-flex align-center gap-8px">
+                                                        <h6 class="color-Grey_90 text-sm_medium">Austria</h6>
+                                                        <p class="text-sm_regular color-Grey_50">Euro</p>
+                                                        <div class="price-value">
+                                                            <img src="./assets/img/icons/taxes.svg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="current-price">
+                                                <span class="text-base_regular color-Grey_40">€</span>
+                                                <p
+                                                    class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                                    -</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="price-list">
+                                            <div class="price-list-details">
+                                                <button class="accordion-icon">
+                                                    <img src="./assets/img/icons/triangle-right.svg">
+                                                </button>
+                                                <div class="price-details">
+                                                    <div class="icon">
+                                                    </div>
+                                                    <div class="display-flex align-center gap-8px">
+                                                        <h6 class="color-Grey_90 text-sm_medium">Germany</h6>
+                                                        <p class="text-sm_regular color-Grey_50">Euro</p>
+                                                        <div class="price-value">
+                                                            <img src="./assets/img/icons/taxes.svg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="current-price">
+                                                <span class="text-base_regular color-Grey_40">€</span>
+                                                <p
+                                                    class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                                    95.00</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="price-list">
+                                    <div class="price-list-details">
+                                        <button class="accordion-icon">
+                                            <img src="./assets/img/icons/triangle-right.svg">
+                                        </button>
+                                        <div class="price-details">
+                                            <div class="icon">
+                                                <img src="./assets/img/icons/coins.svg">
+                                            </div>
+                                            <div class="display-flex align-center gap-8px">
+                                                <h6 class="color-Grey_90 text-sm_medium">JPY</h6>
+                                                <p class="text-sm_regular color-Grey_50">Japanese yen</p>
+                                                <div class="price-value">
+                                                    <img src="./assets/img/icons/taxes.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="current-price">
+                                        <span class="text-base_regular color-Grey_40">¥</span>
+                                        <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                            1324</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="full-screen-model" id="connect_fulfillment_provider">
+
+        <div class="model-content">
+
+
+            <div class="model-header">
+
+                <button class="border border-solid border-Grey_20 rounded-regualr Model_Close_btn"
+                    onclick="CloseModel('connect_fulfillment_provider')">
+                    <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                </button>
+
+                <button class="btn-regular">Connect provider</button>
+            </div>
+
+
+            <div class="model-body">
+
+                <div class="model-body-content">
+
+                    <h4 class="model-title">Connect fulfillment provider</h4>
+
+                    <div>
+                        <h6 class="text-base_semibold color-Grey_90">Fulfillment provider</h6>
+                        <p class="margin-top_4px color-Grey_50 text-base_regular">Use carrier or app to calculate rates.
+                            Rates are based on your customer’s address.</p>
+                    </div>
+
+                    <div class="address-form padding-top_24px padding-bottom_32px">
+
+
+                        <div class="input-group">
+
+                            <label for="Choose_provider">Choose provider</label>
+
+
+                            <div class="custom-select custom-dropdown" onclick="OpenDropDown('Choose_provider')"
+                                style="width: 100%;">
+                                <p>UPS</p>
+                                <ul class="custom-dropdown-list" id="Choose_provider">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link selected-dropdown-option">
+                                            <p class="dropdown-link-title">DHL</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">
+                                            <p class="dropdown-link-title">UPS</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link ">
+                                            <p class="dropdown-link-title">Webshipper</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="padding-y_32px  border-t border-solid border-Grey_20">
+
+                        <div class="display-flex align-center justify-between w-100">
+
+                            <div>
+                                <h6 class="text-base_semibold color-Grey_90">Services</h6>
+                                <p class="text-base_regular color-Grey_50">Pick out the services you need for your store
+                                    further down.</p>
+                            </div>
+
+                            <button class="btn-regular" onclick="OpenDrawer('add_services')">Add services</button>
+
+                        </div>
+
+
+                        <div class="display-flex align-center justify-between w-100">
+
+                            <div class="display-flex align-center gap-16px">
+
+                                <div class="icon-border icon-border_40px border-Grey_20">
+                                    <div class="icon-bg_32px icon-bg bg-Grey_10">
+                                        <img src="./assets/img/icons/fast-delivery.svg">
+                                    </div>
+                                </div>
+
+                                <p class="text-base_regular color-Grey_50 display-flex align-center gap-8px">UPS Next
+                                    Day Air Saver, UPS Worldwide Express
+                                    Plus <span class="color-Grey_50">+ 4 more</span></p>
+
+                            </div>
+
+                            <button class="btn-regular" onclick="OpenDrawer('add_services')">Edit services</button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="drawer rightside" id="add_services">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Add services</h4>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+            <div class="w-100 display-flex align-center gap-8px margin-top_24px">
+
+                <div class="search-wrraper w-100">
+                    <button class="icon">
+                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                    </button>
+                    <input type="text" placeholder="Find something" class="enter_val  w-100">
+                    <button class="icon val_clear" style="cursor: pointer;">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                    </button>
+                </div>
+
+                <p class="text-sm_medium color-Grey_50 padding-x_12px">1selected</p>
+                <button class="btn-regular">Deselect</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-body p-0">
+
+            <ul class="areas-list">
+
+                <li>
+                    <input type="checkbox" id="index100" class="custom-checkbox">
+                    <p class="color-Grey_50 text-sm_regular">Title</p>
+                    <label for="index100"></label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="index101" class="custom-checkbox">
+                    <p class="title">UPS 2nd Day Air A.M. (Commercial addresses only)</p>
+                    <label for="index101"></label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="index102" class="custom-checkbox">
+                    <p class="title">UPS 2nd Day Air</p>
+                    <label for="index102"></label>
+                </li>
+
+
+                <li>
+                    <input type="checkbox" id="index103" class="custom-checkbox">
+                    <p class="title">UPS 3 Day Select</p>
+                    <label for="index103"></label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="index104" class="custom-checkbox" checked>
+                    <p class="title">UPS Next Day Air Saver</p>
+                    <label for="index104"></label>
+                </li>
+
+            </ul>
+
+
+
+
+        </div>
+
+
+        <div class="drawer-footer p-0">
+            <div class="table-footer padding-y_16px padding-x_32px">
+
+                <div class="table-resuits-count">
+
+                    <p class="all-items-list-count">
+
+                        <span>1</span>
+
+                        -
+
+                        <span>13</span>
+
+                        of
+
+                        <span>200</span>
+
+                        results
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="table-pagination">
+
+                    <p class="total-pages-count">
+                        <span> 1 </span>
+                        of
+                        <span>16</span>
+                        pages
+                    </p>
+
+
+                    <div class="pagination-btn-group">
+                        <button class="pagination-btn pagination-btn-disabled">Prev</button>
+                        <button class="pagination-btn pagination-btn-disabled">Next</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="button-group padding-y_16px padding-x_32px border-t border-solid border-Grey_20">
+                <button class="btn" onclick="CloseDrawer('add_services')">Cancel</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
 
 
     <div id="overlay"></div>

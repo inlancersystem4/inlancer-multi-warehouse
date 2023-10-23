@@ -2098,7 +2098,7 @@
 }
 
 .add-condition-input-group .custom-select {
-    width: 96px  !important;
+    width: 96px !important;
     border-right: 1px solid var(--Grey-20) !important;
 }
 
@@ -2113,4 +2113,12 @@
 
 .add-condition-input-group .input-1 {
     text-align: right;
+}
+
+
+
+
+.all-border-t>*+* {
+    border-top: 1px solid var(--Grey-20);
+    padding-top: 24px;
 }

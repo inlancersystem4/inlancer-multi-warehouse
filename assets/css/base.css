@@ -1084,6 +1084,7 @@ body {
 
 .full-screen-model .model-header .btn-regular {
     background-color: #7C3AED;
+    color: var(--Grey);
 }
 
 .full-screen-model .model-body {
