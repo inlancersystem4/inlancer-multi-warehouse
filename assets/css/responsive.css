@@ -62,6 +62,10 @@
     }
 
 
+    .chat-wrapper .chat-connectivity {
+        max-width: 240px;
+    }
+
 }
 
 
@@ -100,11 +104,75 @@
         gap: 8px;
     }
 
+    .chat-wrapper {
+        position: relative;
+    }
+
+    .chat-wrapper .chat-connectivity {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        max-width: 340px;
+        display: none;
+    }
+
 }
 
 
 
-@media (max-width: 560px) {}
+@media (max-width: 560px) {
+
+    .main-content-body {
+        padding: 16px 0px 64px;
+    }
+
+    .main-content-body .content-section {
+        width: 99%;
+    }
+
+    .chat-message-box .message {
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 12px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+
+    .chat-message-box .message {
+        max-width: 320px;
+    }
+
+    .chat-message-box.my-message-box .message {
+        margin-right: 2px;
+    }
+
+    .chat-message-box.friend-message-box .message {
+        margin-left: 2px;
+    }
+
+    .chat-message-box .message {
+        margin-top: 8px;
+    }
+
+    .chat-message-section .chat-message-section-header .chating-options-group .btn {
+        min-width: 32px;
+        min-height: 32px;
+        max-width: 32px;
+        max-height: 32px;
+    }
+
+}
 
 
-@media (max-width: 440px) {}
+@media (max-width: 440px) {
+
+    .chat-message-section-body .message-day-show-tag .daily-counter {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+
+}
