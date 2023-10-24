@@ -699,6 +699,18 @@ body {
     font-weight: 600;
 }
 
+
+.custom-dropdown-list.onTop {
+    top: -120%;
+    right: 100%;
+    left: auto;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+
 /* Close dropdwon  */
 
 
@@ -1350,7 +1362,7 @@ body {
     height: 100%;
     opacity: 0.4;
     background: #111827;
-    display: none; 
+    display: none;
 }
 
 

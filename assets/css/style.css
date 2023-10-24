@@ -2122,3 +2122,10 @@
     border-top: 1px solid var(--Grey-20);
     padding-top: 24px;
 }
+
+
+.accordion-body .price-list .current-price {
+    min-width: 150px;
+    max-width: 210px;
+    margin-left: 16px;
+}

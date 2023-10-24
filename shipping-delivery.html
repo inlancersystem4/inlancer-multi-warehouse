@@ -982,7 +982,7 @@
                                                             <img src="./assets/img/icons/dots-icon.svg"
                                                                 class="img-not-selected w_20px h_20px">
 
-                                                            <ul class="custom-dropdown-list icon-dropdown"
+                                                            <ul class="custom-dropdown-list leftside icon-dropdown"
                                                                 id="index110">
                                                                 <li class="dropdown-item">
                                                                     <a href="#" class="dropdown-link"
@@ -993,7 +993,8 @@
                                                                     </a>
                                                                 </li>
                                                                 <li class="dropdown-item">
-                                                                    <a href="#" class="dropdown-link">
+                                                                    <a href="#" class="dropdown-link"
+                                                                        onclick="OpenDrawer('edit_affected_Area')">
                                                                         <img src="./assets/img/icons/map.svg">
                                                                         <p class="dropdown-link-title">Edit areas
                                                                         </p>
@@ -1140,8 +1141,36 @@
                                                                                 Admin
                                                                             </p>
                                                                         </div>
-                                                                        <button class="icon-btn icon-btn_32px">
+                                                                        <button
+                                                                            class="icon-btn icon-btn_32px custom-dropdown"
+                                                                            onclick="OpenDropDown('index142')">
                                                                             <img src="./assets/img/icons/dots-icon.svg">
+
+                                                                            <ul class="custom-dropdown-list leftside  icon-dropdown"
+                                                                                id="index142">
+                                                                                <li class="dropdown-item">
+                                                                                    <a href="#" class="dropdown-link"
+                                                                                        onclick="OpenDrawer('Edit_shipping_option2')">
+                                                                                        <img
+                                                                                            src="./assets/img/icons/fast-delivery.svg">
+                                                                                        <p class="dropdown-link-title">
+                                                                                            Edit shipping option
+                                                                                        </p>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="dropdown-item">
+                                                                                    <a href="#" class="dropdown-link"
+                                                                                        onclick="OpenModel('Delete_shipping_zone')">
+                                                                                        <img
+                                                                                            src="./assets/img/icons/trash.svg">
+                                                                                        <p
+                                                                                            class="dropdown-link-title required">
+                                                                                            Delete shipping zone
+                                                                                        </p>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -1633,11 +1662,33 @@
                                                     </div>
                                                 </div>
                                                 <div class="display-flex align-stretch gap-6px">
-                                                    <button class="icon-btn icon-btn_32px">
+                                                    <button class="icon-btn icon-btn_32px custom-dropdown"
+                                                        onclick="OpenDropDown('Fulfillment_options')">
                                                         <img src="./assets/img/icons/dots-icon.svg">
-                                                    </button>
-                                                    <button class="icon-btn icon-btn_32px opticy-0"></button>
 
+                                                        <ul class="custom-dropdown-list onTop icon-dropdown"
+                                                            id="Fulfillment_options">
+                                                            <li class="dropdown-item">
+                                                                <a href="#" class="dropdown-link"
+                                                                    onclick="OpenDrawer('Edit_current_services')">
+                                                                    <img src="./assets/img/icons/fast-delivery.svg">
+                                                                    <p class="dropdown-link-title">Edit services
+                                                                    </p>
+                                                                </a>
+                                                            </li>
+                                                            <li class="dropdown-item">
+                                                                <a href="#" class="dropdown-link">
+                                                                    <img src="./assets/img/icons/trash.svg">
+                                                                    <p class="dropdown-link-title required">Delete
+                                                                        provider
+                                                                    </p>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+
+                                                    </button>
+
+                                                    <button class="icon-btn icon-btn_32px opticy-0"></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1661,16 +1712,75 @@
 
 
                                             <div class="display-flex gap-8px">
-                                                <button class="icon-btn icon-btn_32px">
+                                                <button class="icon-btn icon-btn_32px custom-dropdown"
+                                                    onclick="OpenDropDown('shipping_zonesDrop')">
                                                     <img src="./assets/img/icons/dots-icon.svg"
                                                         class="img-not-selected w_20px h_20px">
+
+                                                    <ul class="custom-dropdown-list onTop icon-dropdown"
+                                                        id="shipping_zonesDrop">
+                                                        <li class="dropdown-item">
+                                                            <a href="#" class="dropdown-link">
+                                                                <img src="./assets/img/icons/map.svg">
+                                                                <p class="dropdown-link-title">Create zone from list</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
                                                 </button>
-                                                <button class="icon-btn icon-btn_32px">
+                                                <button class="icon-btn icon-btn_32px toggle_shipping_details">
                                                     <img src="./assets/img/icons/chevron-down.svg"
                                                         class="img-not-selected w_20px h_20px">
                                                 </button>
                                             </div>
 
+
+                                        </div>
+
+
+                                        <div class="shipping_details padding-top_16px">
+
+                                            <p class="text-small_regular color-Grey_50">Afghanistan, Åland Islands,
+                                                Albania, Algeria, Andorra, Angola, Anguilla,
+                                                Antigua & Barbuda, Argentina, Armenia, Aruba, Ascension Island,
+                                                Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados,
+                                                Belarus, Belgium, Belize, Benin, Bermuda, Bhutan, Bolivia, Bosnia &
+                                                Herzegovina, Botswana, Brazil, British Indian Ocean Territory, British
+                                                Virgin Islands, Brunei, Bulgaria, Burkina Faso, Burundi, Cambodia,
+                                                Cameroon, Canada, Cape Verde, Caribbean Netherlands, Cayman Islands,
+                                                Central African Republic, Chad, Chile, China, Christmas Island, Cocos
+                                                (Keeling) Islands, Colombia, Comoros, Congo - Brazzaville, Congo -
+                                                Kinshasa, Cook Islands, Costa Rica, Croatia, Curaçao, Cyprus, Czechia,
+                                                Côte d’Ivoire, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador,
+                                                Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini,
+                                                Ethiopia, Falkland Islands, Faroe Islands, Fiji, Finland, France, French
+                                                Guiana, French Polynesia, French Southern Territories, Gabon, Gambia,
+                                                Georgia, Germany, Ghana, Gibraltar, Greece, Greenland, Grenada,
+                                                Guadeloupe, Guatemala, Guernsey, Guinea, Guinea-Bissau, Guyana, Haiti,
+                                                Honduras, Hong Kong SAR, Hungary, Iceland, India, Indonesia, Iraq,
+                                                Ireland, Isle of Man, Israel, Italy, Jamaica, Japan, Jersey, Jordan,
+                                                Kazakhstan, Kenya, Kiribati, Kosovo, Kuwait, Kyrgyzstan, Laos, Latvia,
+                                                Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Lithuania, Luxembourg,
+                                                Macao SAR, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta,
+                                                Martinique, Mauritania, Mauritius, Mayotte, Mexico, Moldova, Monaco,
+                                                Mongolia, Montenegro, Montserrat, Morocco, Mozambique, Myanmar (Burma),
+                                                Namibia, Nauru, Nepal, Netherlands, New Caledonia, New Zealand,
+                                                Nicaragua, Niger, Nigeria, Niue, Norfolk Island, North Macedonia,
+                                                Norway, Oman, Pakistan, Palestinian Territories, Panama, Papua New
+                                                Guinea, Paraguay, Peru, Philippines, Pitcairn Islands, Poland, Portugal,
+                                                Qatar, Réunion, Romania, Russia, Rwanda, Samoa, San Marino, São Tomé &
+                                                Príncipe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone,
+                                                Singapore, Sint Maarten, Slovakia, Slovenia, Solomon Islands, Somalia,
+                                                South Africa, South Georgia & South Sandwich Islands, South Korea, South
+                                                Sudan, Spain, Sri Lanka, St. Barthélemy, St. Helena, St. Kitts & Nevis,
+                                                St. Lucia, St. Martin, St. Pierre & Miquelon, St. Vincent & Grenadines,
+                                                Sudan, Suriname, Svalbard & Jan Mayen, Sweden, Switzerland, Taiwan,
+                                                Tajikistan, Tanzania, Thailand, Timor-Leste, Togo, Tokelau, Tonga,
+                                                Trinidad & Tobago, Tristan da Cunha, Tunisia, Turkey, Turkmenistan,
+                                                Turks & Caicos Islands, Tuvalu, U.S. Outlying Islands, Uganda, Ukraine,
+                                                United Arab Emirates, United Kingdom, Uruguay, Uzbekistan, Vanuatu,
+                                                Vatican City, Venezuela, Vietnam, Wallis & Futuna, Western Sahara,
+                                                Yemen, Zambia, Zimbabwe</p>
 
                                         </div>
 
@@ -3342,8 +3452,7 @@
 
             <div class="custom-accordion">
 
-                <div
-                    class="accordion-items active-accordion border-b border-solid border-Grey_20 padding-x_32px padding-bottom_32px">
+                <div class="accordion-items active-accordion border-b border-solid border-Grey_20 padding-x_32px">
 
                     <div class="accordion-header">
 
@@ -3358,7 +3467,7 @@
 
                     </div>
 
-                    <div class="accordion-body py-0">
+                    <div class="accordion-body pt-0 padding-bottom_32px">
 
                         <div class="space-y-24px">
 
@@ -3502,8 +3611,7 @@
 
                 </div>
 
-                <div
-                    class="accordion-items active-accordion border-b border-solid border-Grey_20 padding-x_32px padding-bottom_32px">
+                <div class="accordion-items  border-b border-solid border-Grey_20 padding-x_32px">
 
                     <div class="accordion-header">
 
@@ -3518,7 +3626,7 @@
 
                     </div>
 
-                    <div class="accordion-body py-0">
+                    <div class="accordion-body pt-0 padding-bottom_32px">
 
                         <div class="space-y-16px margin-bottom_32px">
 
@@ -3551,9 +3659,10 @@
                                         onclick="OpenDropDown('index120')">
                                         <img src="./assets/img/icons/dots-icon.svg">
 
-                                        <ul class="custom-dropdown-list icon-dropdown" id="index120">
+                                        <ul class="custom-dropdown-list leftside icon-dropdown" id="index120">
                                             <li class="dropdown-item">
-                                                <a href="#" class="dropdown-link">
+                                                <a href="#" class="dropdown-link"
+                                                    onclick="OpenDrawer('edit_conditionDra')">
                                                     <img src="./assets/img/icons/edit.svg">
                                                     <p class="dropdown-link-title">Edit condition</p>
                                                 </a>
@@ -3605,9 +3714,10 @@
                                         onclick="OpenDropDown('index121')">
                                         <img src="./assets/img/icons/dots-icon.svg">
 
-                                        <ul class="custom-dropdown-list icon-dropdown" id="index121">
+                                        <ul class="custom-dropdown-list leftside icon-dropdown" id="index121">
                                             <li class="dropdown-item">
-                                                <a href="#" class="dropdown-link">
+                                                <a href="#" class="dropdown-link"
+                                                    onclick="OpenDrawer('edit_conditionDra')">
                                                     <img src="./assets/img/icons/edit.svg">
                                                     <p class="dropdown-link-title">Edit condition</p>
                                                 </a>
@@ -3630,7 +3740,7 @@
 
                         </div>
 
-                        <button class="btn-regular btn-w-full" onclick="OpenDrawer('add_conditionDra')">Add
+                        <button class="btn-regular btn-w-full " onclick="OpenDrawer('add_conditionDra')">Add
                             condition</button>
 
                     </div>
@@ -3652,6 +3762,1175 @@
     </div>
 
 
+    <div class="drawer rightside" id="Edit_shipping_option2">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Edit shipping option</h4>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+        </div>
+
+
+        <div class="drawer-body pt-0 px-0">
+
+            <div class="custom-accordion">
+
+                <div class="accordion-items active-accordion border-b border-solid border-Grey_20 padding-x_32px">
+
+                    <div class="accordion-header">
+
+                        <div>
+                            <h4 class="accordion-title">General</h4>
+                        </div>
+
+                        <div class="accordion-icons">
+                            <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                            <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-body pt-0 padding-bottom_32px">
+
+                        <div class="space-y-24px">
+
+
+                            <div class="input-group">
+                                <label for="">Name <span class="required">*</span></label>
+                                <input type="text" class="input-1" value="GLS Parcel Shop (GLS Pakkeshop)" />
+                            </div>
+
+                            <div class="input-group">
+
+                                <label for="fulfillment_methodDrop202">Fulfillment Method <span
+                                        class="required">*</span></label>
+
+                                <div class="custom-select custom-dropdown"
+                                    onclick="OpenDropDown('fulfillment_methodDrop202')" style="width: 100%;">
+                                    <p>Manual fulfillment</p>
+                                    <ul class="custom-dropdown-list" id="fulfillment_methodDrop202">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link selected-dropdown-option">
+                                                <p class="dropdown-link-title">Select a method</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">one</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link ">
+                                                <p class="dropdown-link-title">two</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">three</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label for="TypeDrop22">Type <span class="required">*</span></label>
+
+                                <div class="custom-select custom-dropdown w-100" onclick="OpenDropDown('TypeDrop22')">
+                                    <p>Standard</p>
+                                    <ul class="custom-dropdown-list" id="TypeDrop22">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link selected-dropdown-option">
+                                                <p class="dropdown-link-title">Standardx</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">Express</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link ">
+                                                <p class="dropdown-link-title">Express Eco</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <div class="add-custom-option">
+                                                <input type="text" placeholder="Add custom type">
+                                                <button class="add_new-custom-option ">
+                                                    <img src="./assets/img/icons/plus.svg">
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label for="transit_time22">Transit time <span class="required">*</span></label>
+
+                                <div class="custom-select custom-dropdown" onclick="OpenDropDown('transit_time22')"
+                                    style="width: 100%;">
+                                    <p>2-3 days</p>
+                                    <ul class="custom-dropdown-list" id="transit_time22">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link selected-dropdown-option">
+                                                <p class="dropdown-link-title">2-3 days</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">2-8 days</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link ">
+                                                <p class="dropdown-link-title">1-3 days</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <div class="add-custom-option">
+                                                <input type="text" placeholder=" Add Transit time">
+                                                <button class="add_new-custom-option ">
+                                                    <img src="./assets/img/icons/plus.svg">
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+
+
+
+                            <div class="margin-top_32px display-flex align-center justify-between w-100 gap-12px">
+
+                                <div>
+                                    <h6 class="text-base_semibold color-Grey_90">Visible in store
+                                    </h6>
+                                    <p class="color-Grey_50 text-base_regular margin-top_4px">Enable or
+                                        disable the
+                                        shipping option visiblity in store</p>
+                                </div>
+
+
+                                <div class="custom-toogle-btn">
+                                    <input type="checkbox" class="form-toogle-btn" checked>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="accordion-items  border-b border-solid border-Grey_20 padding-x_32px">
+
+                    <div class="accordion-header">
+
+                        <div>
+                            <h4 class="accordion-title">Price</h4>
+                        </div>
+
+                        <div class="accordion-icons">
+                            <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                            <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-body pt-0 padding-bottom_32px">
+
+
+                        <div class="price-accordion">
+
+                            <div class="price-list">
+                                <div class="price-list-details">
+                                    <button class="accordion-icon">
+                                        <img src="./assets/img/icons/triangle-right.svg">
+                                    </button>
+                                    <div class="price-details">
+                                        <div class="icon">
+                                            <img src="./assets/img/icons/coins.svg">
+                                        </div>
+                                        <div class="display-flex align-center gap-8px">
+                                            <h6 class="color-Grey_90 text-sm_medium">DKK</h6>
+                                            <p class="text-sm_regular color-Grey_50">Danish krone</p>
+                                            <div class="price-value">
+                                                <img src="./assets/img/icons/taxes.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="current-price">
+                                    <span class="text-base_regular color-Grey_40">kr.</span>
+                                    <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                        600.00</p>
+                                </div>
+                            </div>
+
+                            <div class="price-accordion-body">
+                                <div class="price-list">
+                                    <div class="price-list-details">
+                                        <button class="accordion-icon">
+                                            <img src="./assets/img/icons/triangle-right.svg">
+                                        </button>
+                                        <div class="price-details">
+                                            <div class="icon">
+                                                <img src="./assets/img/icons/coins.svg">
+                                            </div>
+                                            <div class="display-flex align-center gap-8px">
+                                                <h6 class="color-Grey_90 text-sm_medium">DKK</h6>
+                                                <p class="text-sm_regular color-Grey_50">Danish krone</p>
+                                                <div class="price-value">
+                                                    <img src="./assets/img/icons/taxes.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="current-price">
+                                        <span class="text-base_regular color-Grey_40">kr.</span>
+                                        <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                            600.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="price-list">
+                            <div class="price-list-details">
+                                <button class="accordion-icon">
+                                    <img src="./assets/img/icons/triangle-right.svg">
+                                </button>
+                                <div class="price-details">
+                                    <div class="icon">
+                                        <img src="./assets/img/icons/coins.svg">
+                                    </div>
+                                    <div class="display-flex align-center gap-8px">
+                                        <h6 class="color-Grey_90 text-sm_medium">USD</h6>
+                                        <p class="text-sm_regular color-Grey_50">United States Dollar</p>
+                                        <div class="price-value">
+                                            <img src="./assets/img/icons/taxes.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="current-price">
+                                <span class="text-base_regular color-Grey_40">$</span>
+                                <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                    90.00</p>
+                            </div>
+                        </div>
+
+
+                        <div class="price-accordion">
+
+                            <div class="price-list">
+                                <div class="price-list-details">
+                                    <button class="accordion-icon">
+                                        <img src="./assets/img/icons/triangle-right.svg">
+                                    </button>
+                                    <div class="price-details">
+                                        <div class="icon">
+                                            <img src="./assets/img/icons/coins.svg">
+                                        </div>
+                                        <div class="display-flex align-center gap-8px">
+                                            <h6 class="color-Grey_90 text-sm_medium">EUR</h6>
+                                            <p class="text-sm_regular color-Grey_50">Euro</p>
+                                            <div class="price-value">
+                                                <img src="./assets/img/icons/taxes.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="current-price">
+                                    <span class="text-base_regular color-Grey_40">€</span>
+                                    <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                        90.00</p>
+                                </div>
+                            </div>
+
+                            <div class="price-accordion-body">
+
+
+                                <div class="price-list">
+                                    <div class="price-list-details">
+                                        <button class="accordion-icon">
+                                            <img src="./assets/img/icons/triangle-right.svg">
+                                        </button>
+                                        <div class="price-details">
+                                            <div class="icon">
+                                            </div>
+                                            <div class="display-flex align-center gap-8px">
+                                                <h6 class="color-Grey_90 text-sm_medium">Austria</h6>
+                                                <p class="text-sm_regular color-Grey_50">Euro</p>
+                                                <div class="price-value">
+                                                    <img src="./assets/img/icons/taxes.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="current-price">
+                                        <span class="text-base_regular color-Grey_40">€</span>
+                                        <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                            -</p>
+                                    </div>
+                                </div>
+
+                                <div class="price-list">
+                                    <div class="price-list-details">
+                                        <button class="accordion-icon">
+                                            <img src="./assets/img/icons/triangle-right.svg">
+                                        </button>
+                                        <div class="price-details">
+                                            <div class="icon">
+                                            </div>
+                                            <div class="display-flex align-center gap-8px">
+                                                <h6 class="color-Grey_90 text-sm_medium">Germany</h6>
+                                                <p class="text-sm_regular color-Grey_50">Euro</p>
+                                                <div class="price-value">
+                                                    <img src="./assets/img/icons/taxes.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="current-price">
+                                        <span class="text-base_regular color-Grey_40">€</span>
+                                        <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                            95.00</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="price-list">
+                            <div class="price-list-details">
+                                <button class="accordion-icon">
+                                    <img src="./assets/img/icons/triangle-right.svg">
+                                </button>
+                                <div class="price-details">
+                                    <div class="icon">
+                                        <img src="./assets/img/icons/coins.svg">
+                                    </div>
+                                    <div class="display-flex align-center gap-8px">
+                                        <h6 class="color-Grey_90 text-sm_medium">JPY</h6>
+                                        <p class="text-sm_regular color-Grey_50">Japanese yen</p>
+                                        <div class="price-value">
+                                            <img src="./assets/img/icons/taxes.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="current-price">
+                                <span class="text-base_regular color-Grey_40">¥</span>
+                                <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                    1324</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="accordion-items  border-b border-solid border-Grey_20 padding-x_32px">
+
+                    <div class="accordion-header">
+
+                        <div>
+                            <h4 class="accordion-title">Conditions</h4>
+                        </div>
+
+                        <div class="accordion-icons">
+                            <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                            <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-body pt-0 padding-bottom_32px">
+
+                        <div class="space-y-16px margin-bottom_32px">
+
+                            <div class="display-flex align-center justify-between w-100">
+
+                                <div class="display-flex align-center gap-16px">
+
+                                    <div class="icon-border icon-border_40px border-Grey_20">
+                                        <div class="icon-bg icon-bg_32px  bg-Grey_10">
+                                            €
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6 class="text-base_medium color-Grey_90">Euro</h6>
+                                        <div class="display-flex gap-8px">
+                                            <p class="text-small_regular color-Grey_50">Min. subtotal: €50 EUR
+                                            </p>
+                                            <p class="text-small_regular color-Grey_50">Max. subtotal: No limit
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div>
+
+                                    <button class="icon-btn icon-btn_32px custom-dropdown"
+                                        onclick="OpenDropDown('index1201')">
+                                        <img src="./assets/img/icons/dots-icon.svg">
+
+                                        <ul class="custom-dropdown-list leftside icon-dropdown" id="index1201">
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link"
+                                                    onclick="OpenDrawer('edit_conditionDra')">
+                                                    <img src="./assets/img/icons/edit.svg">
+                                                    <p class="dropdown-link-title">Edit condition</p>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">
+                                                    <img src="./assets/img/icons/trash.svg">
+                                                    <p class="dropdown-link-title required">Delete location
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </button>
+
+
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="display-flex align-center justify-between w-100">
+
+                                <div class="display-flex align-center gap-16px">
+
+                                    <div class="icon-border icon-border_40px border-Grey_20">
+                                        <div class="icon-bg icon-bg_32px  bg-Grey_10">
+                                            $
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6 class="text-base_medium color-Grey_90">United States Dollar</h6>
+                                        <div class="display-flex gap-8px">
+                                            <p class="text-small_regular color-Grey_50">Min. subtotal: $50 USD
+                                            </p>
+                                            <p class="text-small_regular color-Grey_50">Max. subtotal: No limit
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div>
+
+                                    <button class="icon-btn icon-btn_32px custom-dropdown"
+                                        onclick="OpenDropDown('index1211')">
+                                        <img src="./assets/img/icons/dots-icon.svg">
+
+                                        <ul class="custom-dropdown-list leftside icon-dropdown" id="index1211">
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link"
+                                                    onclick="OpenDrawer('edit_conditionDra')">
+                                                    <img src="./assets/img/icons/edit.svg">
+                                                    <p class="dropdown-link-title">Edit condition</p>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">
+                                                    <img src="./assets/img/icons/trash.svg">
+                                                    <p class="dropdown-link-title required">Delete location
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </button>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <button class="btn-regular btn-w-full " onclick="OpenDrawer('Edit_shipping_option2')">Add
+                            condition</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_shipping_option2')">Cancel</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="drawer rightside" id="edit_conditionDra">
+
+        <div class="drawer-header">
+            <div class="icon-btn icon-btn_32px border border-Grey_20 border-solid"
+                onclick="CloseDrawer('edit_conditionDra'); OpenDrawer('Edit_shipping_option')">
+                <img src="./assets/img/icons/arrow-uturn-left.svg">
+            </div>
+            <h4 class="drawer-title">Edit condition</h4>
+
+            <button class="close-icon" onclick="CloseDrawer('edit_conditionDra'); OpenDrawer('Edit_shipping_option')">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+        </div>
+
+
+        <div class="drawer-body">
+
+            <div class="space-y-8px">
+                <div class="display-flex align-center gap-8px">
+                    <p class="text-sm_semibold color-Grey_50">Min. Subtotal</p>
+                    <div
+                        class="w_24px h_24px display-flex align-center justify-center rounded-regualr border border-solid border-Grey_20">
+                        <img src="./assets/img/icons/taxes.svg" class="w_16px h_16px">
+                    </div>
+                </div>
+                <div
+                    class="w-100 display-flex align-stretch border border-solid border-Grey_20 rounded-regualr overflow-hidden add-condition-input-group">
+                    <div class="custom-select custom-dropdown rounded-none border-none"
+                        onclick="OpenDropDown('country_Subtota')">
+                        <p>EUR</p>
+                        <ul class="custom-dropdown-list" id="country_Subtota">
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link selected-dropdown-option">
+                                    <p class="dropdown-link-title">EUR</p>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">
+                                    <p class="dropdown-link-title">DOLLAR</p>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link ">
+                                    <p class="dropdown-link-title">RUPESS</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="display-flex align-start input-1 rounded-none px-0 py-0 border-none w-100">
+                        <input type="text" class="w-100  input-1 rounded-none border-none" value="0.00">
+                        <p
+                            class="w_32px display-flex align-center justify-center h-100 color-Grey_40 text-base_regulars">
+                            €</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-8px">
+                <div class="display-flex align-center gap-8px">
+                    <p class="text-sm_semibold color-Grey_50">Max. Subtotal</p>
+                    <div
+                        class="w_24px h_24px display-flex align-center justify-center rounded-regualr border border-solid border-Grey_20">
+                        <img src="./assets/img/icons/taxes.svg" class="w_16px h_16px">
+                    </div>
+                </div>
+                <div
+                    class="w-100 display-flex align-center border border-solid border-Grey_20 rounded-regualr overflow-hidden add-condition-input-group">
+                    <p class="text-base_regular color-Grey_40 padding-x_12px">EUR</p>
+                    <div class="display-flex align-center input-1 rounded-none px-0 py-0 border-none w-100">
+                        <input type="text" class="w-100  input-1 rounded-none border-none" placeholder="No limit">
+                        <p
+                            class="w_32px display-flex align-center justify-center h-100 color-Grey_40 text-base_regulars">
+                            €</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn"
+                    onclick="CloseDrawer('edit_conditionDra'); OpenDrawer('Edit_shipping_option')">Cancel</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="drawer rightside" id="edit_affected_Area">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Current affected areas</h4>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+            <div class="w-100 display-flex align-center gap-8px margin-top_24px">
+
+                <div class="search-wrraper w-100">
+                    <button class="icon">
+                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                    </button>
+                    <input type="text" placeholder="Find something" class="enter_val  w-100">
+                    <button class="icon val_clear" style="cursor: pointer;">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                    </button>
+                </div>
+
+                <button class="btn-regular" onclick="OpenDrawer('add_affected_Area')">Addareas</button>
+
+            </div>
+
+            <div class="w-100 display-flex align-center gap-8px margin-top_24px">
+
+                <div class="search-wrraper w-100">
+                    <button class="icon">
+                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                    </button>
+                    <input type="text" placeholder="Find something" class="enter_val  w-100">
+                    <button class="icon val_clear" style="cursor: pointer;">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                    </button>
+                </div>
+
+                <p class="text-sm_medium color-Grey_50 padding-x_12px">178selected</p>
+                <button class="btn-regular">Deselect</button>
+                <button class="btn-regular required">Remove</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-body p-0">
+
+
+            <ul class="areas-list">
+
+                <div class="continents-list">
+
+                    <li class="active-list">
+                        <div class="arrow-icon">
+                            <img src="./assets/img/icons/triangle-right.svg">
+                        </div>
+                        <input type="checkbox" id="index202" class="custom-checkbox" checked>
+                        <p class="title">Asia</p>
+                        <label for="index202"></label>
+                    </li>
+
+
+                    <ul class="country-list">
+
+                        <li class="disabled-list">
+                            <div class="arrow-icon">
+                                <img src="./assets/img/icons/triangle-right.svg">
+                            </div>
+                            <input type="checkbox" id="index203" class="custom-checkbox">
+                            <img src="./assets/img/cn 1.png" class="country-flags">
+                            <p class="title">Afghanistan</p>
+                            <label for="index203"></label>
+
+
+
+                        </li>
+
+
+                        <div class="continents-list provinces-country">
+
+                            <li>
+                                <div class="arrow-icon">
+                                    <img src="./assets/img/icons/triangle-right.svg">
+                                </div>
+                                <input type="checkbox" id="index204" class="custom-checkbox">
+                                <img src="./assets/img/Frame 2.png" class="country-flags">
+                                <p class="title">China</p>
+                                <label for="index204"></label>
+                                <p class="text-base_regular color-Grey_50 provinces-count "> 31 of 31 provinces </p>
+                            </li>
+
+
+                            <ul class="country-inner-region">
+
+                                <li class="">
+                                    <div class="arrow-icon">
+                                        <img src="./assets/img/icons/triangle-right.svg">
+                                    </div>
+                                    <input type="checkbox" id="index205" class="custom-checkbox">
+                                    <p class="title">Afghanistan</p>
+                                    <label for="index205"></label>
+                                </li>
+
+                                <li class="disabled-list">
+                                    <div class="arrow-icon">
+                                        <img src="./assets/img/icons/triangle-right.svg">
+                                    </div>
+                                    <input type="checkbox" id="index206" class="custom-checkbox">
+                                    <p class="title">Beijing</p>
+                                    <label for="index206"></label>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </ul>
+                </div>
+
+
+
+            </ul>
+
+
+
+        </div>
+
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('affected_Area')">Cancel</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="drawer rightside" id="add_affected_Area">
+
+        <div class="drawer-header">
+            <div class="display-flex align-center gap-16px">
+                <div class="icon-btn icon-btn_32px border-Grey_20 border border-solid"
+                    onclick="CloseDrawer('add_affected_Area');  OpenDrawer('edit_affected_Area')">
+                    <img src="./assets/img/icons/arrow-uturn-left.svg">
+                </div>
+                <h4 class="drawer-title">Add affected areas</h4>
+            </div>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+            <div class="w-100 display-flex align-center gap-8px margin-top_24px">
+
+                <div class="search-wrraper w-100">
+                    <button class="icon">
+                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                    </button>
+                    <input type="text" placeholder="Find something" class="enter_val  w-100">
+                    <button class="icon val_clear" style="cursor: pointer;">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-body p-0">
+
+            <ul class="areas-list">
+
+                <li class="">
+                    <div class="arrow-icon">
+                        <img src="./assets/img/icons/triangle-right.svg">
+                    </div>
+                    <input type="checkbox" id="index100" class="custom-checkbox" checked>
+                    <p class="title">Rest of the world</p>
+                    <label for="index100"></label>
+                </li>
+
+
+                <div class="continents-list">
+
+                    <li class="active-list">
+                        <div class="arrow-icon">
+                            <img src="./assets/img/icons/triangle-right.svg">
+                        </div>
+                        <input type="checkbox" id="index200" class="custom-checkbox">
+                        <p class="title">Asia</p>
+                        <label for="index200"></label>
+                    </li>
+
+
+                    <ul class="country-list">
+
+                        <li class="disabled-list">
+                            <div class="arrow-icon">
+                                <img src="./assets/img/icons/triangle-right.svg">
+                            </div>
+                            <input type="checkbox" id="afghanistan" class="custom-checkbox">
+                            <img src="./assets/img/cn 1.png" class="country-flags">
+                            <p class="title">Afghanistan</p>
+                            <label for="afghanistan"></label>
+
+
+
+                        </li>
+
+
+                        <div class="continents-list provinces-country">
+
+                            <li>
+                                <div class="arrow-icon">
+                                    <img src="./assets/img/icons/triangle-right.svg">
+                                </div>
+                                <input type="checkbox" id="azerbaijan" class="custom-checkbox">
+                                <img src="./assets/img/Frame 2.png" class="country-flags">
+                                <p class="title">China</p>
+                                <label for="azerbaijan"></label>
+                                <p class="text-base_regular color-Grey_50 provinces-count "> 31 of 31 provinces </p>
+                            </li>
+
+
+                            <ul class="country-inner-region">
+
+                                <li class="">
+                                    <div class="arrow-icon">
+                                        <img src="./assets/img/icons/triangle-right.svg">
+                                    </div>
+                                    <input type="checkbox" id="a" class="custom-checkbox">
+                                    <p class="title">Afghanistan</p>
+                                    <label for="a"></label>
+                                </li>
+
+                                <li class="disabled-list">
+                                    <div class="arrow-icon">
+                                        <img src="./assets/img/icons/triangle-right.svg">
+                                    </div>
+                                    <input type="checkbox" id="B" class="custom-checkbox">
+                                    <p class="title">Beijing</p>
+                                    <label for="B"></label>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </ul>
+                </div>
+
+
+
+            </ul>
+
+
+
+        </div>
+
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('add_affected_Area')">Cancel</button>
+                <button class="btn bg-purple color-white"
+                    onclick="OpenDrawer('edit_affected_Area'); CloseDrawer('add_affected_Area')">Save and go
+                    back</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="drawer rightside" id="Edit_current_services">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Edit current services</h4>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+            <div class="w-100 display-flex align-center gap-8px margin-top_24px">
+
+                <div class="search-wrraper w-100">
+                    <button class="icon">
+                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                    </button>
+                    <input type="text" placeholder="Find something" class="enter_val  w-100">
+                    <button class="icon val_clear" style="cursor: pointer;">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                    </button>
+                </div>
+
+                <button class="btn-regular" onclick="OpenDrawer('Add_current_services')">Addservices</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-body p-0">
+
+            <ul class="areas-list">
+
+                <li>
+                    <input type="checkbox" id="index101" class="custom-checkbox">
+                    <p class=" color-Grey_50">Title</p>
+                    <label for="index101"></label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="index101" class="custom-checkbox">
+                    <p class="title">Webshipper Next Day Air</p>
+                    <label for="index101"></label>
+                </li>
+
+            </ul>
+
+
+
+
+        </div>
+
+
+        <div class="drawer-footer p-0">
+            <div class="table-footer padding-y_16px padding-x_32px">
+
+                <div class="table-resuits-count">
+
+                    <p class="all-items-list-count">
+
+                        <span>1</span>
+
+                        -
+
+                        <span>13</span>
+
+                        of
+
+                        <span>200</span>
+
+                        results
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="table-pagination">
+
+                    <p class="total-pages-count">
+                        <span> 1 </span>
+                        of
+                        <span>16</span>
+                        pages
+                    </p>
+
+
+                    <div class="pagination-btn-group">
+                        <button class="pagination-btn pagination-btn-disabled">Prev</button>
+                        <button class="pagination-btn pagination-btn-disabled">Next</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="button-group padding-y_16px padding-x_32px border-t border-solid border-Grey_20">
+                <button class="btn" onclick="CloseDrawer('Edit_current_services')">Cancel</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="drawer rightside" id="Add_current_services">
+
+        <div class="drawer-header">
+            <div class="display-flex align-center gap-16px">
+                <div class="icon-btn icon-btn_32px border border-solid border-Grey_20"
+                    onclick="CloseDrawer('Add_current_services'); OpenDrawer('Edit_current_services')">
+                    <img src="./assets/img/icons/arrow-uturn-left.svg">
+                </div>
+                <h4 class="drawer-title">Add services</h4>
+            </div>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+
+            <div class="w-100 display-flex align-center gap-8px margin-top_24px">
+
+                <div class="search-wrraper w-100">
+                    <button class="icon">
+                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                    </button>
+                    <input type="text" placeholder="Find something" class="enter_val  w-100">
+                    <button class="icon val_clear" style="cursor: pointer;">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                    </button>
+                </div>
+
+                <p class="text-sm_medium color-Grey_50 padding-x_12px">1selected</p>
+                <button class="btn-regular">Deselect</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-body p-0">
+
+
+
+            <ul class="areas-list">
+
+
+                <ul class="areas-list">
+
+                    <li>
+                        <input type="checkbox" id="index1010" class="custom-checkbox">
+                        <p class=" color-Grey_50">Title</p>
+                        <label for="index1010"></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="index1011" class="custom-checkbox">
+                        <p class="title">Websindex1011hipper 2nd Day Air A.M. (Commercial addresses only)</p>
+                        <label for="index101"></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="index1012" class="custom-checkbox">
+                        <p class="title">Webshipper 2nd Day Air</p>
+                        <label for="index1012"></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="index1013" class="custom-checkbox">
+                        <p class="title">Webshipper 3 Day Select</p>
+                        <label for="index1013"></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="index1014" class="custom-checkbox" checked>
+                        <p class="title">Webshipper Next Day Air Saver</p>
+                        <label for="index1014"></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="index1015" class="custom-checkbox">
+                        <p class="title">Webshipper Next Day Air</p>
+                        <label for="index1015"></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="index1016" class="custom-checkbox">
+                        <p class="title">Webshipper Next Day Air Early</p>
+                        <label for="index1016"></label>
+                    </li>
+
+                </ul>
+
+
+            </ul>
+
+
+
+
+        </div>
+
+
+        <div class="drawer-footer p-0">
+            <div class="table-footer padding-y_16px padding-x_32px">
+
+                <div class="table-resuits-count">
+
+                    <p class="all-items-list-count">
+
+                        <span>1</span>
+
+                        -
+
+                        <span>13</span>
+
+                        of
+
+                        <span>200</span>
+
+                        results
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="table-pagination">
+
+                    <p class="total-pages-count">
+                        <span> 1 </span>
+                        of
+                        <span>16</span>
+                        pages
+                    </p>
+
+
+                    <div class="pagination-btn-group">
+                        <button class="pagination-btn pagination-btn-disabled">Prev</button>
+                        <button class="pagination-btn pagination-btn-disabled">Next</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="button-group padding-y_16px padding-x_32px border-t border-solid border-Grey_20">
+                <button class="btn"
+                    onclick="CloseDrawer('Edit_current_services'); OpenDrawer('Add_current_services')">Cancel</button>
+                <button class="btn bg-purple color-white">Save and go back</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
 
     <div id="overlay"></div>
 
