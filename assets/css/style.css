@@ -2129,3 +2129,56 @@
     max-width: 210px;
     margin-left: 16px;
 }
+
+
+.areas-list-checkbox {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.use-for-add-item .main-areas-list-item .areas-list-checkbox input {
+    display: block;
+}
+
+
+
+.use-for-add-item .areas-list-checkbox.areas-list-checkbox-show input {
+    display: block;
+}
+
+.use-for-add-item .areas-list-checkbox input {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.multi_img-sec {
+    display: flex;
+    align-items: stretch;
+    padding-left: 24px;
+}
+
+.multi_img-sec img {
+    margin-left: -24px;
+    border: 2px solid var(--Grey);
+    overflow: hidden;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    object-fit: cover;
+    width: 30px;
+    height: 40px;
+}

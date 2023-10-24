@@ -159,11 +159,26 @@ $(document).ready(function () {
 
     $('.areas-list li .custom-checkbox').change(function () {
         if ($(this).is(':checked')) {
+            $(this).parent().addClass("areas-list-checkbox-show")
             $(this).closest('li').addClass('active-list');
         } else {
+            $(this).parent().removeClass("areas-list-checkbox-show")
             $(this).closest('li').removeClass('active-list');
         }
     });
+
+    $('.areas-list .main-areas-list-item .custom-checkbox').change(function () {
+        if ($(this).is(':checked')) {
+            $(this).parent().parent().siblings().children('.areas-list-checkbox').addClass('areas-list-checkbox-show');
+            $(this).parent().parent().siblings().addClass('active-list');
+            $(this).parent().parent().siblings().children('.areas-list-checkbox').children('.custom-checkbox').prop('checked', true);
+        } else {
+            $(this).parent().parent().siblings().children('.areas-list-checkbox').removeClass('areas-list-checkbox-show');
+            $(this).parent().parent().siblings().removeClass('active-list');
+            $(this).parent().parent().siblings().children('.areas-list-checkbox').children('.custom-checkbox').prop('checked', false);
+        }
+    });
+
 
 
     $('.continents-list li .arrow-icon').click(function () {

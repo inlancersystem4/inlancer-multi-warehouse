@@ -173,7 +173,9 @@ input[type=number] {
 
 
 
-
+.bg-emerald {
+    background-color: #10B981 !important;
+}
 
 .bg-purple {
     background-color: #7C3AED !important;
@@ -1558,3 +1560,19 @@ textarea {
 }
 
 /* Close  opticy  */
+
+
+
+
+
+/* flex wrap  */
+
+.display-flex-wrap {
+    flex-wrap: wrap;
+}
+
+.display-flex-no-wrap {
+    flex-wrap: nowrap;
+}
+
+/* Close flex wrap  */
