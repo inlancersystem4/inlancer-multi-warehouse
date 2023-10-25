@@ -447,14 +447,16 @@
                                                     <ul class="custom-dropdown-list leftside icon-dropdown"
                                                         id="Product_page_option">
                                                         <li class="dropdown-item">
-                                                            <a href="#" class="dropdown-link">
+                                                            <a href="#" class="dropdown-link"
+                                                                onclick="OpenDrawer('Edit_product_details')">
                                                                 <img src="./assets/img/icons/edit.svg">
                                                                 <p class="dropdown-link-title"> Edit general info
                                                                 </p>
                                                             </a>
                                                         </li>
                                                         <li class="dropdown-item">
-                                                            <a href="#" class="dropdown-link">
+                                                            <a href="#" class="dropdown-link"
+                                                                onclick="OpenModel('deleteProduct')">
                                                                 <img src="./assets/img/icons/trash.svg">
                                                                 <p class="dropdown-link-title required"> Delete product
                                                                 </p>
@@ -568,7 +570,9 @@
 
                                             </div>
 
-                                            <button class="btn-regular">Change availability</button>
+                                            <button class="btn-regular"
+                                                onclick="OpenDrawer('Current_sales_channels')">Change
+                                                availability</button>
 
                                         </li>
 
@@ -854,9 +858,21 @@
 
                                     <h4 class="color-Grey_90 text-xl_semibold">Attributes</h4>
 
-                                    <button class="icon-btn icon-btn_32px">
+                                    <button class="icon-btn icon-btn_32px custom-dropdown"
+                                        onclick="OpenDropDown('Edit_Attributes')">
 
                                         <img src="./assets/img/icons/dots-icon.svg">
+
+
+                                        <ul class="custom-dropdown-list  icon-dropdown" id="Edit_Attributes">
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">
+                                                    <img src="./assets/img/icons/edit.svg">
+                                                    <p class="dropdown-link-title"> Edit attributes
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </ul>
 
                                     </button>
 
@@ -965,7 +981,8 @@
 
                                     <div class="display-flex align-center gap-8px">
 
-                                        <button class="btn-regular">Thumbnail</button>
+                                        <button class="btn-regular"
+                                            onclick="OpenDrawer('Edit_thumbnail')">Thumbnail</button>
 
                                         <button class="icon-btn icon-btn_32px border border-solid border-Grey_20">
 
@@ -1002,7 +1019,8 @@
 
                                     <div class="display-flex align-center gap-8px">
 
-                                        <button class="btn-regular">Edit media</button>
+                                        <button class="btn-regular" onclick="OpenDrawer('Edit_media')">Edit
+                                            media</button>
 
                                     </div>
 
@@ -1083,8 +1101,809 @@
     </main>
 
 
+    <div class="model center-align_model" id="deleteProduct">
+        <div class="delete-model">
+            <div class="w-100">
+                <h4 class="color-Grey_90 text-large_semibold">Delete product</h4>
+                <p class="text-base_regular color-Grey_50">Are you sure you want to delete this product?</p>
+            </div>
+            <div class="display-flex gap-8px">
+                <button class="btn-regular" onclick="CloseModel('deleteProduct')">No, cancel</button>
+                <button class="btn-regular btn-danger">Yes, delete zone</button>
+            </div>
+        </div>
+    </div>
 
 
+
+    <div class="drawer rightside" id="Edit_product_details">
+
+        <div class="drawer-header">
+            <div class="display-flex align-center gap-16px">
+                <h4 class="drawer-title">Edit general information</h4>
+            </div>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+        </div>
+
+
+        <div class="drawer-body">
+
+
+            <div class="space-y-16px">
+
+                <h6 class="color-Grey_90 text-base_semibold margin-bottom_16px">Details</h6>
+
+
+                <div class="w-100 space-y-24px">
+
+                    <div>
+                        <div class="space-y-24px">
+
+                            <div class="input-group">
+
+                                <label for="Title">Title <span class="required">*</span></label>
+
+                                <input type="text" class="input-1" id="Title" placeholder="Classic Bathrobe"
+                                    value="Classic Bathrobe">
+
+                            </div>
+
+
+                            <div class="input-group">
+
+                                <label for="Subtitle">Subtitle</label>
+
+                                <input type="text" class="input-1" id="Subtitle" placeholder="Warm and cozy"
+                                    value="Warm and cozy">
+
+                            </div>
+
+                        </div>
+                        <div class="margin-top_12px">
+                            <p class="text-base_regular color-Grey_50">Give your product a short and
+                                clear title. </p>
+                            <p class="text-base_regular color-Grey_50">50-60 characters is the
+                                recommended length for search engines. </p>
+                        </div>
+                    </div>
+
+                    <div class="">
+
+                        <div class="input-group">
+
+                            <label for="Title" class="display-flex align-center gap-4px">Handle <img
+                                    src="./assets/img/icons/info.svg"></label>
+
+                            <div class="search-wrraper w-100 border border-solid border-Grey_20">
+                                <button class="icon">
+                                    <p class="color-Grey_40">/</p>
+                                </button>
+                                <input type="text" id="Handle" placeholder="bathrobe-classic" value="bathrobe-classic"
+                                    class="w-100">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <div class="input-group">
+
+                            <label for="Description">Description <span class="required">*</span></label>
+
+                            <textarea id="Description" class="input-1" rows="4"
+                                placeholder="Classic Bathrobe">Classic Bathrobe</textarea>
+                            <div class="margin-top_12px">
+                                <p class="text-base_regular color-Grey_50">Give your product a short
+                                    and clear description. </p>
+                                <p class="text-base_regular color-Grey_50">120-160 characters is the
+                                    recommended length for search engines. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="display-flex align-start justify-between w-100 gap-12px">
+
+                        <div>
+                            <h6 class="color-Grey_90 text-base_semibold">Discountable</h6>
+                            <p class="text-base_regular color-Grey_50 margin-top_4px">When unchecked
+                                discounts will
+                                not be applied to this product.</p>
+                        </div>
+
+                        <div class="custom-toogle-btn">
+                            <input type="checkbox" class="form-toogle-btn" checked>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h6 class="color-Grey_90 text-base_semibold margin-bottom_16px">Organize Product</h6>
+
+                <div class="space-y-24px">
+
+
+                    <div class="input-group">
+
+                        <label for="Type">Type</label>
+
+                        <div class="custom-select custom-dropdown" onclick="OpenDropDown('TypeDrop')"
+                            style="width: 100%;">
+                            <p>Bathrobe</p>
+                            <ul class="custom-dropdown-list" id="TypeDrop">
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link selected-dropdown-option">
+                                        <p class="dropdown-link-title">Bathrobe</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">
+                                        <p class="dropdown-link-title">one</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link ">
+                                        <p class="dropdown-link-title">two</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">
+                                        <p class="dropdown-link-title">three</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="Collection">Collection</label>
+
+                        <div class="custom-select custom-dropdown" onclick="OpenDropDown('Collection')"
+                            style="width: 100%;">
+                            <p>Summer 2022</p>
+                            <ul class="custom-dropdown-list" id="Collection">
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link selected-dropdown-option">
+                                        <p class="dropdown-link-title">Summer 2022</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">
+                                        <p class="dropdown-link-title">Summer 2023</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link ">
+                                        <p class="dropdown-link-title">two</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">
+                                        <p class="dropdown-link-title">three</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="margin-top_24px">
+
+                    <div class="input-group">
+                        <label>Tags (Seperated by comma)</label>
+                        <div
+                            class="padding-8px border border-solid border-Grey_20  rounded-regualr bg-Grey_5 w-100 display-flex align-center gap-4px">
+                            <span
+                                class="rounded-regualr bg-Grey_20 display-flex align-center gap-8px padding-y_2px padding-left_12px padding-right_8px color-Grey_60 text-sm_medium">Organic
+                                <button class="icon-btn icon-btn_24px">
+                                    <img src="./assets/img/icons/close-icon2.svg">
+                                </button>
+                            </span>
+                            <span
+                                class="rounded-regualr bg-Grey_20 display-flex align-center gap-8px padding-y_2px padding-left_12px padding-right_8px color-Grey_60 text-sm_medium">Oversized
+                                fit
+                                <button class="icon-btn icon-btn_24px">
+                                    <img src="./assets/img/icons/close-icon2.svg">
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="display-flex align-start justify-between w-100 gap-12px margin-top_32px">
+
+                    <div>
+                        <h6 class="color-Grey_90 text-base_semibold">Sales channels</h6>
+                        <p class="text-base_regular color-Grey_50 margin-top_4px">This product will only
+                            be available in the default sales channel if left untouched.</p>
+                    </div>
+
+                    <div class="custom-toogle-btn">
+                        <input type="checkbox" class="form-toogle-btn" checked="">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="drawer-footer">
+
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_product_details')">Cancel</button>
+                <button class="btn bg-purple color-white" disabled>Save and close</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="drawer rightside" id="Current_sales_channels">
+
+        <div class="drawer-header">
+            <div class="display-flex align-center gap-16px">
+                <h4 class="drawer-title">Current connected locations</h4>
+            </div>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+            <div class="w-100 display-flex align-center gap-8px margin-top_24px">
+
+                <div class="search-wrraper w-100">
+                    <button class="icon">
+                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                    </button>
+                    <input type="text" placeholder="Find something" class="enter_val  w-100">
+                    <button class="icon val_clear" style="cursor: pointer;">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                    </button>
+                </div>
+
+                <button class="btn-regular" onclick="OpenDrawer('Add_sales_channels')">Addchannels</button>
+
+            </div>
+
+            <div class="w-100 display-flex align-center gap-8px margin-top_24px">
+                <div class="search-wrraper w-100">
+                    <button class="icon">
+                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                    </button>
+                    <input type="text" placeholder="Find something" class="enter_val  w-100">
+                    <button class="icon val_clear" style="cursor: pointer;">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                    </button>
+                </div>
+
+                <p class="text-sm_medium color-Grey_50 padding-x_12px">3selected</p>
+                <button class="btn-regular">Deselect</button>
+                <button class="btn-regular required">Remove</button>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="drawer-body p-0">
+
+
+
+            <ul class="areas-list">
+
+
+                <ul class="areas-list use-for-add-item">
+
+
+                    <li class="main-areas-list-item">
+                        <div class="areas-list-checkbox ">
+                            <input type="checkbox" id="Current_sales_channels_index0" class="custom-checkbox">
+                        </div>
+                        <div class="w-100 display-flex align-center justify-between gap-16px">
+                            <p class="text-sm_medium line-clamp-1 w-100 color-Grey_50">Title</p>
+                            <p class="text-sm_medium line-clamp-1 w-100 color-Grey_50">Location</p>
+                        </div>
+                        <label for="Current_sales_channels_index0"></label>
+                    </li>
+
+
+                    <li>
+                        <div class="areas-list-checkbox">
+                            <input type="checkbox" id="Current_sales_channels_index1" class="custom-checkbox">
+                        </div>
+                        <div class="w-100 display-flex align-center justify-between gap-16px">
+                            <p class="title line-clamp-1 w-100">Retail store #1</p>
+                            <p class="title line-clamp-1 w-100">Vognmagergade 7, 1120 Copenhagen, De...</p>
+                        </div>
+                        <label for="Current_sales_channels_index1"></label>
+                    </li>
+
+
+                    <li>
+                        <div class="areas-list-checkbox">
+                            <input type="checkbox" id="Current_sales_channels_index2" class="custom-checkbox">
+                        </div>
+                        <div class="w-100 display-flex align-center justify-between gap-16px">
+                            <p class="title line-clamp-1 w-100">Retail store #2</p>
+                            <p class="title line-clamp-1 w-100">Kongens Nytorv 13, 1095 Copenhagen, D...</p>
+                        </div>
+                        <label for="Current_sales_channels_index2"></label>
+                    </li>
+
+
+
+                    <li>
+                        <div class="areas-list-checkbox">
+                            <input type="checkbox" id="Current_sales_channels_index3" class="custom-checkbox">
+                        </div>
+                        <div class="w-100 display-flex align-center justify-between gap-16px">
+                            <p class="title line-clamp-1 w-100">Nordhavn warehouse</p>
+                            <p class="title line-clamp-1 w-100">Kattegatvej 4, 2150 Copenhagen, Denma...</p>
+                        </div>
+                        <label for="Current_sales_channels_index3"></label>
+                    </li>
+
+                    <li>
+                        <div class="areas-list-checkbox">
+                            <input type="checkbox" id="Current_sales_channels_index4" class="custom-checkbox">
+                        </div>
+                        <div class="w-100 display-flex align-center justify-between gap-16px">
+                            <p class="title line-clamp-1 w-100">Frederiksberg warehouse</p>
+                            <p class="title line-clamp-1 w-100">Frederiksberg, Denmark, Den...</p>
+                        </div>
+                        <label for="Current_sales_channels_index4"></label>
+                    </li>
+
+                </ul>
+
+
+            </ul>
+
+
+
+
+        </div>
+
+
+        <div class="drawer-footer p-0">
+            <div class="table-footer py-0 padding-y_16px padding-x_32px ">
+
+                <div class="table-resuits-count">
+
+                    <p class="all-items-list-count">
+
+                        <span>1</span>
+
+                        -
+
+                        <span>13</span>
+
+                        of
+
+                        <span>200</span>
+
+                        results
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="table-pagination">
+
+                    <p class="total-pages-count">
+                        <span> 1 </span>
+                        of
+                        <span>16</span>
+                        pages
+                    </p>
+
+
+                    <div class="pagination-btn-group">
+                        <button class="pagination-btn pagination-btn-disabled">Prev</button>
+                        <button class="pagination-btn pagination-btn-disabled">Next</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="button-group padding-y_16px padding-x_32px border-t border-solid border-Grey_20">
+                <button class="btn" onclick="CloseDrawer('Current_sales_channels')">Cancel</button>
+                <button class="btn bg-purple color-white" disabled>Add and save</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="drawer rightside" id="Add_sales_channels">
+
+        <div class="drawer-header">
+            <div class="display-flex align-center gap-16px">
+                <button onclick="CloseDrawer('Add_sales_channels'); OpenDrawer('Current_sales_channels')"
+                    class="icon-btn icon-btn_32px border border-solid border-Grey_10">
+                    <img src="./assets/img/icons/arrow-uturn-left.svg">
+                </button>
+                <h4 class="drawer-title">Current connected locations</h4>
+            </div>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+            <div class="w-100 display-flex align-center gap-8px margin-top_24px">
+
+                <div class="search-wrraper w-100">
+                    <button class="icon">
+                        <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                    </button>
+                    <input type="text" placeholder="Find something" class="enter_val  w-100">
+                    <button class="icon val_clear" style="cursor: pointer;">
+                        <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                    </button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-body p-0">
+
+
+
+            <ul class="areas-list">
+
+
+                <ul class="areas-list use-for-add-item">
+
+
+                    <li class="main-areas-list-item">
+                        <div class="areas-list-checkbox ">
+                            <input type="checkbox" id="Add_sales_channels_index0" class="custom-checkbox">
+                        </div>
+                        <div class="w-100 display-flex align-center justify-between gap-16px">
+                            <p class="text-sm_medium line-clamp-1 w-100 color-Grey_50">Title</p>
+                            <p class="text-sm_medium line-clamp-1 w-100 color-Grey_50">Location</p>
+                        </div>
+                        <label for="Add_sales_channels_index0"></label>
+                    </li>
+
+
+                    <li>
+                        <div class="areas-list-checkbox">
+                            <input type="checkbox" id="Add_sales_channels_index1" class="custom-checkbox">
+                        </div>
+                        <div class="w-100 display-flex align-center justify-between gap-16px">
+                            <p class="title line-clamp-1 w-100">Retail store #1</p>
+                            <p class="title line-clamp-1 w-100">Vognmagergade 7, 1120 Copenhagen, De...</p>
+                        </div>
+                        <label for="Add_sales_channels_index1"></label>
+                    </li>
+
+
+                    <li>
+                        <div class="areas-list-checkbox">
+                            <input type="checkbox" id="Add_sales_channels_index2" class="custom-checkbox">
+                        </div>
+                        <div class="w-100 display-flex align-center justify-between gap-16px">
+                            <p class="title line-clamp-1 w-100">Retail store #2</p>
+                            <p class="title line-clamp-1 w-100">Kongens Nytorv 13, 1095 Copenhagen, D...</p>
+                        </div>
+                        <label for="Add_sales_channels_index2"></label>
+                    </li>
+
+
+
+                    <li>
+                        <div class="areas-list-checkbox">
+                            <input type="checkbox" id="Add_sales_channels_index3" class="custom-checkbox">
+                        </div>
+                        <div class="w-100 display-flex align-center justify-between gap-16px">
+                            <p class="title line-clamp-1 w-100">Nordhavn warehouse</p>
+                            <p class="title line-clamp-1 w-100">Kattegatvej 4, 2150 Copenhagen, Denma...</p>
+                        </div>
+                        <label for="Add_sales_channels_index3"></label>
+                    </li>
+
+                    <li>
+                        <div class="areas-list-checkbox">
+                            <input type="checkbox" id="Add_sales_channels_index4" class="custom-checkbox">
+                        </div>
+                        <div class="w-100 display-flex align-center justify-between gap-16px">
+                            <p class="title line-clamp-1 w-100">Frederiksberg warehouse</p>
+                            <p class="title line-clamp-1 w-100">Frederiksberg, Denmark, Den...</p>
+                        </div>
+                        <label for="Add_sales_channels_index4"></label>
+                    </li>
+
+                </ul>
+
+
+            </ul>
+
+
+
+
+        </div>
+
+
+        <div class="drawer-footer p-0">
+            <div class="table-footer py-0 padding-y_16px padding-x_32px">
+
+                <div class="table-resuits-count">
+
+                    <p class="all-items-list-count">
+
+                        <span>1</span>
+
+                        -
+
+                        <span>13</span>
+
+                        of
+
+                        <span>200</span>
+
+                        results
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="table-pagination">
+
+                    <p class="total-pages-count">
+                        <span> 1 </span>
+                        of
+                        <span>16</span>
+                        pages
+                    </p>
+
+
+                    <div class="pagination-btn-group">
+                        <button class="pagination-btn pagination-btn-disabled">Prev</button>
+                        <button class="pagination-btn pagination-btn-disabled">Next</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="button-group padding-y_16px padding-x_32px border-t border-solid border-Grey_20">
+                <button class="btn"
+                    onclick="CloseDrawer('Add_sales_channels'); OpenDrawer('Current_sales_channels')">Cancel</button>
+                <button class="btn bg-purple color-white" disabled>Save and go back</button>
+                <button class="btn bg-purple color-white" disabled>Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="drawer rightside" id="Edit_media">
+
+        <div class="drawer-header">
+            <div class="display-flex align-center gap-16px">
+                <h4 class="drawer-title">Edit media</h4>
+            </div>
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+        </div>
+
+        <div class="drawer-body">
+
+            <p class="text-base_regular color-Grey_50">Used to represent your product during checkout, social sharing
+                and more. You can have as many files as
+                you want. We even support GIF and video.</p>
+
+            <label for="FileDroper2" class="FileDroper margin-top_24px">
+                <input type="file">
+                <p class="color-Grey_50 text-base_regular">Drop your file here, or <span class="font-500 color_violet">
+                        click to
+                        browse </span></p>
+                <p class="color-Grey_50 text-base_regular">1200 x 1600 (3:4) recommended</p>
+            </label>
+
+            <div class="margin-top_32px">
+
+                <ul class="margin-top_24px space-y-24px">
+                    <li class="display-flex align-center justify-between w-100 gap-12px">
+
+                        <div class="display-flex align-center gap-24px">
+
+                            <div class="icon-btn icon-btn_32px">
+                                <img src="./assets/img/icons/grip-icon.svg">
+                            </div>
+
+                            <div class="max-w-48px">
+                                <img src="./assets/img/image-13.png" class="rounded-regualr object-contain "
+                                    height="auto" width="100%">
+                            </div>
+
+                            <div>
+                                <h6 class="text-base_regular color-Grey_90">bathrobe-white01.jpg
+                                </h6>
+                                <p class="text-base_regular color-Grey_50">163.38 KB</p>
+                            </div>
+
+                        </div>
+
+                        <div class="icon-btn icon-btn_32px">
+                            <img src="./assets/img/icons/close-icon.svg">
+                        </div>
+                    </li>
+
+                    <li class="display-flex align-center justify-between w-100 gap-12px">
+
+                        <div class="display-flex align-center gap-24px">
+
+                            <div class="icon-btn icon-btn_32px">
+                                <img src="./assets/img/icons/grip-icon.svg">
+                            </div>
+
+                            <div class="max-w-48px">
+                                <img src="https://images.unsplash.com/photo-1682685797736-dabb341dc7de?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="rounded-regualr object-contain " height="auto" width="100%">
+                            </div>
+
+
+
+
+
+                            <div>
+                                <h6 class="text-base_regular color-Grey_90">bathrobe-white01.jpg
+                                </h6>
+                                <p class="text-base_regular color-Grey_50">163.38 KB</p>
+                            </div>
+
+                        </div>
+
+                        <div class="icon-btn icon-btn_32px">
+                            <img src="./assets/img/icons/close-icon.svg">
+                        </div>
+                    </li>
+
+                    <li class="display-flex align-center justify-between w-100 gap-12px">
+
+                        <div class="display-flex align-center gap-24px">
+
+                            <div class="icon-btn icon-btn_32px">
+                                <img src="./assets/img/icons/grip-icon.svg">
+                            </div>
+
+                            <div class="max-w-48px">
+                                <img src="https://images.unsplash.com/photo-1697991839081-b10798abaf85?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="rounded-regualr object-contain " height="auto" width="100%">
+                            </div>
+
+                            <div>
+                                <h6 class="text-base_regular color-Grey_90">bathrobe-white01.jpg
+                                </h6>
+                                <p class="text-base_regular color-Grey_50">163.38 KB</p>
+                            </div>
+
+                        </div>
+
+                        <div class="icon-btn icon-btn_32px">
+                            <img src="./assets/img/icons/close-icon.svg">
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_media')">Cancel</button>
+                <button class="btn bg-purple color-white" disabled>Save and close</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="drawer rightside" id="Edit_thumbnail">
+
+        <div class="drawer-header">
+            <div class="display-flex align-center gap-16px">
+                <h4 class="drawer-title">Upload thumbnail</h4>
+            </div>
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+        </div>
+
+        <div class="drawer-body">
+
+            <p class="text-base_regular color-Grey_50">Used to represent your product during checkout, social sharing
+                and more.</p>
+
+            <label for="FileDroper2" class="FileDroper margin-top_24px">
+                <input type="file">
+                <p class="color-Grey_50 text-base_regular">Drop your file here, or <span class="font-500 color_violet">
+                        click to
+                        browse </span></p>
+                <p class="color-Grey_50 text-base_regular">1200 x 1600 (3:4) recommended</p>
+            </label>
+
+            <div class="margin-top_32px">
+
+
+                <ul class="space-y-24px">
+                    <li class="display-flex align-center justify-between w-100 gap-12px">
+
+                        <div class="display-flex align-center gap-24px">
+
+                            <div class="max-w-48px">
+                                <img src="./assets/img/image-13.png" class="rounded-regualr object-contain "
+                                    height="auto" width="100%">
+                            </div>
+
+                            <div>
+                                <h6 class="text-base_regular color-Grey_90">bathrobe-white01.jpg
+                                </h6>
+                                <p class="text-base_regular color-Grey_50">163.38 KB</p>
+                            </div>
+
+                        </div>
+
+                        <div class="icon-btn icon-btn_32px">
+                            <img src="./assets/img/icons/close-icon.svg">
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_thumbnail')">Cancel</button>
+                <button class="btn bg-purple color-white" disabled>Save and close</button>
+            </div>
+        </div>
+
+
+    </div>
 
 
 

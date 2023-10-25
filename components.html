@@ -304,6 +304,143 @@
             </div>
 
 
+            <div>
+
+
+                <h4 class="text-2xl_regular margin-bottom_14px">Delete Model</h4>
+
+                <pre>
+                    <code>
+                        &lt;div class="model center-align_model" id="deleteProduct"&gt;
+                            &lt;div class="delete-model"&gt;
+                                &lt;div class="w-100"&gt;
+                                    &lt;h4 class="color-Grey_90 text-large_semibold"&gt;Delete product&lt;/h4&gt;
+                                    &lt;p class="text-base_regular color-Grey_50"&gt;Are you sure you want to delete this product?&lt;/p&gt;
+                                &lt;/div&gt;
+                                &lt;div class="display-flex gap-8px"&gt;
+                                    &lt;button class="btn-regular" onclick="CloseModel('deleteProduct')"&gt;No, cancel&lt;/button&gt;
+                                    &lt;button class="btn-regular btn-danger"&gt;Yes, delete location&lt;/button&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+
+
+            </div>
+
+            <div>
+
+
+                <h4 class="text-2xl_regular margin-bottom_14px">Right Side Drawer</h4>
+
+                <pre>
+                    <code>
+                        &lt;div class="drawer rightside" id="Current_sales_channels"&gt;
+
+                            &lt;div class="drawer-header"&gt;
+                                &lt;div class="display-flex align-center gap-16px"&gt;
+                                    &lt;h4 class="drawer-title"&gt;Current connected locations&lt;/h4&gt;
+                                &lt;/div&gt;
+                                &lt;button class="close-icon"&gt;
+                                    &lt;img src="./assets/img/icons/close-icon.svg"&gt;
+                                &lt;/button&gt;
+
+                                &lt;div class="w-100 display-flex align-center gap-8px margin-top_24px"&gt;
+                                    &lt;div class="search-wrraper w-100"&gt;
+                                        &lt;button class="icon"&gt;
+                                            &lt;img src="./assets/img/icons/search.svg" class="img-not-selected"&gt;
+                                        &lt;/button&gt;
+                                        &lt;input type="text" placeholder="Find something" class="enter_val  w-100"&gt;
+                                        &lt;button class="icon val_clear" style="cursor: pointer;"&gt;
+                                            &lt;img src="./assets/img/icons/close-icon.svg" class="img-not-selected"&gt;
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+                                    &lt;button class="btn-regular" onclick="OpenDrawer('Add_sales_channels')"&gt;Add channels&lt;/button&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="w-100 display-flex align-center gap-8px margin-top_24px"&gt;
+                                    &lt;div class="search-wrraper w-100"&gt;
+                                        &lt;button class="icon"&gt;
+                                            &lt;img src="./assets/img/icons/search.svg" class="img-not-selected"&gt;
+                                        &lt;/button&gt;
+                                        &lt;input type="text" placeholder="Find something" class="enter_val  w-100"&gt;
+                                        &lt;button class="icon val_clear" style="cursor: pointer;"&gt;
+                                            &lt;img src="./assets/img/icons/close-icon.svg" class="img-not-selected"&gt;
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+                                    &lt;p class="text-sm_medium color-Grey_50 padding-x_12px"&gt;3 selected&lt;/p&gt;
+                                    &lt;button class="btn-regular"&gt;Deselect&lt;/button&gt;
+                                    &lt;button class="btn-regular required"&gt;Remove&lt;/button&gt;
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+                            &lt;div class="drawer-body"&gt;
+
+
+                            &lt;/div&gt;
+
+                            &lt;div class="drawer-footer p-0"&gt;
+                            &lt;div class="table-footer py-0 padding-y_16px padding-x_32px"&gt;
+
+                                &lt;div class="table-resuits-count"&gt;
+
+                                    &lt;p class="all-items-list-count"&gt;
+                
+                                        &lt;span&gt;1&lt;/span&gt;
+                
+                                        -
+                
+                                        &lt;span&gt;13&lt;/span&gt;
+                
+                                        of
+                
+                                        &lt;span&gt;200&lt;/span&gt;
+                
+                                        results
+                
+                                    &lt;/p&gt;
+                
+                                &lt;/div&gt;
+                
+                                &lt;div class="table-pagination"&gt;
+                
+                                    &lt;p class="total-pages-count"&gt;
+                                        &lt;span&gt;1&lt;/span&gt; 
+                                        of 
+                                        &lt;span&gt;16&lt;/span&gt; 
+                                        pages
+                                    &lt;/p&gt;
+
+                                    &lt;div class="pagination-btn-group"&gt;
+                                        &lt;button class="pagination-btn pagination-btn-disabled"&gt;Prev&lt;/button&gt;
+                                        &lt;button class="pagination-btn pagination-btn-disabled"&gt;Next&lt;/button&gt;
+                                    &lt;/div&gt;
+
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+                            &lt;div class="button-group padding-y_16px padding-x_32px border-t border-solid border-Grey_20"&gt;
+                                &lt;button class="btn" onclick="CloseDrawer('Add_Location2'); OpenDrawer('Current_locations')"&gt;Cancel&lt;/button&gt;
+                                &lt;button class="btn bg-purple color-white" disabled&gt;Save and go back&lt;/button&gt;
+                                &lt;button class="btn bg-purple color-white" disabled&gt;Save and close&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+
+
+                        &lt;/div&gt;
+
+                    </code>
+                </pre>
+
+
+
+            </div>
+
+
         </div>
 
 
