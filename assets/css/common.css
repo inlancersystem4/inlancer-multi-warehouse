@@ -124,7 +124,9 @@ input[type=number] {
 
 /* Tyrograph */
 
-
+.color_violet{
+    color: #7C3AED;
+}
 
 .color-black {
     color: var(--black);
@@ -294,7 +296,7 @@ input[type=number] {
 }
 
 .border-Grey_20 {
-    border-color: var(--Grey-20);
+    border-color: var(--Grey-20) !important;
 }
 
 .border-Grey_30 {
@@ -1124,8 +1126,8 @@ input[type=number] {
 }
 
 .padding-y_16px {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
 }
 
 .padding-x_16px {
@@ -1364,6 +1366,15 @@ input[type=number] {
 /* Close line clamp  */
 
 
+/* grid help  */
+
+.col-span-2{
+    grid-column: span 2 / span 2;
+}
+
+
+/* Close grid help  */
+
 /* img width  */
 
 .w_20px {
@@ -1576,3 +1587,45 @@ textarea {
 }
 
 /* Close flex wrap  */
+
+
+
+/* text wrap  */
+
+
+.text-wrap {
+    text-wrap: wrap;
+}
+
+.text-no-wrap {
+    text-wrap: nowrap;
+}
+
+
+
+
+/* Close text wrap  */
+
+
+
+/* Cursor */
+
+
+.cursor-auto {
+    cursor: auto;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-no-drop {
+    cursor: no-drop;
+}
+
+
+/* Close Cursor */

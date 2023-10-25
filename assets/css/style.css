@@ -2182,3 +2182,116 @@
     width: 30px;
     height: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+.main-table.product-list tr {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main-table.product-list tr .label {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.main-table.product-list tr .label label {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.main-table.product-list tr td {
+    padding: 0 8px;
+}
+
+.product-list .list-checkbox {
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+}
+
+.product-list .product {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    gap: 8px;
+}
+
+.product-list .product img {
+    width: 30px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.product-list .collection {
+    width: 20%;
+    text-align: left;
+}
+
+.product-list .availability {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+.product-list .inventory {
+    width: 20%;
+    text-align: left;
+}
+
+.product-list .blank-section {
+    width: 10%;
+}
+
+.product-list .row-status {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.product-list .row-status>* {
+    color: var(--Grey-60) !important;
+}
+
+.row-option-section {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.main-table .list-checkbox.main-checkbox .custom-checkbox {
+    display: block;
+}
+
+.main-table .list-checkbox.list-checkbox-show .custom-checkbox {
+    display: block;
+}
+
+.main-table .list-checkbox .custom-checkbox {
+    display: none;
+}
+
+.max-w-64px {
+    width: 64px;
+}

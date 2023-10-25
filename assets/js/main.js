@@ -180,6 +180,22 @@ $(document).ready(function () {
     });
 
 
+    $('.main-table .main-checkbox .custom-checkbox').change(function () {
+        if ($(this).is(':checked')) {
+            $(this).parent().parent().addClass('bg-Grey_5');
+            $(this).parent().parent().siblings().addClass('bg-Grey_5');
+            $(this).parent().parent().siblings().children('.list-checkbox').addClass("list-checkbox-show");
+            $(this).parent().parent().siblings().children('.list-checkbox').children(".custom-checkbox").prop('checked', true);
+        } else {
+            $(this).parent().parent().removeClass('bg-Grey_5');
+            $(this).parent().parent().siblings().removeClass('bg-Grey_5');
+            $(this).parent().parent().siblings().children('.list-checkbox').removeClass("list-checkbox-show");
+            $(this).parent().parent().siblings().children('.list-checkbox').children('.custom-checkbox').prop('checked', false);
+        }
+    });
+
+
+
 
     $('.continents-list li .arrow-icon').click(function () {
         $(this).parent().toggleClass("active-continents-list");
