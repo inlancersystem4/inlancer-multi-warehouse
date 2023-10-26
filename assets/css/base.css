@@ -1357,22 +1357,6 @@ body {
 /* Close model  */
 
 
-/* overlay  */
-
-
-#overlay {
-    position: fixed;
-    z-index: 99;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-    background: #111827;
-    display: none;
-}
-
-
-/* Close Overlay  */
 
 
 
@@ -1406,3 +1390,127 @@ body {
 
 
 /* Close FileDroper */
+
+
+
+
+
+
+
+/* custom-popovers  */
+
+
+.custom-popovers {
+    position: relative;
+}
+
+
+.popovers {
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 2px 16px 0px rgba(17, 24, 39, 0.08);
+    background-color: var(--Grey);
+    border: 1px solid var(--Grey-20);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: none;
+}
+
+.popovers.top_left {
+    top: -250%;
+    left: -90%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.popovers.top_right {
+    top: -100%;
+    right: -100%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+.popovers.bottom_left {
+    bottom: -100%;
+    left: -90%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.popovers.bottom_right {
+    bottom: -100%;
+    right: -100%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+
+
+/* Close custom-popovers */
+
+
+
+
+
+/* input 2 */
+
+
+.input-2 {
+    border: 0;
+    outline: 0;
+    color: var(--Grey-90);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px
+}
+
+.input-2::placeholder {
+    font-size: 14px;
+    color: var(--Grey-40);
+    font-weight: 400;
+    line-height: 24px
+}
+
+.input-2:focus {
+    border: 0;
+    outline: none;
+}
+
+
+/* CLose input 2  */
+
+
+
+
+
+/* overlay  */
+
+
+#overlay {
+    position: fixed;
+    z-index: 99;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background: #111827;
+    display: none;
+}
+
+
+/* Close Overlay  */

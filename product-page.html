@@ -598,12 +598,12 @@
                                     <h4 class="text-xl_semibold">Options</h4>
 
                                     <button class="icon-btn icon-btn_32px custom-dropdown"
-                                        onclick="OpenDropDown('Edit_options')">
+                                        onclick="OpenDropDown('Edit_optionsDrop')">
                                         <img src="./assets/img/icons/dots-icon.svg">
 
-                                        <ul class="custom-dropdown-list  icon-dropdown" id="Edit_options">
+                                        <ul class="custom-dropdown-list  icon-dropdown" id="Edit_optionsDrop">
                                             <li class="dropdown-item">
-                                                <a href="#" class="dropdown-link">
+                                                <a href="#" class="dropdown-link" onclick="OpenDrawer('Edit_options')">
                                                     <img src="./assets/img/icons/edit.svg">
                                                     <p class="dropdown-link-title"> Edit options
                                                     </p>
@@ -716,14 +716,16 @@
 
                                             <ul class="custom-dropdown-list  icon-dropdown" id="Variants_Options">
                                                 <li class="dropdown-item">
-                                                    <a href="#" class="dropdown-link">
+                                                    <a href="#" class="dropdown-link"
+                                                        onclick="OpenDrawer('Organize_variants')">
                                                         <img src="./assets/img/icons/table.svg">
                                                         <p class="dropdown-link-title"> Organize variants
                                                         </p>
                                                     </a>
                                                 </li>
                                                 <li class="dropdown-item">
-                                                    <a href="#" class="dropdown-link">
+                                                    <a href="#" class="dropdown-link"
+                                                        onclick="OpenDrawer('Edit_inventory')">
                                                         <img src="./assets/img/icons/buildings.svg">
                                                         <p class="dropdown-link-title"> Edit inventory
                                                         </p>
@@ -761,14 +763,15 @@
                                                 locations</p>
 
                                             <button class="icon-btn icon-btn_32px custom-dropdown"
-                                                onclick="OpenDropDown('Edit_variant')">
+                                                onclick="OpenDropDown('Edit_variantDrop')">
 
                                                 <img src="./assets/img/icons/dots-icon.svg">
 
 
-                                                <ul class="custom-dropdown-list  icon-dropdown" id="Edit_variant">
+                                                <ul class="custom-dropdown-list  icon-dropdown" id="Edit_variantDrop">
                                                     <li class="dropdown-item">
-                                                        <a href="#" class="dropdown-link">
+                                                        <a href="#" class="dropdown-link"
+                                                            onclick="OpenDrawer('Edit_variant')">
                                                             <img src="./assets/img/icons/edit.svg">
                                                             <p class="dropdown-link-title"> Edit variant
                                                             </p>
@@ -859,14 +862,15 @@
                                     <h4 class="color-Grey_90 text-xl_semibold">Attributes</h4>
 
                                     <button class="icon-btn icon-btn_32px custom-dropdown"
-                                        onclick="OpenDropDown('Edit_Attributes')">
+                                        onclick="OpenDropDown('Edit_AttributesDrop')">
 
                                         <img src="./assets/img/icons/dots-icon.svg">
 
 
-                                        <ul class="custom-dropdown-list  icon-dropdown" id="Edit_Attributes">
+                                        <ul class="custom-dropdown-list  icon-dropdown" id="Edit_AttributesDrop">
                                             <li class="dropdown-item">
-                                                <a href="#" class="dropdown-link">
+                                                <a href="#" class="dropdown-link"
+                                                    onclick="OpenDrawer('Edit_attributes')">
                                                     <img src="./assets/img/icons/edit.svg">
                                                     <p class="dropdown-link-title"> Edit attributes
                                                     </p>
@@ -1902,6 +1906,1177 @@
             </div>
         </div>
 
+
+    </div>
+
+
+
+
+
+
+    <div class="drawer rightside" id="Edit_options">
+
+        <div class="drawer-header">
+            <div class="display-flex align-center gap-16px">
+                <h4 class="drawer-title">Edit options</h4>
+            </div>
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+        </div>
+
+        <div class="drawer-body">
+
+
+            <div class="w-full rounded-regualr overflow-hidden border border-solid border-Grey_20 all-child-border-t">
+
+                <div class="display-flex align-stretch">
+
+                    <div class="bg-Grey_5 padding-y_8px padding-x_16px border-r border-solid border-Grey_20 w-3_10">
+                        <p class="color-Grey_60 text-base_medium">Option title</p>
+                    </div>
+                    <div class="bg-Grey_5 padding-y_8px padding-x_16px w-7_10">
+                        <p class="color-Grey_60 text-base_medium">Variations</p>
+                    </div>
+
+                </div>
+
+                <div class="display-flex align-stretch">
+
+                    <div class="border-r border-solid border-Grey_20 w-3_10">
+                        <input type="text" class="padding-y_8px padding-x_16px w-100 h-100 input-2" value="Color">
+                    </div>
+                    <div class="padding-y_8px padding-x_16px w-7_10">
+                        <div class="display-flex display-flex-wrap align-center gap-12px">
+                            <div class="display-flex align-center gap-8px display-flex-wrap">
+                                <div
+                                    class="rounded-regualr bg-Grey_20 padding-y_2px padding-left_12px padding-right_8px display-flex align-center gap-4px">
+                                    <p class="color-Grey_60 text-base_medium">White</p>
+                                    <button class="icon-btn icon-btn_24px">
+                                        <img src="./assets/img/icons/close-icon2.svg">
+                                    </button>
+                                </div>
+                            </div>
+                            <input type="text" class="input-2 h-full" value="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="display-flex align-stretch">
+
+                    <div class="border-r border-solid border-Grey_20 w-3_10">
+                        <input type="text" class="padding-y_8px padding-x_16px w-100 h-100 input-2"
+                            placeholder="Size, Material">
+                    </div>
+                    <div class="padding-y_8px padding-x_16px w-7_10">
+                        <div class="display-flex display-flex-wrap align-center gap-12px">
+                            <input type="text" class="input-2 h-full" placeholder="Large, Oak">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="display-flex align-center justify-end w-100">
+                <button class="btn-regular">Add an option</button>
+            </div>
+
+
+        </div>
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_options')">Cancel</button>
+                <button class=" btn bg-purple color-white" disabled="">Save and close</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="drawer rightside" id="Edit_attributes">
+
+        <div class="drawer-header">
+            <div class="display-flex align-center gap-16px">
+                <h4 class="drawer-title">Edit attributes</h4>
+            </div>
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+        </div>
+
+        <div class="drawer-body">
+
+            <div>
+
+                <div class="space-y-24px">
+
+                    <div>
+                        <div class="w-100 display-flex align-center justify-between">
+
+                            <h6 class="text-base_semibold color-Grey_90">Dimensions</h6>
+
+                            <div class="custom-toogle-btn">
+                                <input type="checkbox" class="form-toogle-btn" checked="">
+                            </div>
+
+                        </div>
+                        <p class="text-base_regular color-Grey_50">Configure to calculate the most
+                            accurate
+                            shipping rates</p>
+                    </div>
+
+
+                    <div class="grid-cols-2 display-grid gap-16px">
+
+                        <div class="input-group">
+
+                            <label for="">Length</label>
+                            <input type="text" class="input-1 text-right" value="80">
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label for="">Width</label>
+                            <input type="text" class="input-1 text-right" value="56">
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label for="">Height</label>
+                            <input type="text" class="input-1 text-right" value="120">
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label for="">Weight</label>
+                            <input type="text" class="input-1 text-right" value="0.8">
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div>
+                        <div class="w-100 display-flex align-center justify-between">
+
+                            <h6 class="text-base_semibold color-Grey_90">Customs</h6>
+
+                            <div class="custom-toogle-btn">
+                                <input type="checkbox" class="form-toogle-btn" checked="">
+                            </div>
+
+                        </div>
+                        <p class="text-base_regular color-Grey_50">Configure to calculate the most accurate
+                            shipping rates</p>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="">MID Code</label>
+                        <input type="text" class="input-1" value="XDSKLAD99">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="">HS Code</label>
+                        <input type="text" class="input-1" value="BDJSK39277W">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="">Country of origin</label>
+
+                        <div class="custom-select custom-dropdown w-100" onclick="OpenDropDown('CountrySele')">
+                            <p>Manual fulfillment</p>
+                            <ul class="custom-dropdown-list" id="CountrySele">
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link selected-dropdown-option">
+                                        <p class="dropdown-link-title">Select a method</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">
+                                        <p class="dropdown-link-title">one</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link ">
+                                        <p class="dropdown-link-title">two</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">
+                                        <p class="dropdown-link-title">three</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_attributes');">Cancel</button>
+                <button class="btn bg-purple color-white" disabled>Save and close</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="drawer rightside" id="Edit_variant">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Edit variant</h4>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+        </div>
+
+        <div class="drawer-body pt-0 px-0">
+
+            <div class="custom-accordion">
+
+                <div class="accordion-items active-accordion border-b border-solid border-Grey_20 padding-x_32px">
+
+                    <div class="accordion-header align-center">
+
+                        <div>
+                            <h4 class="accordion-title">General</h4>
+                        </div>
+
+                        <div class="accordion-icons">
+                            <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                            <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-body pt-0 padding-bottom_32px">
+
+                        <div class="space-y-32px">
+
+                            <div class="space-y-24px">
+
+
+                                <div class="input-group">
+                                    <label for="Custom title">Custom title</label>
+                                    <input type="text" class="input-1" id="Custom title" placeholder="Green and blue">
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="Material">Material</label>
+                                    <input type="text" class="input-1" id="Material" placeholder="80% wool, 20% cotton">
+                                </div>
+
+                            </div>
+
+
+                            <div>
+
+
+                                <p class="display-flex align-center gap-4px text-base_semibold color-Grey_90">Product
+                                    options
+                                    <img src="./assets/img/icons/info.svg">
+                                </p>
+
+
+                                <div class="space-y-24px margin-top_16px">
+
+                                    <div class="input-group">
+
+                                        <label for="">Color</label>
+
+                                        <div class="custom-select custom-dropdown w-100"
+                                            onclick="OpenDropDown('ColorDrop')">
+                                            <p>White</p>
+                                            <ul class="custom-dropdown-list" id="ColorDrop">
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link selected-dropdown-option">
+                                                        <p class="dropdown-link-title">pink</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link">
+                                                        <p class="dropdown-link-title">Bule</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link ">
+                                                        <p class="dropdown-link-title">black</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link">
+                                                        <p class="dropdown-link-title">red</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link">
+                                                        <p class="dropdown-link-title">gray</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link">
+                                                        <p class="dropdown-link-title">purple</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link">
+                                                        <p class="dropdown-link-title">sky bule</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="input-group">
+
+                                        <label for="">Color</label>
+
+                                        <div class="custom-select custom-dropdown w-100"
+                                            onclick="OpenDropDown('SizeDrop')">
+                                            <p>Large</p>
+                                            <ul class="custom-dropdown-list" id="SizeDrop">
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link selected-dropdown-option">
+                                                        <p class="dropdown-link-title">Large</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link">
+                                                        <p class="dropdown-link-title">Small</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link ">
+                                                        <p class="dropdown-link-title">Xl</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link">
+                                                        <p class="dropdown-link-title">XXl</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="accordion-items  border-b border-solid border-Grey_20 padding-x_32px">
+
+                    <div class="accordion-header align-center">
+
+                        <div>
+                            <h4 class="accordion-title">Pricing</h4>
+                        </div>
+
+                        <div class="accordion-icons">
+                            <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                            <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-body pt-0 padding-bottom_32px">
+
+
+                        <div class="price-accordion">
+
+                            <div class="price-list">
+                                <div class="price-list-details">
+                                    <button class="accordion-icon">
+                                        <img src="./assets/img/icons/triangle-right.svg">
+                                    </button>
+                                    <div class="price-details">
+                                        <div class="icon">
+                                            <img src="./assets/img/icons/coins.svg">
+                                        </div>
+                                        <div class="display-flex align-center gap-8px">
+                                            <h6 class="color-Grey_90 text-sm_medium">DKK</h6>
+                                            <p class="text-sm_regular color-Grey_50">Danish krone</p>
+                                            <div class="price-value">
+                                                <img src="./assets/img/icons/taxes.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="current-price">
+                                    <span class="text-base_regular color-Grey_40">kr.</span>
+                                    <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                        600.00</p>
+                                </div>
+                            </div>
+
+                            <div class="price-accordion-body">
+                                <div class="price-list">
+                                    <div class="price-list-details">
+                                        <button class="accordion-icon">
+                                            <img src="./assets/img/icons/triangle-right.svg">
+                                        </button>
+                                        <div class="price-details">
+                                            <div class="icon">
+                                                <img src="./assets/img/icons/coins.svg">
+                                            </div>
+                                            <div class="display-flex align-center gap-8px">
+                                                <h6 class="color-Grey_90 text-sm_medium">DKK</h6>
+                                                <p class="text-sm_regular color-Grey_50">Danish krone</p>
+                                                <div class="price-value">
+                                                    <img src="./assets/img/icons/taxes.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="current-price">
+                                        <span class="text-base_regular color-Grey_40">kr.</span>
+                                        <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                            600.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="price-list">
+                            <div class="price-list-details">
+                                <button class="accordion-icon">
+                                    <img src="./assets/img/icons/triangle-right.svg">
+                                </button>
+                                <div class="price-details">
+                                    <div class="icon">
+                                        <img src="./assets/img/icons/coins.svg">
+                                    </div>
+                                    <div class="display-flex align-center gap-8px">
+                                        <h6 class="color-Grey_90 text-sm_medium">USD</h6>
+                                        <p class="text-sm_regular color-Grey_50">United States Dollar</p>
+                                        <div class="price-value">
+                                            <img src="./assets/img/icons/taxes.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="current-price">
+                                <span class="text-base_regular color-Grey_40">$</span>
+                                <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                    90.00</p>
+                            </div>
+                        </div>
+
+
+                        <div class="price-accordion">
+
+                            <div class="price-list">
+                                <div class="price-list-details">
+                                    <button class="accordion-icon">
+                                        <img src="./assets/img/icons/triangle-right.svg">
+                                    </button>
+                                    <div class="price-details">
+                                        <div class="icon">
+                                            <img src="./assets/img/icons/coins.svg">
+                                        </div>
+                                        <div class="display-flex align-center gap-8px">
+                                            <h6 class="color-Grey_90 text-sm_medium">EUR</h6>
+                                            <p class="text-sm_regular color-Grey_50">Euro</p>
+                                            <div class="price-value">
+                                                <img src="./assets/img/icons/taxes.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="current-price">
+                                    <span class="text-base_regular color-Grey_40">€</span>
+                                    <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                        90.00</p>
+                                </div>
+                            </div>
+
+                            <div class="price-accordion-body">
+
+
+                                <div class="price-list">
+                                    <div class="price-list-details">
+                                        <button class="accordion-icon">
+                                            <img src="./assets/img/icons/triangle-right.svg">
+                                        </button>
+                                        <div class="price-details">
+                                            <div class="icon">
+                                            </div>
+                                            <div class="display-flex align-center gap-8px">
+                                                <h6 class="color-Grey_90 text-sm_medium">Austria</h6>
+                                                <p class="text-sm_regular color-Grey_50">Euro</p>
+                                                <div class="price-value">
+                                                    <img src="./assets/img/icons/taxes.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="current-price">
+                                        <span class="text-base_regular color-Grey_40">€</span>
+                                        <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                            -</p>
+                                    </div>
+                                </div>
+
+                                <div class="price-list">
+                                    <div class="price-list-details">
+                                        <button class="accordion-icon">
+                                            <img src="./assets/img/icons/triangle-right.svg">
+                                        </button>
+                                        <div class="price-details">
+                                            <div class="icon">
+                                            </div>
+                                            <div class="display-flex align-center gap-8px">
+                                                <h6 class="color-Grey_90 text-sm_medium">Germany</h6>
+                                                <p class="text-sm_regular color-Grey_50">Euro</p>
+                                                <div class="price-value">
+                                                    <img src="./assets/img/icons/taxes.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="current-price">
+                                        <span class="text-base_regular color-Grey_40">€</span>
+                                        <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                            95.00</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="price-list">
+                            <div class="price-list-details">
+                                <button class="accordion-icon">
+                                    <img src="./assets/img/icons/triangle-right.svg">
+                                </button>
+                                <div class="price-details">
+                                    <div class="icon">
+                                        <img src="./assets/img/icons/coins.svg">
+                                    </div>
+                                    <div class="display-flex align-center gap-8px">
+                                        <h6 class="color-Grey_90 text-sm_medium">JPY</h6>
+                                        <p class="text-sm_regular color-Grey_50">Japanese yen</p>
+                                        <div class="price-value">
+                                            <img src="./assets/img/icons/taxes.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="current-price">
+                                <span class="text-base_regular color-Grey_40">¥</span>
+                                <p class="w-100 text-right text-base_regular color-Grey_90 line-clamp-1">
+                                    1324</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="accordion-items  border-b border-solid border-Grey_20 padding-x_32px">
+
+                    <div class="accordion-header">
+
+                        <div>
+                            <h4 class="accordion-title">Attributes</h4>
+                        </div>
+
+                        <div class="accordion-icons">
+                            <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                            <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-body pt-0 padding-bottom_32px">
+
+                        <div class="space-y-24px">
+
+                            <div>
+                                <div class="w-100 display-flex align-center justify-between">
+
+                                    <h6 class="text-base_semibold color-Grey_90">Dimensions</h6>
+
+                                    <div class="custom-toogle-btn">
+                                        <input type="checkbox" class="form-toogle-btn" checked="">
+                                    </div>
+
+                                </div>
+                                <p class="text-base_regular color-Grey_50">Configure to calculate the most
+                                    accurate
+                                    shipping rates</p>
+                            </div>
+
+
+                            <div class="grid-cols-2 display-grid gap-16px">
+
+                                <div class="input-group">
+
+                                    <label for="">Length</label>
+                                    <input type="text" class="input-1 text-right" value="80">
+
+                                </div>
+
+                                <div class="input-group">
+
+                                    <label for="">Width</label>
+                                    <input type="text" class="input-1 text-right" value="56">
+
+                                </div>
+
+                                <div class="input-group">
+
+                                    <label for="">Height</label>
+                                    <input type="text" class="input-1 text-right" value="120">
+
+                                </div>
+
+                                <div class="input-group">
+
+                                    <label for="">Weight</label>
+                                    <input type="text" class="input-1 text-right" value="0.8">
+
+                                </div>
+
+
+                            </div>
+
+
+                            <div>
+                                <div class="w-100 display-flex align-center justify-between">
+
+                                    <h6 class="text-base_semibold color-Grey_90">Customs</h6>
+
+                                    <div class="custom-toogle-btn">
+                                        <input type="checkbox" class="form-toogle-btn" checked="">
+                                    </div>
+
+                                </div>
+                                <p class="text-base_regular color-Grey_50">Configure to calculate the most accurate
+                                    shipping rates</p>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="">MID Code</label>
+                                <input type="text" class="input-1" value="XDSKLAD99">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="">HS Code</label>
+                                <input type="text" class="input-1" value="BDJSK39277W">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="">Country of origin</label>
+
+                                <div class="custom-select custom-dropdown w-100" onclick="OpenDropDown('CountrySele1')">
+                                    <p>Manual fulfillment</p>
+                                    <ul class="custom-dropdown-list" id="CountrySele1">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link selected-dropdown-option">
+                                                <p class="dropdown-link-title">Select a method</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">one</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link ">
+                                                <p class="dropdown-link-title">two</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">
+                                                <p class="dropdown-link-title">three</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="accordion-items  border-b border-solid border-Grey_20 padding-x_32px">
+
+                    <div class="accordion-header">
+
+                        <div>
+                            <h4 class="accordion-title">Inventory</h4>
+                        </div>
+
+                        <div class="accordion-icons">
+                            <img src="./assets/img/icons/plus-2.svg" class="img-not-selected plus_icon">
+                            <img src="./assets/img/icons/minus.svg" class="img-not-selected minus_icon">
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-body pt-0 padding-bottom_32px">
+
+                        <div class="space-y-32px">
+
+                            <div>
+
+                                <p class="text-base_semibold color-Grey_90">General</p>
+
+                                <div class="space-y-24px margin-top_16px">
+
+                                    <div class="input-group">
+                                        <label for="">Stock Keeping Unit (SKU)</label>
+                                        <input type="text" class="input-1" placeholder="SUN-G, JK1234">
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label for="">Barcode (EAN)</label>
+                                        <input type="text" class="input-1" placeholder="1231231231234">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="display-flex align-start justify-between w-100 gap-24px">
+
+                                <div>
+                                    <h6 class="color-Grey_90 text-base_semibold">Manage inventory</h6>
+                                    <p class="color-Grey_50 text-base_regular">When checked Medusa will regulate the
+                                        inventory when orders and returns are made. </p>
+                                </div>
+
+                                <div class="custom-toogle-btn">
+                                    <input type="checkbox" class="form-toogle-btn" checked="">
+                                </div>
+
+                            </div>
+
+                            <div class="display-flex align-start justify-between w-100 gap-24px">
+
+                                <div>
+                                    <h6 class="color-Grey_90 text-base_semibold">Allow backorders</h6>
+                                    <p class="color-Grey_50 text-base_regular">When checked the product will be
+                                        available for purchase despite the product being sold out </p>
+                                </div>
+
+                                <div class="custom-toogle-btn">
+                                    <input type="checkbox" class="form-toogle-btn">
+                                </div>
+
+                            </div>
+
+                            <div>
+
+                                <p class="color-Grey_90 text-base_semibold ">Quantity</p>
+
+                                <div class="display-flex align-center justify-between gap-12px w-100 margin-top_8px">
+                                    <p class="text-left text-base_regular color-Grey_50">Location</p>
+                                    <p class="text-right text-base_regular color-Grey_50">Available</p>
+                                </div>
+
+                                <ul
+                                    class="space-y-8px margin-top_16px border-b border-Grey_20 border-dotted padding-bottom_24px">
+
+                                    <li class="display-flex align-center justify-between w-100 gap-16px">
+
+                                        <div class="display-flex align-center gap-16px w-1_2">
+
+                                            <div class="icon-border icon-border_40px border-Grey_20">
+                                                <div class="icon-bg_32px bg-Grey_10 icon-bg">
+                                                    <img src="./assets/img/icons/buildings.svg">
+                                                </div>
+                                            </div>
+
+                                            <p class="color-Grey_90 text-base_medium line-clamp-1">Nordhavn warehouse
+                                            </p>
+
+                                        </div>
+
+                                        <div class="w-1_2">
+                                            <input type="text" class="input-1 text-right" value="70">
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="padding-y_24px display-flex align-center justify-between w-100">
+
+                            <p class="text-base_regular color-Grey_50">Total inventory at all locations</p>
+                            <p class="text-base_regular color-Grey_50 text-right">160 available</p>
+
+                        </div>
+
+                        <button class="btn-regular btn-w-full" onclick="OpenDrawer('Edit_locations')">Edit
+                            locations</button>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_variant')">Cancel</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="drawer rightside" id="Edit_locations">
+
+        <div class="drawer-header">
+            <div class="display-flex align-center gap-16px">
+                <button class="icon-btn icon-btn_32px border border-solid border-Grey_20"
+                    onclick="CloseDrawer('Edit_locations'); OpenDrawer('Edit_variant')">
+                    <img src="./assets/img/icons/arrow-uturn-left.svg">
+                </button>
+                <h4 class="drawer-title">Edit locations</h4>
+            </div>
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+        </div>
+
+        <div class="drawer-body p-0">
+
+            <div
+                class="border-b border-solid border-Grey_10 padding-x_32px padding-y_24px display-flex align-center justify-between gap-12px w-100">
+
+                <p class="color-Grey_50 text-base_regular">Select locations that stock the selected variants.<br>
+                    (2 of 3 selected)</p>
+
+                <button class="btn-regular">Select all</button>
+            </div>
+
+
+            <ul class="mt-0">
+
+                <li
+                    class="padding-x_32px padding-y_16px border-b border-solid border-Grey_20 display-flex align-center justify-between w-100 gap-12px">
+
+                    <div class="display-flex align-center gap-16px">
+
+                        <div class="icon-border icon-border_40px border-Grey_20">
+                            <div class="icon-bg_32px bg-Grey_10 icon-bg">
+                                <img src="./assets/img/icons/buildings.svg">
+                            </div>
+                        </div>
+
+                        <p class="color-Grey_90 text-base_medium">Nordhavn warehouse</p>
+
+                    </div>
+
+
+                    <div class="display-flex align-center gap-24px justify-end">
+
+                        <div class="custom-popovers" onmouseover="showPopovers('popovers2')"
+                            onmouseout="hidePopovers('popovers2')">
+
+                            <p class="Default-tag">Locked</p>
+
+                            <div class="popovers padding-y_8px padding-x_16px bottom_left" data-show="popovers2">
+
+                                <p class="color-Grey_50 text-sm_medium">Can’t unstock from this location
+                                    because it has unfulfilled, on hold,
+                                    or scheduled orders. </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="custom-toogle-btn">
+                            <input type="checkbox" class="form-toogle-btn">
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li
+                    class="padding-x_32px padding-y_16px border-b border-solid border-Grey_20 display-flex align-center justify-between w-100 gap-12px">
+
+                    <div class="display-flex align-center gap-16px">
+
+                        <div class="icon-border icon-border_40px border-Grey_20">
+                            <div class="icon-bg_32px bg-Grey_10 icon-bg">
+                                <img src="./assets/img/icons/buildings.svg">
+                            </div>
+                        </div>
+
+                        <p class="color-Grey_90 text-base_medium">Nordhavn warehouse</p>
+
+                    </div>
+
+
+                    <div class="display-flex align-center gap-24px justify-end">
+
+                        <div class="custom-toogle-btn">
+                            <input type="checkbox" class="form-toogle-btn">
+                        </div>
+
+                    </div>
+
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_locations'); OpenDrawer('Edit_variant')">Cancel</button>
+                <button class="btn bg-purple color-white" disabled="">Save and go back</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="drawer rightside" id="Organize_variants">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Organize variants</h4>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+        </div>
+
+        <div class="drawer-body p-0">
+
+            <ul>
+
+                <li
+                    class="padding-x_32px padding-y_8px display-flex  align-center justify-between w-100 border-b border-solid border-Grey_20">
+
+                    <div class="display-flex align-center gap-16px">
+
+                        <button class="icon-btn icon-btn_32px">
+                            <img src="./assets/img/icons/grip-icon.svg">
+                        </button>
+
+                        <div>
+
+                            <div class="display-flex align-center gap-4px">
+
+                                <h6 class="color-Grey_90 text-base_medium">White / Large</h6>
+                                <h6 class="color-Grey_50 text-base_medium">(WH_L)</h6>
+
+                            </div>
+
+                            <p class="color-Grey_50 text-base_regular">8734231119816</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="display-flex align-center gap-16px">
+
+                        <p class="text-right color-Grey_50 text-base_regular">24 available at 2
+                            locations</p>
+
+                    </div>
+
+                </li>
+
+
+                <li
+                    class="padding-x_32px padding-y_8px display-flex  align-center justify-between w-100 border-b border-solid border-Grey_20">
+
+                    <div class="display-flex align-center gap-16px">
+
+                        <button class="icon-btn icon-btn_32px">
+                            <img src="./assets/img/icons/grip-icon.svg">
+                        </button>
+
+                        <div>
+
+                            <div class="display-flex align-center gap-4px">
+
+                                <h6 class="color-Grey_90 text-base_medium">White / Large</h6>
+                                <h6 class="color-Grey_50 text-base_medium">(WH_L)</h6>
+
+                            </div>
+
+                            <p class="color-Grey_50 text-base_regular">8734231119816</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="display-flex align-center gap-16px">
+
+                        <p class="text-right color-Grey_50 text-base_regular">16 available at 3 locations</p>
+
+                    </div>
+
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+        <div class="drawer-footer">
+            <div class="button-group">
+                <button class="btn" onclick="CloseDrawer('Edit_shipping_option2')">Cancel</button>
+                <button class="btn bg-purple color-white">Save and close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="drawer rightside" id="Edit_inventory">
+
+        <div class="drawer-header">
+            <h4 class="drawer-title">Edit inventory</h4>
+
+            <button class="close-icon">
+                <img src="./assets/img/icons/close-icon.svg">
+            </button>
+
+        </div>
+
+        <div class="drawer-body p-0">
+
+            <div
+                class="padding-y_12px padding-x_32px border-b border-solid border-Grey_20 display-flex align-center gap-16px">
+
+                <p class="color-Grey_50 text-base_regular">Edit inventory at</p>
+
+                <div class="display-flex align-center gap-12px">
+
+                    <div class="icon-border icon-border_40px border-Grey_20">
+                        <div class="icon-bg_32px bg-Grey_10 icon-bg">
+                            <img src="./assets/img/icons/buildings.svg">
+                        </div>
+                    </div>
+
+                    <p class="color-Grey_90 text-sm_medium">Nordhavn Warehouse</p>
+
+                </div>
+
+            </div>
+
+            <ul class="mt-0">
+
+                <li
+                    class="padding-x_32px padding-y_8px display-flex align-center justify-between w-100 border-b border-solid border-Grey_20">
+
+                    <div class="w-1_2">
+                        <div class="display-flex align-center gap-4px">
+                            <p class="color-Grey_90 text-base_medium">White / Large</p>
+                            <p class="color-Grey_50 text-base_medium">(WH_L)</p>
+                        </div>
+                        <p class="color-Grey_50 text-base_regular">8734231119816</p>
+                    </div>
+                    <div class="w-1_2">
+                        <input type="text" class="input-1 text-right" value="8">
+                    </div>
+
+                </li>
+
+                <li
+                    class="padding-x_32px padding-y_8px display-flex align-center justify-between w-100 border-b border-solid border-Grey_20">
+
+                    <div class="w-1_2">
+                        <div class="display-flex align-center gap-4px">
+                            <p class="color-Grey_90 text-base_medium">White / Large</p>
+                            <p class="color-Grey_50 text-base_medium">(WH_L)</p>
+                        </div>
+                        <p class="color-Grey_50 text-base_regular">8734231119816</p>
+                    </div>
+                    <div class="w-1_2">
+                        <input type="text" class="input-1 text-right" value="0">
+                    </div>
+
+                </li>
+
+            </ul>
+
+
+        </div>
+
+        <div class="drawer-footer p-0">
+
+
+            <div
+                class="display-flex align-center justify-between w-100 padding-y_16px padding-x_32px border-t border-solid border-Grey_20">
+                <p class="color-Grey_50 text-base_regular">Total inventory at Nordhavn Warehouse</p>
+                <p class="color-Grey_50 text-base_regular">34 available</p>
+            </div>
+
+            <div class="button-group padding-y_16px padding-x_32px border-t border-solid border-Grey_20">
+                <button class="btn" onclick="CloseDrawer('Edit_inventory')">Cancel</button>
+                <button class="btn bg-purple color-white" disabled>Save and close</button>
+            </div>
+        </div>
 
     </div>
 

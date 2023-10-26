@@ -19,7 +19,7 @@
 }
 
 .align-center {
-    align-items: center;
+    align-items: center !important;
 }
 
 .align-stretch {
@@ -124,7 +124,7 @@ input[type=number] {
 
 /* Tyrograph */
 
-.color_violet{
+.color_violet {
     color: #7C3AED;
 }
 
@@ -277,6 +277,14 @@ input[type=number] {
 
 .border-solid {
     border-style: solid;
+}
+
+.border-dotted {
+    border-style: dotted;
+}
+
+.border-dashed {
+    border-style: dashed;
 }
 
 .border-black {
@@ -1368,7 +1376,7 @@ input[type=number] {
 
 /* grid help  */
 
-.col-span-2{
+.col-span-2 {
     grid-column: span 2 / span 2;
 }
 
@@ -1401,6 +1409,82 @@ input[type=number] {
     width: 42px;
 }
 
+.w-1_2 {
+    width: 50%;
+}
+
+.w-1_3 {
+    width: 33.333333%;
+}
+
+.w-2_3 {
+    width: 66.666667%;
+}
+
+.w-1_4 {
+    width: 25%;
+}
+
+.w-3_4 {
+    width: 75%;
+}
+
+.w-1_5 {
+    width: 20%;
+}
+
+.w-2_5 {
+    width: 40%;
+}
+
+.w-3_5 {
+    width: 60%;
+}
+
+.w-4_5 {
+    width: 80%;
+}
+
+.w-1_6 {
+    width: 16.666667%;
+}
+
+.w-5_6 {
+    width: 83.333333%;
+}
+
+.w-1_8 {
+    width: 12.5%;
+}
+
+.w-3_8 {
+    width: 37.5%;
+}
+
+.w-5_8 {
+    width: 62.5%;
+}
+
+.w-7_8 {
+    width: 87.5%;
+}
+
+.w-1_10 {
+    width: 10%;
+}
+
+.w-3_10 {
+    width: 30%;
+}
+
+.w-7_10 {
+    width: 70%;
+}
+
+.w-9_10 {
+    width: 90%;
+}
+
 
 /* Close img width  */
 
@@ -1430,6 +1514,83 @@ input[type=number] {
 .h_42px {
     height: 42px;
 }
+
+.h-1_2 {
+    height: 50%;
+}
+
+.h-1_3 {
+    height: 33.333333%;
+}
+
+.h-2_3 {
+    height: 66.666667%;
+}
+
+.h-1_4 {
+    height: 25%;
+}
+
+.h-3_4 {
+    height: 75%;
+}
+
+.h-1_5 {
+    height: 20%;
+}
+
+.h-2_5 {
+    height: 40%;
+}
+
+.h-3_5 {
+    height: 60%;
+}
+
+.h-4_5 {
+    height: 80%;
+}
+
+.h-1_6 {
+    height: 16.666667%;
+}
+
+.h-5_6 {
+    height: 83.333333%;
+}
+
+.h-1_8 {
+    height: 12.5%;
+}
+
+.h-3_8 {
+    height: 37.5%;
+}
+
+.h-5_8 {
+    height: 62.5%;
+}
+
+.h-7_8 {
+    height: 87.5%;
+}
+
+.h-1_10 {
+    height: 10%;
+}
+
+.h-3_10 {
+    height: 30%;
+}
+
+.h-7_10 {
+    height: 70%;
+}
+
+.h-9_10 {
+    height: 90%;
+}
+
 
 /* Close img height  */
 

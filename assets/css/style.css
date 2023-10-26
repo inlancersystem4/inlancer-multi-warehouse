@@ -1881,6 +1881,7 @@
 
 .setting-pages-grid .details-content {
     width: 100%;
+    min-width: 416px;
     max-width: 416px;
     padding: 24px 32px 32px 32px;
     border-radius: 8px;
@@ -2298,4 +2299,13 @@
 
 .max-w-48px {
     width: 48px;
+}
+
+
+
+
+
+
+.all-child-border-t>*+* {
+    border-top: 1px solid var(--Grey-20);
 }

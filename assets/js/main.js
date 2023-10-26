@@ -276,6 +276,17 @@ function CloseModel(modelId) {
     $("#overlay").hide();
 }
 
+// function showPopovers(popoversId) {
+//     $("[data-show ]" + popoversId).hide()
+// }
+
+function showPopovers(popoversId) {
+    $("[data-show='" + popoversId + "']").fadeIn("fast");
+}
+
+function hidePopovers(popoversId) {
+    $("[data-show='" + popoversId + "']").hide();
+}
 
 function ToggleAccordion(accordionId) {
     $("#" + accordionId).slideToggle("slow");
