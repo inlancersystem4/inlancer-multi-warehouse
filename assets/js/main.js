@@ -241,6 +241,20 @@ $(document).ready(function () {
         $(this).parent().parent().removeClass("friend-list_drawer_show")
     })
 
+    $(".chat_box_Close_btn").hide()
+
+    $(".chat_box_Open_btn").click(function () {
+        $(this).hide();
+        $(this).siblings(".chat_box_Close_btn").show();
+        $(this).parent().siblings(".chat-box").addClass("chat-box_show");
+    })
+
+    $(".chat_box_Close_btn").click(function () {
+        $(this).hide();
+        $(this).siblings(".chat_box_Open_btn").show();
+        $(this).parent().siblings(".chat-box").removeClass("chat-box_show");
+    })
+
 })
 
 

@@ -2379,6 +2379,9 @@
     height: 22px;
 }
 
+
+
+
 .chat-box-position .chat-box {
     display: flex;
     flex-direction: column;
@@ -2397,6 +2400,28 @@
     -ms-border-radius: 8px;
     overflow: hidden;
     -o-border-radius: 8px;
+    display: none;
+    transform: translateY(999px);
+    -webkit-transform: translateY(999px);
+    -moz-transform: translateY(999px);
+    -ms-transform: translateY(999px);
+    -o-transform: translateY(999px);
+}
+
+.chat-box-position .chat-box.chat-box_show {
+    display: flex;
+    animation: chat-box_show 1.3s ease forwards;
+    -webkit-animation: chat-box_show 1.3s ease forwards;
+}
+
+@keyframes chat-box_show {
+    100% {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
 }
 
 .chat-box-position .chat-box .chat-box-header {
