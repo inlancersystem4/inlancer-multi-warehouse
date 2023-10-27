@@ -231,6 +231,16 @@ $(document).ready(function () {
     });
 
 
+
+
+    $(".Open_frined_list").click(function () {
+        $(this).parent().parent().siblings(".friend-list_drawer").addClass("friend-list_drawer_show")
+    })
+
+    $(".Close_frined_list").click(function () {
+        $(this).parent().parent().removeClass("friend-list_drawer_show")
+    })
+
 })
 
 

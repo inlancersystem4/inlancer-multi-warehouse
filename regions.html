@@ -921,7 +921,7 @@
 
                     <div class="input-group">
 
-                        <label for="">Title <span>*</span> </label>
+                        <label for="">Title <span class="required">*</span> </label>
 
                         <input type="text" class="input-1" value="North America">
 
@@ -929,7 +929,7 @@
 
                     <div class="input-group">
 
-                        <label for="">Currency <span>*</span> </label>
+                        <label for="">Currency <span class="required">*</span> </label>
 
                         <div class="custom-select custom-dropdown w-100" onclick="OpenDropDown('CurrencyDrop')">
                             <p>US Dollar</p>
@@ -959,7 +959,171 @@
 
                     </div>
 
+
+
+                    <div class="input-group">
+                        <label>Countries</label>
+                        <div
+                            class="padding-8px rounded-regualr border border-Grey_20 border-solid w-100 display-flex bg-Grey_5 align-center gap-12px">
+
+                            <div class="display-flex align-center gap-8px w-fit">
+
+                                <div
+                                    class="rounded-regualr bg-Grey_20 padding-y_2px padding-left_12px padding-right_8px display-flex align-center gap-4px">
+                                    <p class="color-Grey_60 text-base_medium">20</p>
+                                    <button class="icon-btn icon-btn_24px">
+                                        <img src="./assets/img/icons/close-icon2.svg">
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="custom-select custom-dropdown w-100 border-none p-0 custom-select_hover_no"
+                                onclick="OpenDropDown('CountriesSelec')">
+                                <p>Countries</p>
+                                <ul class="custom-dropdown-list" id="CountriesSelec">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link selected-dropdown-option">
+                                            <p class="dropdown-link-title">Select a method</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">
+                                            <p class="dropdown-link-title">one</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link ">
+                                            <p class="dropdown-link-title">two</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">
+                                            <p class="dropdown-link-title">three</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
                 </div>
+
+
+                <div class="display-flex align-start justify-between w-100 gap-12px">
+
+                    <div>
+                        <h6 class="color-Grey_90 text-base_semibold">Tax inclusive prices</h6>
+                        <p class="color-Grey_50 margin-top_4px text-base_regular">When enabled region prices will be tax
+                            inclusive</p>
+                    </div>
+
+                    <div class="custom-toogle-btn">
+                        <input type="checkbox" class="form-toogle-btn">
+                    </div>
+
+                </div>
+
+                <div class="space-y-24px">
+
+                    <div class="input-group">
+                        <label>Payment providers <span class="required">*</span></label>
+                        <div
+                            class="padding-8px rounded-regualr border border-Grey_20 border-solid w-100 display-flex bg-Grey_5 align-center gap-12px">
+
+                            <div class="display-flex align-center gap-8px w-fit">
+
+                                <div
+                                    class="rounded-regualr bg-Grey_20 padding-y_2px padding-left_12px padding-right_8px display-flex align-center gap-4px">
+                                    <p class="color-Grey_60 text-base_medium">1</p>
+                                    <button class="icon-btn icon-btn_24px">
+                                        <img src="./assets/img/icons/close-icon2.svg">
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="custom-select custom-dropdown w-100 border-none p-0 custom-select_hover_no"
+                                onclick="OpenDropDown('Payment_providersSelec')">
+                                <p>Payment providers</p>
+                                <ul class="custom-dropdown-list" id="Payment_providersSelec">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link selected-dropdown-option">
+                                            <p class="dropdown-link-title">Select a method</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">
+                                            <p class="dropdown-link-title">one</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link ">
+                                            <p class="dropdown-link-title">two</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">
+                                            <p class="dropdown-link-title">three</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Payment providers <span class="required">*</span></label>
+                        <div
+                            class="padding-8px rounded-regualr border border-Grey_20 border-solid w-100 display-flex bg-Grey_5 align-center gap-12px">
+
+                            <div class="display-flex align-center gap-8px w-fit">
+
+                                <div
+                                    class="rounded-regualr bg-Grey_20 padding-y_2px padding-left_12px padding-right_8px display-flex align-center gap-4px">
+                                    <p class="color-Grey_60 text-base_medium">1</p>
+                                    <button class="icon-btn icon-btn_24px">
+                                        <img src="./assets/img/icons/close-icon2.svg">
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="custom-select custom-dropdown w-100 border-none p-0 custom-select_hover_no"
+                                onclick="OpenDropDown('Fulfillment_providersSelec')">
+                                <p>Fulfillment providers*</p>
+                                <ul class="custom-dropdown-list" id="Fulfillment_providersSelec">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link selected-dropdown-option">
+                                            <p class="dropdown-link-title">Select a method</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">
+                                            <p class="dropdown-link-title">one</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link ">
+                                            <p class="dropdown-link-title">two</p>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">
+                                            <p class="dropdown-link-title">three</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
 

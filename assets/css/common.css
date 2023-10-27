@@ -1485,6 +1485,9 @@ input[type=number] {
     width: 90%;
 }
 
+.w-fit {
+    width: fit-content;
+}
 
 /* Close img width  */
 
