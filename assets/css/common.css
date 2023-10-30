@@ -18,6 +18,11 @@
     display: inline-block;
 }
 
+
+.relative {
+    position: relative;
+}
+
 .align-center {
     align-items: center !important;
 }
@@ -125,55 +130,63 @@ input[type=number] {
 /* Tyrograph */
 
 .color_violet {
-    color: #7C3AED;
+    color: #7C3AED !important;
 }
 
 .color-black {
-    color: var(--black);
+    color: var(--black) !important;
 }
 
 .color-white {
-    color: var(--Grey);
+    color: var(--Grey) !important;
 }
 
 .color-Grey_5 {
-    color: var(--Grey-5);
+    color: var(--Grey-5) !important;
 }
 
 .color-Grey_10 {
-    color: var(--Grey-10);
+    color: var(--Grey-10) !important;
 }
 
 .color-Grey_20 {
-    color: var(--Grey-20);
+    color: var(--Grey-20) !important;
 }
 
 .color-Grey_30 {
-    color: var(--Grey-30);
+    color: var(--Grey-30) !important;
 }
 
 .color-Grey_40 {
-    color: var(--Grey-40);
+    color: var(--Grey-40) !important;
 }
 
 
 .color-Grey_50 {
-    color: var(--Grey-50);
+    color: var(--Grey-50) !important;
 }
 
 .color-Grey_60 {
-    color: var(--Grey-60);
+    color: var(--Grey-60) !important;
 }
 
 .color-Grey_70 {
-    color: var(--Grey-70);
+    color: var(--Grey-70) !important;
 }
 
 .color-Grey_90 {
-    color: var(--Grey-90);
+    color: var(--Grey-90) !important;
 }
 
 
+
+.bg-rose {
+    background-color: #F43F5E !important;
+}
+
+.bg-orange {
+    background-color: #F97316 !important;
+}
 
 .bg-emerald {
     background-color: #10B981 !important;
@@ -346,6 +359,14 @@ input[type=number] {
     -o-border-radius: 0 !important;
 }
 
+.rounded {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 
 .rounded-sm {
     border-radius: 4px;
@@ -369,27 +390,27 @@ input[type=number] {
 }
 
 .font-400 {
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 .font-500 {
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
 .font-600 {
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 .font-700 {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 .font-800 {
-    font-weight: 800;
+    font-weight: 800 !important;
 }
 
 .font-900 {
-    font-weight: 900;
+    font-weight: 900 !important;
 }
 
 
@@ -583,6 +604,9 @@ input[type=number] {
 
 /* space   */
 
+.space-y-4px>*+* {
+    margin-top: 4px;
+}
 
 .space-y-8px>*+* {
     margin-top: 8px;
@@ -1390,7 +1414,9 @@ input[type=number] {
 }
 
 .w_32px {
+    max-width: 32px;
     width: 32px;
+    min-width: 32px;
 }
 
 .w_24px {
@@ -1499,7 +1525,9 @@ input[type=number] {
 }
 
 .h_32px {
+    min-height: 32px;
     height: 32px;
+    max-height: 32px;
 }
 
 .h_24px {
@@ -1793,3 +1821,21 @@ textarea {
 
 
 /* Close Cursor */
+
+
+
+
+
+
+
+/* contenteditable */
+
+
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block;
+    color: var(--Grey-40);
+}
+
+/* Close contenteditable */

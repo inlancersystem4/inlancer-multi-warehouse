@@ -1497,11 +1497,36 @@ body {
     outline: none;
 }
 
+.foucs_none:focus {
+    outline: none;
+    border: 0;
+    box-shadow: none;
+}
+
 
 /* CLose input 2  */
 
 
+/* text tra  */
 
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-transform {
+    text-transform: none;
+}
+
+/* Close text tra  */
 
 
 /* overlay  */

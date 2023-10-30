@@ -255,6 +255,8 @@ $(document).ready(function () {
         $(this).parent().siblings(".chat-box").removeClass("chat-box_show");
     })
 
+
+
 })
 
 
@@ -287,7 +289,6 @@ function OpenDropDown(dropdownId) {
     $(".custom-dropdown-list").removeClass("show-dropdown");
     $("#" + dropdownId).toggleClass("show-dropdown");
 }
-
 
 
 function OpenModel(modelId) {
