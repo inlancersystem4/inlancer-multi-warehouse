@@ -85,6 +85,19 @@
         min-width: 100%;
     }
 
+    .model.center-align_model {
+        width: 100%;
+
+    }
+
+    .delete-model {
+        display: flex;
+        width: 100%;
+        min-width: 0;
+        max-width: 94%;
+        margin: 0 auto;
+    }
+
 }
 
 
