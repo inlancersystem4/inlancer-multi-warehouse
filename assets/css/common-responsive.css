@@ -3730,6 +3730,10 @@
         display: inline-block !important;
     }
 
+    .Sm_display-none {
+        display: none !important;
+    }
+
     /* Position Classes */
 
     .Sm_relative {

@@ -74,6 +74,17 @@
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
+
+    .setting-pages-grid {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .setting-pages-grid .details-content {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
 }
 
 
