@@ -1326,7 +1326,7 @@
     height: 24px;
 }
 
-.chat-message-section .chat-message-section-footer input {
+.chat-message-section .chat-message-section-footer .enter_message {
     padding: 8px 16px;
     border-radius: 8px;
     border: 1px solid var(--Grey-20);
@@ -1341,6 +1341,9 @@
     font-weight: 400;
     line-height: 24px;
     color: var(--Grey-90);
+    max-height: 230px;
+    min-height: 42px;
+    overflow-y: scroll;
 }
 
 .chat-message-section .chat-message-section-footer .btn:hover {
@@ -2964,4 +2967,9 @@
 
 .user-profile-show:hover .user-profile-popehover {
     display: inline-flex;
+}
+
+
+.open_chat-connectivity {
+    display: none;
 }

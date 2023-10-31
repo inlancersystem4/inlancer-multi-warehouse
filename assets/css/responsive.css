@@ -32,7 +32,7 @@
     }
 
     #Close_mini_sidebar {
-        display: none;
+        display: none !important;
     }
 
     .responsive-main-sidebar {
@@ -110,12 +110,44 @@
 
     .chat-wrapper .chat-connectivity {
         position: absolute;
-        left: 0;
+        left: -999px;
         top: 0;
         z-index: 99;
-        max-width: 340px;
+        max-width: 100%;
         display: none;
+        transform: translateX(-9990x);
+        -webkit-transform: translateX(-9990x);
+        -moz-transform: translateX(-9990x);
+        -ms-transform: translateX(-9990x);
+        -o-transform: translateX(-9990x);
+        transition: transform 0.5s left 0.4s;
+        -webkit-transition: transform 0.5s left 0.4s;
+        -moz-transition: transform 0.5s left 0.4s;
+        -ms-transition: transform 0.5s left 0.4s;
+        -o-transition: transform 0.5s left 0.4s;
     }
+
+    .chat-wrapper .chat-connectivity.chat-connectivity_show {
+        animation: connectivity_show 1s ease;
+        -webkit-animation: connectivity_show 1s ease;
+        display: block !important;
+        left: 0 !important;
+    }
+
+    @keyframes connectivity_show {
+        100% {
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+    }
+
+    .open_chat-connectivity {
+        display: flex;
+    }
+
 
 }
 
@@ -154,6 +186,10 @@
         min-height: 32px;
         max-width: 32px;
         max-height: 32px;
+    }
+
+    .chat-message-section .chat-message-section-header .chating-options-group .btn .custom-dropdown-list {
+        left: auto;
     }
 
 }

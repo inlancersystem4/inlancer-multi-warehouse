@@ -407,13 +407,18 @@
 
                                 <div class="chat-connectivity-header">
 
-                                    <div class="search-wrraper">
-                                        <button class="icon">
-                                            <img src="./assets/img/icons/search.svg" class="img-not-selected">
-                                        </button>
-                                        <input type="text" placeholder="Find something" class="enter_val">
-                                        <button class="icon val_clear" style="cursor: pointer;">
-                                            <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                                    <div class="display-flex align-center gap-4px">
+                                        <div class="search-wrraper w-100">
+                                            <button class="icon">
+                                                <img src="./assets/img/icons/search.svg" class="img-not-selected">
+                                            </button>
+                                            <input type="text" placeholder="Find something" class="enter_val">
+                                            <button class="icon val_clear" style="cursor: pointer;">
+                                                <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
+                                            </button>
+                                        </div>
+                                        <button class="icon-btn icon-btn_32px close_chat-connectivity">
+                                            <img src="./assets/img/icons/close-icon.svg">
                                         </button>
                                     </div>
 
@@ -516,15 +521,22 @@
 
                                 <div class="chat-message-section-header">
 
-                                    <div class="people-profile-details">
+                                    <div class="display-flex align-center gap-12px">
 
-                                        <div class="people-img">
-                                            <img
-                                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374">
-                                        </div>
-                                        <div>
-                                            <h4 class="text-sm_semibold">Glenda Taylor</h4>
-                                            <p class="people-name-last-seen">last seen 2:30 PM</p>
+                                        <button class="icon-btn icon-btn_32px open_chat-connectivity">
+                                            <img src="./assets/img/icons/burger-menu.svg">
+                                        </button>
+
+                                        <div class="people-profile-details">
+
+                                            <div class="people-img">
+                                                <img
+                                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374">
+                                            </div>
+                                            <div>
+                                                <h4 class="text-sm_semibold">Glenda Taylor</h4>
+                                                <p class="people-name-last-seen">last seen 2:30 PM</p>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -737,7 +749,7 @@
                                         </label>
                                         <input type="file" id="file">
                                     </button>
-                                    <input type="text">
+                                    <div class="enter_message" contenteditable="true"></div>
                                     <button class="btn send_btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none">
@@ -767,7 +779,7 @@
             </section>
         </main>
 
-        <div class="chat-box-position">
+        <div class="chat-box-position" style="display: none;">
 
             <div class="chat-box-show-hide-icon-box">
                 <button class="chat_box_Open_btn">

@@ -257,6 +257,16 @@ $(document).ready(function () {
 
 
 
+    $('.open_chat-connectivity').click(function () {
+        $('.chat-wrapper .chat-connectivity').addClass('chat-connectivity_show')
+    })
+
+    $('.close_chat-connectivity').click(function () {
+        $('.chat-wrapper .chat-connectivity').removeClass('chat-connectivity_show')
+    })
+
+
+
 })
 
 
