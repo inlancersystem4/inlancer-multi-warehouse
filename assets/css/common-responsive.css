@@ -5050,6 +5050,10 @@
 
     /* gap  */
 
+    .Sm_gap-0 {
+        gap: 0;
+    }
+
     .Sm_gap-4px {
         gap: 4px;
     }

@@ -170,11 +170,19 @@
 
     .drawer-header,
     .drawer-body {
-        padding: 18px 26px;
+        padding: 18px 24px;
     }
 
     .drawer-footer {
-        padding: 12px 26px;
+        padding: 12px 24px;
+    }
+
+    .areas-list li {
+        padding: 10px 24px;
+    }
+
+    .areas-list li .title {
+        font-size: 12px;
     }
 
     .inventory_location-location-details-box .location-status-list {
@@ -288,6 +296,11 @@
     }
 
 
+    .address-form {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+
 }
 
 
@@ -305,6 +318,20 @@
 
     .table-pagination {
         gap: 12px;
+    }
+
+
+    .drawer-header,
+    .drawer-body {
+        padding: 14px 20px;
+    }
+
+    .drawer-footer {
+        padding: 10px 20px;
+    }
+
+    .areas-list li {
+        padding: 10px 20px;
     }
 
 
