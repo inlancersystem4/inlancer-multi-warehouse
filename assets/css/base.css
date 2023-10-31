@@ -1031,6 +1031,10 @@ body {
 .icon-border_40px {
     width: 40px;
     height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
 }
 
 .icon-border_32px {
@@ -1126,7 +1130,7 @@ body {
 }
 
 .full-screen-model .model-body .model-body-content {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     max-width: 700px;
     display: block;

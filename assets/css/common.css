@@ -389,6 +389,7 @@ input[type=number] {
     color: #F43F5E !important;
 }
 
+
 .font-400 {
     font-weight: 400 !important;
 }
@@ -603,6 +604,10 @@ input[type=number] {
 /* Close alignment */
 
 /* space   */
+
+.space-y-2px>*+* {
+    margin-top: 2px;
+}
 
 .space-y-4px>*+* {
     margin-top: 4px;

@@ -66,6 +66,14 @@
         max-width: 240px;
     }
 
+    .inventory_location-grid div:nth-child(1) {
+        grid-column: span 1 / span 1;
+    }
+
+    .inventory_location-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
 }
 
 
@@ -149,6 +157,63 @@
     }
 
 
+    .drawer-header,
+    .drawer-body {
+        padding: 18px 26px;
+    }
+
+    .drawer-footer {
+        padding: 12px 26px;
+    }
+
+    .inventory_location-location-details-box .location-status-list {
+        gap: 4px;
+    }
+
+    .inventory_location-padd {
+        padding: 18px 26px;
+        flex-wrap: wrap;
+    }
+
+    .address-form {
+        gap: 18px;
+    }
+
+    .inventory_location-add-location-box .add_location_btn {
+        width: 100%;
+    }
+
+    .inventory_location-location-details-box .first {
+        padding: 18px 26px;
+    }
+
+    .inventory_location-location-details-box>*+* {
+        padding: 18px 26px;
+    }
+
+    .location-details-flex-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .location-details-flex-list li .btn-regular {
+        width: 100%;
+    }
+
+    .custom-dropdown-list {
+        transform: none;
+        left: auto;
+        right: 100%;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
+    .setting-options-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
 }
 
 
@@ -192,6 +257,26 @@
         left: auto;
     }
 
+    .tab-list .tab-button {
+        width: max-content;
+    }
+
+    .tab-list {
+        width: inherit;
+        overflow-x: auto;
+        padding-bottom: 12px;
+    }
+
+
+    .setting-options-grid .options {
+        padding: 12px 18px;
+    }
+
+    .setting-options-grid .options .gap-24px {
+        gap: 16px;
+    }
+
+
 }
 
 
@@ -200,6 +285,15 @@
     .chat-message-section-body .message-day-show-tag .daily-counter {
         font-size: 12px;
         padding: 4px 12px;
+    }
+
+
+    .table-footer {
+        padding: 16px 16px 0;
+    }
+
+    .table-pagination {
+        gap: 12px;
     }
 
 
