@@ -367,7 +367,8 @@
         <!-- Close mini sidebar  -->
 
 
-        <!-- tdis is main content section  -->
+
+        <!-- this is main content section  -->
 
         <section class="main-content">
 
@@ -475,91 +476,96 @@
                         </div>
 
 
-                        <table class="main-table product-list">
+                        <div class="main-table product-list">
+                            <table class="w-100">
 
-                            <tr>
-                                <td class="list-checkbox main-checkbox">
-                                    <input type="checkbox" class="custom-checkbox" id="product-list_index0">
-                                </td>
-                                <td class="product">
-                                    Product
-                                </td>
-                                <td class="collection">
-                                    Collection
-                                </td>
-                                <td class="availability">
-                                    Availability
-                                </td>
-                                <td class="inventory">
-                                    Inventory
-                                </td>
-                                <td class="blank-section"></td>
-                                <td class="row-status"></td>
-                                <td class="row-option-section"></td>
-                                <td class="label">
-                                    <label for="product-list_index0"></label>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td class="list-checkbox">
-                                    <input type="checkbox" class="custom-checkbox" id="product-list_index1">
-                                </td>
-                                <td class="label">
-                                    <label for="product-list_index1"></label>
-                                </td>
-                                <td class="product">
-                                    <img src="./assets/img/Rectangle-1665.png">
-                                    <p class="color-Grey_90 text-sm_regular line-clamp-1">Classic Bathrobe</p>
-                                </td>
-                                <td class="collection">
-                                    <p class="text-sm_regular color-Grey_50 line-clamp-1">Limited collab with stussy</p>
-                                </td>
-                                <td class="availability">
-                                    <p class="text-sm_regular color-Grey_90 line-clamp-1">Website</p>
-                                    <p class="text-sm_medium color-Grey_50">+ 3 more</p>
-                                </td>
-                                <td class="inventory">
-                                    <p class="text-sm_regular color-Grey_90 line-clamp-1">400 in stock for 4 variants
-                                    </p>
-                                </td>
-                                <td class="blank-section"></td>
-                                <td class="row-status">
-                                    <button class="btn-regular color-Grey_60 display-flex align-center gap-8px">
-                                        <div class="ellipse-dot bg-emerald"></div>
-                                        Published
-                                    </button>
-                                </td>
-                                <td class="row-option-section">
-                                    <button class="icon-btn icon-bg_32px custom-dropdown"
-                                        onclick="OpenDropDown('index1')">
-                                        <img src="./assets/img/icons/dots-icon.svg">
-
-                                        <ul class="custom-dropdown-list leftside    " id="index1">
-                                            <li class="dropdown-item">
-                                                <a href="#" class="dropdown-link selected-dropdown-option">
-                                                    <p class="dropdown-link-title">Standardx</p>
-                                                </a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a href="#" class="dropdown-link">
-                                                    <p class="dropdown-link-title">Express</p>
-                                                </a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a href="#" class="dropdown-link ">
-                                                    <p class="dropdown-link-title">Express Eco</p>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                <tr>
+                                    <td class="list-checkbox main-checkbox">
+                                        <input type="checkbox" class="custom-checkbox" id="product-list_index0">
+                                    </td>
+                                    <td class="product">
+                                        Product
+                                    </td>
+                                    <td class="collection">
+                                        Collection
+                                    </td>
+                                    <td class="availability">
+                                        Availability
+                                    </td>
+                                    <td class="inventory">
+                                        Inventory
+                                    </td>
+                                    <td class="blank-section"></td>
+                                    <td class="row-status"></td>
+                                    <td class="row-option-section"></td>
+                                    <td class="label">
+                                        <label for="product-list_index0"></label>
+                                    </td>
+                                </tr>
 
 
-                                    </button>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td class="list-checkbox">
+                                        <input type="checkbox" class="custom-checkbox" id="product-list_index1">
+                                    </td>
+                                    <td class="label">
+                                        <label for="product-list_index1"></label>
+                                    </td>
+                                    <td class="product">
+                                        <img src="./assets/img/Rectangle-1665.png">
+                                        <p class="color-Grey_90 text-sm_regular line-clamp-1">Classic Bathrobe</p>
+                                    </td>
+                                    <td class="collection">
+                                        <p class="text-sm_regular color-Grey_50 line-clamp-1">Limited collab with stussy
+                                        </p>
+                                    </td>
+                                    <td class="availability">
+                                        <p class="text-sm_regular color-Grey_90 line-clamp-1">Website</p>
+                                        <p class="text-sm_medium color-Grey_50">+ 3 more</p>
+                                    </td>
+                                    <td class="inventory">
+                                        <p class="text-sm_regular color-Grey_90 line-clamp-1">400 in stock for 4
+                                            variants
+                                        </p>
+                                    </td>
+                                    <td class="blank-section"></td>
+                                    <td class="row-status">
+                                        <button class="btn-regular color-Grey_60 display-flex align-center gap-8px">
+                                            <div class="ellipse-dot bg-emerald"></div>
+                                            Published
+                                        </button>
+                                    </td>
+                                    <td class="row-option-section">
+                                        <button class="icon-btn icon-bg_32px custom-dropdown"
+                                            onclick="OpenDropDown('index1')">
+                                            <img src="./assets/img/icons/dots-icon.svg">
 
-                        </table>
+                                            <ul class="custom-dropdown-list leftside    " id="index1">
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link selected-dropdown-option">
+                                                        <p class="dropdown-link-title">Standardx</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link">
+                                                        <p class="dropdown-link-title">Express</p>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" class="dropdown-link ">
+                                                        <p class="dropdown-link-title">Express Eco</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                        </div>
 
 
 
@@ -1159,7 +1165,8 @@
 
                                                 </div>
 
-                                                <div class="display-flex align-center gap-16px Sm_w-100 Sm_justify-between">
+                                                <div
+                                                    class="display-flex align-center gap-16px Sm_w-100 Sm_justify-between">
 
                                                     <p class="text-right color-Grey_50 text-base_regular">-</p>
 

@@ -98,6 +98,37 @@
         margin: 0 auto;
     }
 
+
+    .product-list .product {
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    .product-list .collection {
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    .product-list .availability {
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    .product-list .inventory{
+        min-width: 210px;
+        max-width: 210px;
+    }
+
+    .product-list .blank-section{
+        min-width: 10px;
+        max-width: 10px;
+    }
+
+    .product-list .row-status{
+        min-width: 200px;
+        max-width: 200px;
+    }
+
 }
 
 
