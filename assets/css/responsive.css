@@ -166,6 +166,36 @@
     }
 
 
+    .main-table .item-section {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .main-table .variants-section {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .main-table .SKU-section {
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    .main-table .incoming-section {
+        min-width: 120px;
+        max-width: 120px;
+    }
+
+    .main-table .committed-section {
+        min-width: 120px;
+        max-width: 120px;
+    }
+
+    .main-table .available-section {
+        min-width: 140px;
+        max-width: 124px;
+    }
+
 }
 
 
@@ -194,7 +224,7 @@
 
 
     .table-header .table-options {
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         justify-content: flex-end;
         column-gap: 20px;
         row-gap: 8px;

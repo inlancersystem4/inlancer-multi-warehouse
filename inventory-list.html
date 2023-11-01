@@ -427,7 +427,7 @@
 
                         <div class="table-content">
 
-                            <div class="table-header">
+                            <div class="table-header Md_flex-column Md_align-start">
 
                                 <h2 class="title">Inventory list</h2>
 
@@ -471,11 +471,11 @@
 
 
 
-                                    <div class="search-wrraper">
+                                    <div class="search-wrraper Md_w-100">
                                         <button class="icon">
                                             <img src="./assets/img/icons/search.svg" class="img-not-selected">
                                         </button>
-                                        <input type="text" placeholder="Find something" class="enter_val">
+                                        <input type="text" placeholder="Find something" class="enter_val  Md_w-100">
                                         <button class="icon val_clear" style="cursor: pointer;">
                                             <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
                                         </button>
@@ -486,61 +486,67 @@
                             </div>
 
 
-                            <table class="main-table">
+                            <div class="main-table">
 
-                                <tr>
-                                    <th class="item-section">Item</th>
-                                    <th class="variants-section">Variants</th>
-                                    <th class="SKU-section">SKU</th>
-                                    <th class="blank-section"></th>
-                                    <th class="incoming-section">Incoming</th>
-                                    <th class="committed-section">Committed</th>
-                                    <th class="available-section">Available</th>
-                                </tr>
+                                <table class="w-100">
 
-                                <tr>
-                                    <td class="item-section">
-                                        <div class="product-item">
-                                            <img src="./assets/img/Rectangle-1665.png">
-                                            <p class="items-name">Classic Bathrobe</p>
-                                        </div>
-                                    </td>
-                                    <td class="variants-section">
-                                        <div class="product-variants">
-                                            <p>Small</p>
-                                            <p>White</p>
-                                            <p>Hooded</p>
-                                        </div>
-                                    </td>
-                                    <td class="text-light SKU-section">ROBE_001</td>
-                                    <td class="blank-section"></td>
-                                    <td class="incoming-section">0</td>
-                                    <td class="committed-section">16</td>
-                                    <td class="available-section" onclick="OpenDrawer('adjust_availablity')">240</td>
-                                </tr>
+                                    <tr>
+                                        <th class="item-section">Item</th>
+                                        <th class="variants-section">Variants</th>
+                                        <th class="SKU-section">SKU</th>
+                                        <th class="blank-section"></th>
+                                        <th class="incoming-section">Incoming</th>
+                                        <th class="committed-section">Committed</th>
+                                        <th class="available-section">Available</th>
+                                    </tr>
 
-                                <tr>
-                                    <td class="item-section">
-                                        <div class="product-item">
-                                            <img src="./assets/img/Rectangle-1665.png">
-                                            <p class="items-name">Classic Bathrobe</p>
-                                        </div>
-                                    </td>
-                                    <td class="variants-section">
-                                        <div class="product-variants">
-                                            <p>Small</p>
-                                            <p>White</p>
-                                            <p>Hooded</p>
-                                        </div>
-                                    </td>
-                                    <td class="text-light SKU-section">ROBE_001</td>
-                                    <td class="blank-section"></td>
-                                    <td class="incoming-section">0</td>
-                                    <td class="committed-section">16</td>
-                                    <td class="available-section" onclick="OpenDrawer('adjust_availablity')">240</td>
-                                </tr>
+                                    <tr>
+                                        <td class="item-section">
+                                            <div class="product-item">
+                                                <img src="./assets/img/Rectangle-1665.png">
+                                                <p class="items-name">Classic Bathrobe</p>
+                                            </div>
+                                        </td>
+                                        <td class="variants-section">
+                                            <div class="product-variants">
+                                                <p>Small</p>
+                                                <p>White</p>
+                                                <p>Hooded</p>
+                                            </div>
+                                        </td>
+                                        <td class="text-light SKU-section">ROBE_001</td>
+                                        <td class="blank-section"></td>
+                                        <td class="incoming-section">0</td>
+                                        <td class="committed-section">16</td>
+                                        <td class="available-section" onclick="OpenDrawer('adjust_availablity')">240
+                                        </td>
+                                    </tr>
 
-                            </table>
+                                    <tr>
+                                        <td class="item-section">
+                                            <div class="product-item">
+                                                <img src="./assets/img/Rectangle-1665.png">
+                                                <p class="items-name">Classic Bathrobe</p>
+                                            </div>
+                                        </td>
+                                        <td class="variants-section">
+                                            <div class="product-variants">
+                                                <p>Small</p>
+                                                <p>White</p>
+                                                <p>Hooded</p>
+                                            </div>
+                                        </td>
+                                        <td class="text-light SKU-section">ROBE_001</td>
+                                        <td class="blank-section"></td>
+                                        <td class="incoming-section">0</td>
+                                        <td class="committed-section">16</td>
+                                        <td class="available-section" onclick="OpenDrawer('adjust_availablity')">240
+                                        </td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
 
                             <div class="table-footer">
 
