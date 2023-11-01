@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./assets/css/base.css">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="./assets/css/common-responsive.css">
     </head>
 
     <body>
@@ -411,7 +412,7 @@
                                     <p class="text-large_semibold color-Grey_40 cursor-pointer">Drafts</p>
                                 </div>
 
-                                <div class="w-100 display-flex align-center justify-between gap-8px margin-top_16px">
+                                <div class="w-100 display-flex align-center justify-between gap-8px margin-top_16px Md_flex-column Md_align-end">
 
                                     <div class="display-flex align-stretch gap-8px">
 
@@ -426,7 +427,7 @@
 
 
 
-                                    <div class="display-flex align-center gap-8px">
+                                    <div class="display-flex align-center gap-8px Sm_flex-column-reverse Sm_w-100 Sm_align-end">
 
 
                                         <div class="search-wrraper w-100">
@@ -451,106 +452,110 @@
                             </div>
 
 
-                            <table class="main-table order-list">
+                            <div class="main-table order-list">
+                                <table class="w-100">
 
-                                <tbody>
-                                    <tr>
-                                        <td class="list-checkbox main-checkbox">
-                                            <input type="checkbox" class="custom-checkbox" id="order-list_index0">
-                                        </td>
+                                    <tbody>
+                                        <tr>
+                                            <td class="list-checkbox main-checkbox">
+                                                <input type="checkbox" class="custom-checkbox" id="order-list_index0">
+                                            </td>
 
-                                        <td class="label">
-                                            <label for="order-list_index0"></label>
-                                        </td>
+                                            <td class="label">
+                                                <label for="order-list_index0"></label>
+                                            </td>
 
-                                        <td class="Id color-Grey_50 font-500">Order</td>
-                                        <td class="Date color-Grey_50 font-500">Date</td>
-                                        <td class="Customer color-Grey_50 font-500">Customer</td>
-                                        <td class="Channel color-Grey_50 font-500">Channel</td>
-                                        <td class="Payment_status color-Grey_50 font-500">Payment status</td>
-                                        <td class="Fulfillment_status color-Grey_50 font-500">Fulfillment status</td>
-                                        <td class="Total color-Grey_50 font-500">Total</td>
+                                            <td class="Id color-Grey_50 font-500">Order</td>
+                                            <td class="Date color-Grey_50 font-500">Date</td>
+                                            <td class="Customer color-Grey_50 font-500">Customer</td>
+                                            <td class="Channel color-Grey_50 font-500">Channel</td>
+                                            <td class="Payment_status color-Grey_50 font-500">Payment status</td>
+                                            <td class="Fulfillment_status color-Grey_50 font-500">Fulfillment status
+                                            </td>
+                                            <td class="Total color-Grey_50 font-500">Total</td>
 
-                                    </tr>
-
-
-                                    <tr>
-
-                                        <td class="list-checkbox">
-                                            <input type="checkbox" class="custom-checkbox" id="order-list_index1">
-                                        </td>
-                                        <td class="label">
-                                            <label for="order-list_index1"></label>
-                                        </td>
+                                        </tr>
 
 
-                                        <td class="Id color-Grey_90">#5688</td>
-                                        <td class="Date color-Grey_50">Aug 17, 2:56 PM</td>
-                                        <td class="Customer color-Grey_90">Ludvig Rask</td>
-                                        <td class="Channel color-Grey_90">Default Sales Channel</td>
-                                        <td class="Payment_status color-Grey_50">
-                                            <button class="btn-regular display-flex align-center gap-8px">
-                                                <div class="ellipse-dot bg-rose"></div>
-                                                <p class="color-Grey_60">Awaits payment</p>
-                                            </button>
-                                        </td>
-                                        <td class="Fulfillment_status color-Grey_50">
-                                            <button class="btn-regular display-flex align-center gap-8px">
-                                                <div class="ellipse-dot bg-orange"></div>
-                                                <p class="color-Grey_60">Awaits fulfillment</p>
-                                            </button>
-                                        </td>
-                                        <td class="Total color-Grey_90">
-                                            <p class="display-flex align-center gap-8px justify-end">3,424.50 kr.
-                                                <span class="color-Grey_50 font-500">DKK</span>
-                                            </p>
-                                        </td>
+                                        <tr>
+
+                                            <td class="list-checkbox">
+                                                <input type="checkbox" class="custom-checkbox" id="order-list_index1">
+                                            </td>
+                                            <td class="label">
+                                                <label for="order-list_index1"></label>
+                                            </td>
 
 
-
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <td class="list-checkbox">
-                                            <input type="checkbox" class="custom-checkbox" id="order-list_index2">
-                                        </td>
-                                        <td class="label">
-                                            <label for="order-list_index2"></label>
-                                        </td>
-
-
-                                        <td class="Id color-Grey_90">#5687</td>
-                                        <td class="Date color-Grey_50">Aug 17, 2:56 PM</td>
-                                        <td class="Customer color-Grey_90 line-clamp-1">Lorem ipsum dolor sit amet
-                                            consectetur.</td>
-                                        <td class="Channel color-Grey_90 line-clamp-1">Default Sales Channel</td>
-                                        <td class="Payment_status color-Grey_50">
-                                            <button class="btn-regular display-flex align-center gap-8px">
-                                                <div class="ellipse-dot bg-emerald"></div>
-                                                <p class="color-Grey_60">Paid</p>
-                                            </button>
-                                        </td>
-                                        <td class="Fulfillment_status color-Grey_50">
-                                            <button class="btn-regular display-flex align-center gap-8px">
-                                                <div class="ellipse-dot bg-emerald"></div>
-                                                <p class="color-Grey_60">Shipped</p>
-                                            </button>
-                                        </td>
-                                        <td class="Total color-Grey_90">
-                                            <p class="display-flex align-center gap-8px justify-end">€47.50
-                                                <span class="color-Grey_50 font-500">EUR</span>
-                                            </p>
-                                        </td>
+                                            <td class="Id color-Grey_90">#5688</td>
+                                            <td class="Date color-Grey_50">Aug 17, 2:56 PM</td>
+                                            <td class="Customer color-Grey_90">Ludvig Rask</td>
+                                            <td class="Channel color-Grey_90">Default Sales Channel</td>
+                                            <td class="Payment_status color-Grey_50">
+                                                <button class="btn-regular display-flex align-center gap-8px">
+                                                    <div class="ellipse-dot bg-rose"></div>
+                                                    <p class="color-Grey_60">Awaits payment</p>
+                                                </button>
+                                            </td>
+                                            <td class="Fulfillment_status color-Grey_50">
+                                                <button class="btn-regular display-flex align-center gap-8px">
+                                                    <div class="ellipse-dot bg-orange"></div>
+                                                    <p class="color-Grey_60">Awaits fulfillment</p>
+                                                </button>
+                                            </td>
+                                            <td class="Total color-Grey_90">
+                                                <p class="display-flex align-center gap-8px justify-end">3,424.50 kr.
+                                                    <span class="color-Grey_50 font-500">DKK</span>
+                                                </p>
+                                            </td>
 
 
 
 
-                                    </tr>
+                                        </tr>
 
-                                </tbody>
-                            </table>
+                                        <tr>
+
+                                            <td class="list-checkbox">
+                                                <input type="checkbox" class="custom-checkbox" id="order-list_index2">
+                                            </td>
+                                            <td class="label">
+                                                <label for="order-list_index2"></label>
+                                            </td>
+
+
+                                            <td class="Id color-Grey_90">#5687</td>
+                                            <td class="Date color-Grey_50">Aug 17, 2:56 PM</td>
+                                            <td class="Customer color-Grey_90 line-clamp-1">Lorem ipsum dolor sit amet
+                                                consectetur.</td>
+                                            <td class="Channel color-Grey_90 line-clamp-1">Default Sales Channel</td>
+                                            <td class="Payment_status color-Grey_50">
+                                                <button class="btn-regular display-flex align-center gap-8px">
+                                                    <div class="ellipse-dot bg-emerald"></div>
+                                                    <p class="color-Grey_60">Paid</p>
+                                                </button>
+                                            </td>
+                                            <td class="Fulfillment_status color-Grey_50">
+                                                <button class="btn-regular display-flex align-center gap-8px">
+                                                    <div class="ellipse-dot bg-emerald"></div>
+                                                    <p class="color-Grey_60">Shipped</p>
+                                                </button>
+                                            </td>
+                                            <td class="Total color-Grey_90">
+                                                <p class="display-flex align-center gap-8px justify-end">€47.50
+                                                    <span class="color-Grey_50 font-500">EUR</span>
+                                                </p>
+                                            </td>
+
+
+
+
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
 
 
 
