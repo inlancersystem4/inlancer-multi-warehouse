@@ -8773,6 +8773,10 @@
 
     /* gap  */
 
+    .Mobile-fit_gap-0{
+        gap: 0 !important;
+    }
+
     .Mobile-fit_gap-4px {
         gap: 4px;
     }

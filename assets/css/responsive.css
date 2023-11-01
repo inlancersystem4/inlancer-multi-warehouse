@@ -246,6 +246,38 @@
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
+    .price-accordion {
+        border-bottom: 1px solid var(--Grey-20);
+        border-top: 1px solid var(--Grey-20);
+        padding: 6px 0;
+    }
+
+    .price-list {
+        align-items: flex-start;
+        gap: 6px;
+        flex-direction: column;
+        padding: 6px 0;
+    }
+
+    .price-accordion .price-accordion-body .price-list {
+        padding: 6px 0 !important;
+    }
+
+    .price-list .current-price {
+        min-width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .drawer .table-resuits-count {
+        display: none;
+    }
+
+    .drawer .table-pagination {
+        width: 100%;
+        justify-content: space-between;
+    }
+
 }
 
 
