@@ -114,17 +114,17 @@
         max-width: 150px;
     }
 
-    .product-list .inventory{
+    .product-list .inventory {
         min-width: 210px;
         max-width: 210px;
     }
 
-    .product-list .blank-section{
+    .product-list .blank-section {
         min-width: 10px;
         max-width: 10px;
     }
 
-    .product-list .row-status{
+    .product-list .row-status {
         min-width: 200px;
         max-width: 200px;
     }
@@ -402,10 +402,14 @@
 
     .table-footer {
         padding: 16px 16px 0;
+        flex-wrap: wrap;
     }
 
     .table-pagination {
         gap: 12px;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 12px;
     }
 
 
