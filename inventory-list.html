@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/common-responsive.css">
 </head>
 
 <body>
@@ -1418,7 +1419,7 @@
 
                                 <div class="space-y-32px">
 
-                                    <div class="display-flex justify-between align-center w-100">
+                                    <div class="display-flex justify-between align-center w-100 gap-12px">
 
                                         <div class="custom-toogle-btn-title">
                                             <h6 class="text-base_semibold color-Grey_90">Does this location keeps stock
@@ -1438,7 +1439,7 @@
 
                                     </div>
 
-                                    <div class="display-flex justify-between align-center w-100">
+                                    <div class="display-flex justify-between align-center w-100 gap-12px">
 
                                         <div class="custom-toogle-btn-title">
                                             <h6 class="text-base_semibold color-Grey_90">Does this location fulfill
@@ -1455,7 +1456,7 @@
 
                                     </div>
 
-                                    <div class="display-flex justify-between align-center w-100">
+                                    <div class="display-flex justify-between align-center w-100 gap-12px">
 
                                         <div class="custom-toogle-btn-title">
                                             <h6 class="text-base_semibold color-Grey_90">Does this location offer
@@ -1568,7 +1569,7 @@
                                         <div
                                             class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                            <div class="display-flex align-center gap-20px">
+                                            <div class="display-flex align-center gap-20px Mobile_gap-12px">
                                                 <div class="icon-border icon-border-20 icon-border_40px">
                                                     <div class="icon-bg icon-bg_32px bg-Grey_10">
                                                         <img src="./assets/img/icons/buildings.svg"
@@ -1593,7 +1594,7 @@
                                         <div
                                             class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                            <div class="display-flex align-center gap-20px">
+                                            <div class="display-flex align-center gap-20px Mobile_gap-12px">
                                                 <div class="icon-border icon-border-20 icon-border_40px">
                                                     <div class="icon-bg icon-bg_32px bg-Grey_10">
                                                         <img src="./assets/img/icons/buildings.svg"
@@ -1618,7 +1619,7 @@
                                         <div
                                             class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                            <div class="display-flex align-center gap-20px">
+                                            <div class="display-flex align-center gap-20px Mobile_gap-12px">
                                                 <div class="icon-border icon-border-20 icon-border_40px">
                                                     <div class="icon-bg icon-bg_32px bg-Grey_10">
                                                         <img src="./assets/img/icons/buildings.svg"
@@ -1643,7 +1644,7 @@
                                         <div
                                             class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                            <div class="display-flex align-center gap-20px">
+                                            <div class="display-flex align-center gap-20px Mobile_gap-12px">
                                                 <div class="icon-border icon-border-20 icon-border_40px">
                                                     <div class="icon-bg icon-bg_32px bg-Grey_10">
                                                         <img src="./assets/img/icons/buildings.svg"
@@ -1685,21 +1686,23 @@
 
                             </div>
 
-                            <div class="accordion-body">
+                            <div class="accordion-body Sm_space-y-16px">
 
-                                <div class="display-flex align-center justify-between w-100">
+                                <div
+                                    class="display-flex align-center justify-between w-100 Sm_flex-column Sm_align-start Sm_gap-8px">
                                     <div class="custom-toogle-btn-title">
                                         <h6 class="text-base_semibold color-Grey_90">Areas affected by this rule</h6>
                                         <p class="text-base_regular color-Grey_50">Select the geographical areas where
                                             this location
                                             rank should apply.</p>
                                     </div>
-                                    <button class="btn-regular" onclick="OpenDrawer('affected_Area')">Add
+                                    <button class="btn-regular Sm_w-100" onclick="OpenDrawer('affected_Area')">Add
                                         areas</button>
                                 </div>
 
 
-                                <div class="display-flex align-center justify-between w-100">
+                                <div
+                                    class="display-flex align-center justify-between w-100 Sm_flex-column Sm_align-start Sm_gap-8px">
                                     <div class="display-flex align-center gap-16px">
 
                                         <div class="icon-border icon-border-20 icon-border_40px">
@@ -1708,12 +1711,14 @@
                                             </div>
                                         </div>
 
-                                        <div class="display-flex align-center gap-8px">
-                                            <p class="text-base_regular color-Grey_90">Anhui, Beijing, Chongqing</p>
+                                        <div
+                                            class="display-flex align-center gap-8px Mobile_flex-column Mobile_gap-0 Mobile_align-start">
+                                            <p class="text-base_regular color-Grey_90 Sm_line-clamp-1">Anhui, Beijing,
+                                                Chongqing</p>
                                             <p class="text-base_regular color-Grey_50">+ 28 more</p>
                                         </div>
                                     </div>
-                                    <button class="btn-regular" onclick="OpenDrawer('affected_Area')">Edit
+                                    <button class="btn-regular Sm_w-100" onclick="OpenDrawer('affected_Area')">Edit
                                         areas</button>
                                 </div>
 
@@ -1849,6 +1854,10 @@
 
 
 
+
+
+
+
     <div class="drawer rightside" id="affected_Area">
 
         <div class="drawer-header">
@@ -1979,6 +1988,7 @@
         </div>
 
     </div>
+
 
 
     <div class="drawer rightside" id="Edit_location_details">
@@ -2206,6 +2216,8 @@
 
 
 
+
+
     <div class="drawer rightside" id="Edit_default_location_ranking">
 
         <div class="drawer-header">
@@ -2252,7 +2264,7 @@
                             </div>
                             <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                <div class="display-flex align-center gap-20px">
+                                <div class="display-flex align-center gap-20px Sm_gap-12px">
                                     <div class="icon-border icon-border-20 icon-border_40px">
                                         <div class="icon-bg icon-bg_32px bg-Grey_10">
                                             <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
@@ -2275,7 +2287,7 @@
                             </div>
                             <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                <div class="display-flex align-center gap-20px">
+                                <div class="display-flex align-center gap-20px Sm_gap-12px">
                                     <div class="icon-border icon-border-20 icon-border_40px">
                                         <div class="icon-bg icon-bg_32px bg-Grey_10">
                                             <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
@@ -2298,7 +2310,7 @@
                             </div>
                             <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                <div class="display-flex align-center gap-20px">
+                                <div class="display-flex align-center gap-20px Sm_gap-12px">
                                     <div class="icon-border icon-border-20 icon-border_40px">
                                         <div class="icon-bg icon-bg_32px bg-Grey_10">
                                             <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
@@ -2321,7 +2333,7 @@
                             </div>
                             <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                <div class="display-flex align-center gap-20px">
+                                <div class="display-flex align-center gap-20px Sm_gap-12px">
                                     <div class="icon-border icon-border-20 icon-border_40px">
                                         <div class="icon-bg icon-bg_32px bg-Grey_10">
                                             <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
@@ -2359,6 +2371,8 @@
         </div>
 
     </div>
+
+
 
 
 
@@ -2419,7 +2433,7 @@
                             </div>
                             <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                <div class="display-flex align-center gap-20px">
+                                <div class="display-flex align-center gap-20px Sm_gap-12px">
                                     <div class="icon-border icon-border-20 icon-border_40px">
                                         <div class="icon-bg icon-bg_32px bg-Grey_10">
                                             <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
@@ -2442,7 +2456,7 @@
                             </div>
                             <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                <div class="display-flex align-center gap-20px">
+                                <div class="display-flex align-center gap-20px Sm_gap-12px">
                                     <div class="icon-border icon-border-20 icon-border_40px">
                                         <div class="icon-bg icon-bg_32px bg-Grey_10">
                                             <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
@@ -2465,7 +2479,7 @@
                             </div>
                             <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                <div class="display-flex align-center gap-20px">
+                                <div class="display-flex align-center gap-20px Sm_gap-12px">
                                     <div class="icon-border icon-border-20 icon-border_40px">
                                         <div class="icon-bg icon-bg_32px bg-Grey_10">
                                             <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
@@ -2488,7 +2502,7 @@
                             </div>
                             <div class="display-flex align-center justify-between w-100 padding-8px gap-20px">
 
-                                <div class="display-flex align-center gap-20px">
+                                <div class="display-flex align-center gap-20px Sm_gap-12px">
                                     <div class="icon-border icon-border-20 icon-border_40px">
                                         <div class="icon-bg icon-bg_32px bg-Grey_10">
                                             <img src="./assets/img/icons/buildings.svg" class="img-not-selected">
@@ -2549,7 +2563,7 @@
     <div class="drawer rightside" id="Edit_override_location_rank_settings">
 
         <div class="drawer-header">
-            <h4 class="drawer-title">Edit override location rank settings</h4>
+            <h4 class="drawer-title Sm_text-large_semibold Sm_line-clamp-1">Edit override location rank settings</h4>
 
             <button class="close-icon">
                 <img src="./assets/img/icons/close-icon.svg">
