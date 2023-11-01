@@ -196,6 +196,15 @@
         max-width: 124px;
     }
 
+    .table-footer .custom-dropdown-list {
+        right: 0;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
 }
 
 
@@ -376,6 +385,10 @@
         justify-content: space-between;
     }
 
+    .table-footer .custom-dropdown-list {
+        right: -120%;
+    }
+
 }
 
 
@@ -470,7 +483,14 @@
     .table-footer {
         padding: 16px 16px 0;
         flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 6px;
     }
+
+    .table-footer .custom-dropdown-list {
+        right: 0;
+    }
+
 
     .table-pagination {
         gap: 12px;
