@@ -265,6 +265,18 @@ $(document).ready(function () {
         $('.chat-wrapper .chat-connectivity').removeClass('chat-connectivity_show')
     })
 
+    $('.togglePassword').click(function () {
+        var inputField = $(this).siblings("input");
+        if (inputField.attr('type') === 'password') {
+            inputField.attr('type', 'text');
+            $(this).children(".pass_hide").show();
+            $(this).children(".pass_show").hide();
+        } else {
+            inputField.attr('type', 'password');
+            $(this).children(".pass_hide").hide();
+            $(this).children(".pass_show").show();
+        }
+    });
 
 
 })

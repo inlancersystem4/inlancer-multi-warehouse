@@ -205,6 +205,28 @@
         -o-transform: none;
     }
 
+
+    .auth-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .auth-from-section .from {
+        position: fixed;
+        bottom: 0;
+        max-width: 100%;
+        margin-left: 0;
+        left: 0;
+        border-radius: 16px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        max-height: 450px;
+        overflow-y: auto;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+    }
+
 }
 
 
