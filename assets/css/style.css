@@ -2662,7 +2662,7 @@
     gap: 4px;
     flex-direction: column;
     padding-left: 4px;
-    margin-top: 4px;
+    margin-top: 12px;
 }
 
 .chat-box-position .chat-box .chat-box-main-content .message-box img {
@@ -2690,6 +2690,24 @@
     color: var(--Grey-90);
     max-width: 86%;
     border-bottom-left-radius: 0 !important;
+}
+
+.chat-box-position .chat-box .chat-box-main-content .message-box .message:has(audio) {
+    width: 100%;
+}
+
+.chat-box-position .chat-box .chat-box-main-content .message-box .message audio {
+    height: 42px;
+    width: 100%;
+}
+
+.chat-box-position .chat-box .chat-box-main-content .message-box .message:has(video) {
+    width: 100%;
+}
+
+.chat-box-position .chat-box .chat-box-main-content .message-box .message video {
+    height: auto;
+    width: 100%;
 }
 
 .chat-box-position .chat-box .chat-box-main-content .message-box .message-timeing {
@@ -2827,6 +2845,62 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+}
+
+.chat-box-position .chat-box .OverLay {
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    display: none;
+}
+
+.chat-box-position .chat-box .chat-box-close-model {
+    width: 94%;
+    padding: 12px;
+    background-color: white;
+    position: absolute;
+    z-index: 11;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    align-items: flex-end;
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid var(--Grey-20);
+}
+
+.chat-box-position .chat-box .chat-box-close-model .title {
+    font-size: 16px;
+    color: var(--Grey-90);
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.chat-box-position .chat-box .chat-box-close-model .sub-title {
+    color: var(--Grey-50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.chat-box-position .chat-box .chat-box-close-model .btn-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 /* Close  chat-box  */

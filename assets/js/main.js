@@ -233,13 +233,7 @@ $(document).ready(function () {
 
 
 
-    $(".Open_frined_list").click(function () {
-        $(this).parent().parent().siblings(".friend-list_drawer").addClass("friend-list_drawer_show")
-    })
 
-    $(".Close_frined_list").click(function () {
-        $(this).parent().parent().removeClass("friend-list_drawer_show")
-    })
 
     $(".chat_box_Close_btn").hide()
 
@@ -253,6 +247,22 @@ $(document).ready(function () {
         $(this).hide();
         $(this).siblings(".chat_box_Open_btn").show();
         $(this).parent().siblings(".chat-box").removeClass("chat-box_show");
+    })
+
+    $(".open_End_conversation_model").click(function () {
+        $(".chat-box-position .chat-box .chat-box-close-model").css("display", "flex");
+        $(".chat-box-position .chat-box .OverLay").show();
+    })
+
+    $(".Close_End_conversation_model").click(function () {
+        $(".chat-box-position .chat-box .chat-box-close-model").hide();
+        $(".chat-box-position .chat-box .OverLay").hide();
+    })
+
+    $(".Close_chat-box").click(function () {
+        $(this).parent().parent().parent(".chat-box").removeClass("chat-box_show");
+        $(".chat-box-position .chat-box .chat-box-close-model").hide();
+        $(".chat-box-position .chat-box .OverLay").hide();
     })
 
 
@@ -277,7 +287,6 @@ $(document).ready(function () {
             $(this).children(".pass_show").show();
         }
     });
-
 
 })
 

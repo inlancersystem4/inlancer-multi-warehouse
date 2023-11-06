@@ -31,9 +31,6 @@
             <div class="chat-box-header">
 
                 <div class="header-group">
-                    <button class="options Open_frined_list">
-                        <img src="./assets/img/chat-box/list.svg">
-                    </button>
                     <div class="user-profile">
                         <div class="avatar">
                             <img
@@ -53,12 +50,34 @@
                     <button class="options">
                         <img src="./assets/img/chat-box/videoCamera.svg">
                     </button>
+                    <button class="options open_End_conversation_model">
+                        <img src="./assets/img/chat-box/close-icon.svg">
+                    </button>
                 </div>
 
             </div>
 
 
             <div class="chat-box-main-content">
+
+
+                <div class="message-box">
+                    <div class="message">👋 Hi! I’m REVE Chatbot. Nice to meet you.</div>
+                    <span class="message-timeing">14:38 PM</span>
+                </div>
+
+                <div class="message-box">
+                    <div class="message">How may I help you today?
+                        <div class="display-flex display-flex-wrap gap-4px margin-top_12px">
+                            <button class="btn-regular display-flex gap-6px">🎁 Start 14-Day Free Trial</button>
+                            <button class="btn-regular display-flex gap-6px">📅 Book a Free Demo</button>
+                            <button class="btn-regular display-flex gap-6px"> ✋ I have a Question</button>
+                            <button class="btn-regular display-flex gap-6px"> 💬 Chat with a Live Agent</button>
+                        </div>
+                    </div>
+                    <span class="message-timeing">14:38 PM</span>
+                </div>
+
 
                 <div class="message-box my-chat">
                     <div class="message">hii</div>
@@ -86,6 +105,20 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis molestias dolor adipisci, nam
                         ratione quae alias velit, reprehenderit eius unde repudiandae laboriosam inventore accusamus
                         natus ipsum iste? Optio repellendus temporibus alias quas.
+                    </div>
+                    <span class="message-timeing">14:38 PM</span>
+                </div>
+
+                <div class="message-box my-chat">
+                    <div class="message">
+                        <audio src="./assets/audio/varma-playlist.mp3" controls></audio>
+                    </div>
+                    <span class="message-timeing">14:38 PM</span>
+                </div>
+
+                <div class="message-box my-chat">
+                    <div class="message">
+                        <video src="./assets/video/mov_bbb.mp4" controls></video>
                     </div>
                     <span class="message-timeing">14:38 PM</span>
                 </div>
@@ -136,50 +169,18 @@
 
             </div>
 
-
-
-            <div class="friend-list_drawer">
-
-                <div class="header">
-                    <div class="search-wrraper w-100">
-                        <button class="icon">
-                            <img src="./assets/img/icons/search.svg" class="img-not-selected">
-                        </button>
-                        <input type="text" placeholder="Find something" class="enter_val  w-100">
-                        <button class="icon val_clear" style="cursor: pointer;">
-                            <img src="./assets/img/icons/close-icon.svg" class="img-not-selected">
-                        </button>
-                    </div>
-                    <div class="icon-btn icon-btn_32px Close_frined_list">
-                        <img src="./assets/img/chat-box/close-icon.svg">
-                    </div>
+            <div class="chat-box-close-model">
+                <div>
+                    <h6 class="title">End conversation</h6>
+                    <p class="sub-title">Are you sure you want to end conversation?</p>
                 </div>
-
-                <ul class="friend-list">
-                    <li>
-                        <div class="avatar">
-                            <img
-                                src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                        </div>
-                        <div>
-                            <div class="user-name">Courtney Cook</div>
-                            <div class="user-last-message">hii!!!</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="avatar">
-                            <img
-                                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                        </div>
-                        <div>
-                            <div class="user-name">Ali Morshedlou</div>
-                            <div class="user-last-message">byy</div>
-                        </div>
-                    </li>
-                </ul>
-
+                <div class="btn-group">
+                    <button class="btn-regular Close_End_conversation_model">Not Now</button>
+                    <button class="btn-regular btn-danger Close_chat-box">End conversation</button>
+                </div>
             </div>
 
+            <div class="OverLay"></div>
 
         </div>
 
