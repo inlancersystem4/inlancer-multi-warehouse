@@ -9,7 +9,7 @@
 
 
 .focus_border {
-    border: 1px solid #7C3AED !important;
+    border: 1px solid #F56600 !important;
 }
 
 
@@ -3127,4 +3127,53 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auth-page_center .auth-title {
+    padding: 0;
+}
+
+.auth-page_center .auth-container {
+    display: block;
+}
+
+.auth-page_center .auth-from-section {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-page_center .auth-from-section .from {
+    margin: 0 auto;
+}
+
+.auth-page_center .logo {
+    height: auto;
+    margin: 0 auto;
+    width: 240px;
+    display: block;
+}
+
+
+.auth-page_center .logo_mobile {
+    display: none;
 }

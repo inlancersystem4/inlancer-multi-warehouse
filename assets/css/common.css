@@ -130,7 +130,7 @@ input[type=number] {
 /* Tyrograph */
 
 .color_violet {
-    color: #7C3AED !important;
+    color: #F56600 !important;
 }
 
 .color-black {
@@ -193,7 +193,7 @@ input[type=number] {
 }
 
 .bg-purple {
-    background-color: #7C3AED !important;
+    background-color: #F56600 !important;
 }
 
 .bg-blue {
@@ -345,7 +345,7 @@ input[type=number] {
 }
 
 .border-violet {
-    border-color: #7C3AED;
+    border-color: #F56600;
 }
 
 
@@ -1660,7 +1660,7 @@ input[type=number] {
 }
 
 .input-1:focus {
-    border: 1px solid #7C3AED !important;
+    border: 1px solid #F56600 !important;
     outline: none;
     box-shadow: 0px 0px 0px 4px rgba(124, 58, 237, 0.10);
 }
@@ -1709,7 +1709,7 @@ textarea {
 }
 
 .custom-radio:checked {
-    border: 2px solid #7C3AED;
+    border: 2px solid #F56600;
     background-image: url('../img/icons/radio-checked.svg');
     background-repeat: no-repeat;
     background-size: 10px;
