@@ -288,6 +288,25 @@ $(document).ready(function () {
         }
     });
 
+
+
+
+    function createToaster() {
+        var toaster = $('.toaster');
+
+        toaster.hide();
+
+        // $('body').append(toaster);
+
+        setTimeout(function () {
+            toaster.fadeIn();
+            toaster.css('display', 'flex');
+
+        }, 2000);
+    }
+
+    createToaster();
+
 })
 
 
