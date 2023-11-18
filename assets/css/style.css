@@ -3177,3 +3177,115 @@
 .auth-page_center .logo_mobile {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* toaster  */
+
+
+.toaster-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    width: 100%;
+    max-width: 360px;
+}
+
+
+.toaster {
+    width: 100%;
+    border-radius: 4px;
+    z-index: 99;
+    background-color: white;
+    overflow: hidden;
+    border-top-width: 3px;
+    border-top-style: solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 4px 12px;
+}
+
+
+.toaster .close_btn {
+    border: 0;
+    outline: none;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.toaster .close_btn img,
+.toaster .close_btn svg,
+.toaster .close_btn i {
+    width: 18px;
+    height: 18px;
+}
+
+.toaster .toaster-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+    margin-top: 4px;
+}
+
+.toaster .toaster-content .toaster-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-transform: capitalize;
+}
+
+.toaster .toaster-content .toaster-subtitle {
+    margin-top: 4px;
+    font-size: 13px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.toaster.success {
+    border-top-color: #10B981;
+}
+
+.error.toaster {
+    border-top-color: #F43F5E;
+}
+
+.toaster .toaster-content img,
+.toaster .toaster-content svg {
+    width: 32px;
+    height: 32px;
+}
