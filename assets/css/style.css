@@ -3201,8 +3201,8 @@
     flex-direction: column;
     gap: 12px;
     position: absolute;
-    left: 1rem;
-    bottom: 1rem;
+    right: 1rem;
+    top: 1rem;
     width: 100%;
     max-width: 360px;
 }
@@ -3290,3 +3290,5 @@
     width: 32px;
     height: 32px;
 }
+
+

@@ -137,7 +137,6 @@ $(document).ready(function () {
 
 
 
-
     $("#show_SearchBar").click(function (event) {
         event.stopPropagation();
         $(this).children(".searchBar").fadeIn();
@@ -275,6 +274,8 @@ $(document).ready(function () {
         $('.chat-wrapper .chat-connectivity').removeClass('chat-connectivity_show')
     })
 
+
+
     $('.togglePassword').click(function () {
         var inputField = $(this).siblings("input");
         if (inputField.attr('type') === 'password') {
@@ -287,7 +288,6 @@ $(document).ready(function () {
             $(this).children(".pass_show").show();
         }
     });
-
 
 
 
@@ -334,7 +334,6 @@ function CloseDrawer(DrawerId) {
 }
 
 
-
 function OpenDropDown(dropdownId) {
     $(".custom-dropdown-list").removeClass("show-dropdown");
     $("#" + dropdownId).toggleClass("show-dropdown");
@@ -373,5 +372,6 @@ $(document).on("click", function (e) {
         $(".custom-dropdown-list").removeClass("show-dropdown");
     }
 });
+
 
 

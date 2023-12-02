@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<body lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+        <link rel="stylesheet" href="./assets/css/common.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+    </head>
+
+    <style>
+        .restaurants-list_item {
+            border: 1px solid var(--Grey-20);
+            border-radius: 8px;
+            padding: 8px 12px;
+            position: relative;
+        }
+
+        .restaurants-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            padding: 12px;
+        }
+
+        .restaurants-list .options:hover .custom-dropdown-list {
+            display: block;
+        }
+
+        .restaurants-list .restaurants-list_item .restaurants_img {
+            width: 160px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    </style>
+
+    <body>
+
+        <ul class="restaurants-list">
+
+            <li class="restaurants-list_item">
+
+                <div class="display-flex align-start justify-between w-100">
+
+                    <h6 class="text-large_regular">01.</h6>
+
+                    <div class="options">
+                        <div class="icon-btn icon-btn_32px  custom-dropdown border border-solid border-Grey_20">
+                            <img src="{% static " assets/img/icons/dots-icon.svg" %}">
+                            <ul class="custom-dropdown-list leftside icon-dropdown">
+                                <li class="dropdown-item">
+                                    <div class="dropdown-link" onclick=edit_res(' + item.res_id + ')>
+                                        <img src=" ' + editicon + ' ">
+                                        <p class="dropdown-link-title"> Edit Toll Plaza </p>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item">
+                                    <div class="dropdown-link" onclick=open_my_model("deleteProduct",'
+                                        +item.res_id+','+ index +')>
+                                        <img src="' + trashicon + '">
+                                        <p class="dropdown-link-title required"> Delete Toll Plaza </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="display-flex align-start gap-14px">
+
+                    <img src="' + item.res_image + '" class="restaurants_img">
+
+                    <div class="space-y-8px">
+
+                        <h4 class="text-large_semibold text-capitalize line-clamp-1"> + item.res_name + '</h4>
+
+                        <div class="display-flex align-start gap-8px">
+                            <img src="">
+                            <p class="text-base_regular">+ item.res_address +</p>
+                        </div>
+
+                        <div class="display-flex align-center gap-8px">
+                            <img src="">
+                            <p class="text-base_regular">+ item.res_url + </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </li>
+
+
+        </ul>
+
+
+
+
+
+
+
+        <script src="./assets/js/jQuery-min.js"></script>
+        <script src="./assets/js/main.js"></script>
+
+    </body>
+
+    </html>
