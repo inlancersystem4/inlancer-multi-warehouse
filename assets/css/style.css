@@ -3292,3 +3292,173 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chat-message-section {
+    position: relative;
+}
+
+.upload-file-popever {
+    position: absolute;
+    max-width: 96%;
+    width: 100%;
+    bottom: 68px;
+    left: 50%;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+    z-index: 99;
+    filter: drop-shadow(0 0 0.75rem #ffffff33);
+    padding: 12px;
+}
+
+.upload-loader {
+    width: 10%;
+    height: 100%;
+    background-color: skyblue;
+    position: absolute;
+    inset: 0;
+}
+
+.upload-file-popever .file-uploaded {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    position: relative;
+    z-index: 101;
+}
+
+.upload-file-popever .file-uploaded .file-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.upload-file-popever .file-uploaded .file-info .file-pic {
+    width: 36px;
+    height: 36px;
+}
+
+.upload-file-popever .file-uploaded .file-info .file-pic img,
+.upload-file-popever .file-uploaded .file-info .file-pic svg,
+.upload-file-popever .file-uploaded .file-info .file-pic i {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.upload-file-popever .file-uploaded .file-info .file-details {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.upload-file-popever .file-uploaded .file-info .file-details .file-name {
+    font-size: 14px;
+    margin: 0;
+}
+
+.upload-file-popever .file-uploaded .file-info .file-details .progress-count {
+    font-size: 12px;
+    margin: 0;
+}
+
+.upload-file-popever .file-uploaded .popever-btns {
+    display: flex;
+    gap: 12px;
+}
+
+.upload-file-popever .file-uploaded .popever-btns .btn {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.upload-file-popever .file-uploaded .popever-btns .btn img,
+.upload-file-popever .file-uploaded .popever-btns .btn svg {
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.upload-file-popever .file-uploaded .successfully-msg {
+    display: none;
+    font-size: 18px;
+    color: #4BB543;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.upload-file-popever .file-uploaded.successfully .successfully-msg {
+    display: block;
+    opacity: 0;
+}
+
+.upload-file-popever .file-uploaded.successfully .successfully-msg {
+    animation: fadeIn 1.5s linear forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.upload-file-popever .file-uploaded.successfully .file-name {
+    display: none;
+}
+
+.upload-file-popever .file-uploaded .popever-btns .CloseBtn {
+    border-color: #FF3333;
+}
+
+.upload-file-popever .file-uploaded.successfully .popever-btns .CloseBtn {
+    display: none;
+}
+
+.upload-file-popever .file-uploaded .popever-btns .SuccessBtn {
+    display: none;
+    border-color: #4BB543;
+}
+
+.upload-file-popever .file-uploaded.successfully .popever-btns .SuccessBtn {
+    display: flex;
+    opacity: 0;
+}
+
+.upload-file-popever .file-uploaded.successfully .popever-btns .SuccessBtn {
+    animation: fadeIn 1.5s linear forwards;
+}
