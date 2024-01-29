@@ -532,6 +532,10 @@ body {
     background-color: var(--Grey-10);
 }
 
+.main-content-header .layout-buttons:focus {
+    background-color: var(--Grey-10);
+}
+
 .header-btn-group {
     display: flex;
     align-items: stretch;
